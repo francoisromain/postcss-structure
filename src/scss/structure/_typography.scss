@@ -1,0 +1,75 @@
+/*
+    Typography
+------------------------------- 
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+h1,
+.xxl {
+  font-size: $text-xxl * 1rem;
+  line-height: $baseline-xxl;
+}
+
+h2,
+.xl {
+  font-size: $text-xl * 1rem;
+  line-height: $baseline-xl;
+}
+
+h3,
+.l {
+  font-size: $text-l * 1rem;
+  line-height: $baseline-l;
+}
+
+h4,
+.m {
+  font-size: $text-m * 1rem;
+  line-height: $baseline-m;
+}
+
+h5,
+.s {
+  font-size: $text-s * 1rem;
+  line-height: $baseline-s;
+}
+
+h6,
+.xs,
+small {
+  font-size: $text-xs * 1rem;
+  line-height: $baseline-s;
+}
+
+.lead {
+  font-size: $text-lead * 1rem;
+  line-height: $baseline-lead;
+}
+
+blockquote {
+  font-size: $text-blockquote * 1rem;
+  line-height: $baseline-blockquote;
+  font-style: italic;
+  padding-left: $base-unit * 1rem;
+  padding-right: $base-unit * 1rem;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px dotted $color-neutral;
+  margin-bottom: ($base-unit-xs - $base-unit-line) * $base-font-size;
+  margin-bottom: ($base-unit-xs - $base-unit-line) * 1rem;
+  clear: both;
+}

@@ -1,0 +1,22 @@
+/*
+    Table
+------------------------------- 
+
+*/
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+}
+
+tr {
+  border-bottom: $base-unit-line * 1rem dotted silver;
+}
+td, th {
+  vertical-align: top;
+  word-wrap:break-word;
+}

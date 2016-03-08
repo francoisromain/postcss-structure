@@ -1,0 +1,171 @@
+/*
+    Theme
+------------------------------- 
+
+*/
+
+html {
+  background-color: $color-bg;
+  font-family: 'Roboto', sans-serif;
+  color: $color-text;
+}
+
+.page {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: $base-unit-xl * -1rem;
+}
+
+.page .push-footer {
+  height: $base-unit-xl * 1rem;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  height: $base-unit-xl * 1rem;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: $color-invert;
+  &:hover {
+    color: $color-brand;
+  }
+  &:active {
+    color: $color-brand;
+  }
+  &:visited {
+    color: $color-invert;
+  }
+  &:focus {
+    color: color-brand;
+  }
+}
+
+h1,
+.xxl,
+h2,
+.xl,
+h3,
+.l,
+h4,
+.m {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+h6,
+.xs {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+blockquote {
+  color: $color-invert;
+}
+
+b,
+strong,
+.strong {
+  font-weight: 700;
+}
+
+.language-switch {
+  position: absolute;
+  right: $base-unit * 1rem;
+  margin-top: $base-unit-xs * 1rem;
+  > ul {
+    margin-right: -$base-unit-xs * 1rem;
+  }
+}
+
+#content,
+#content img {
+  opacity: 1;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+}
+
+.menu {
+  margin-bottom: 0;
+  > li a {
+    padding: $base-unit-s * 1rem;
+    display: block;
+    border-left: $base-unit-line * 1rem solid transparent;
+    margin-right: 1.5em;
+    white-space: nowrap;
+  }
+  > li.active a,
+  > li a:hover {
+    color: $color-invert;
+    border-left: $base-unit-line * 1rem solid $color-invert;
+  }
+  > li.active a,
+  > li.active a:hover {
+    color: $color-brand;
+    border-left: $base-unit-line * 1rem solid $color-brand;
+  }
+}
+
+@media (min-width: 48rem) {
+  .menu {
+    > li {
+      float: left;
+      > a {
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: - $base-unit-line * 1rem;
+        border-bottom: $base-unit-line * 1rem solid transparent;
+        border-left: 0 none $color-bg;
+      }
+      > a:hover {
+        border-bottom: $base-unit-line * 1rem solid $color-invert;
+        border-left: 0 none $color-bg;
+      }
+    }
+    > li.active a,
+    > li.active a:hover {
+      color: $color-brand;
+      border-bottom: $base-unit-line * 1rem solid $color-brand;
+      border-left: 0 none $color-bg;
+    }
+  }
+}
+
+@media (min-width: 63rem) {}
+
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border: $color-alt 10px solid;
+}
+
+.circle div {
+  display: block;
+  /* Stretch
+      height: 100%;
+      width: 100%; */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/**
+ * 1. Google Maps breaks if `max-width: 100%` acts upon it;
+ *    use their selector to remove the effects.
+ */
+
+.gm-style img {
+  max-width: none;
+}

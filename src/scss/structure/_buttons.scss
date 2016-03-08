@@ -1,0 +1,146 @@
+/*
+      Buttons
+-------------------------------
+
+*/
+
+.btn, 
+.btn:visited {
+  display:                 inline-block;
+  text-align:              center;
+  border:                  none;
+  margin:                  0;
+  cursor:                  pointer;
+
+  text-decoration:         none;
+  color:                   $btn-color;
+  background-color:        $btn-color-bg;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color:             $btn-color-active;
+        background-color:  $btn-color-bg-active;
+    }
+  @extend %transition;
+}
+
+.btn.disabled {
+  color:            rgba($btn-color, 0.25);
+  background-color: rgba($btn-color-bg, 0.25);
+  cursor:                  default;
+  &:hover,
+  &:active,
+  &:focus {
+      color:            rgba($btn-color, 0.25);
+      background-color: rgba($btn-color-bg, 0.25);
+  }
+}
+
+.btn-rnd {
+  border-radius: $btn-radius * 1rem;
+}
+
+.btn-alt,
+.btn-alt:visited {
+  color:                   $btn-alt-color;
+  background-color:        $btn-alt-color-bg;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color:              $btn-alt-color-active;
+        background-color:   $btn-alt-color-bg-active;
+    }
+
+}
+
+.btn-flash,
+.btn-flash:visited {
+  color:          $btn-flash-color;
+  background-color:     $btn-flash-color-bg;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color:         $btn-flash-color-active;
+        background-color:   $btn-flash-color-bg-active;
+    }
+}
+
+/**
+ * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+ */
+.btn::-moz-focus-inner,  {
+    border:          0;
+    padding:         0;
+}
+
+.btn-xxs {
+    padding:         $base-unit-xxs /2 * 1rem  $base-unit-xxs * 1rem;
+}
+
+.btn-xs {
+    padding:         $base-unit-xxs * 1rem  $base-unit-xxs * 3 * 1rem;
+    height: 		$base-unit-l * 1rem;
+}
+
+.btn-s {
+    padding:            $base-unit-xs * 1rem  $base-unit-xs * 2 * 1rem;
+}
+
+.btn-m {
+  padding:              $base-unit-s  * 1rem  $base-unit-s * 2 * 1rem;
+}
+
+.btn-l {
+    padding:            $base-unit-m * 1rem  $base-unit-m * 2 * 1rem;
+}
+.btn-xl {
+    padding:            $base-unit-l * 1rem  $base-unit-l * 2 * 1rem;
+}
+
+.btn-border,
+.btn-border:visited {
+  border: $btn-b-width * 1rem $btn-b-style $btn-b-color-border;
+  background-color:     $btn-b-color-bg;
+  color:                $btn-b-color;
+  &.active,
+  &:hover,
+  &:active,
+  &:focus {
+      color:            $btn-b-color-active;
+      background-color: $btn-b-color-bg-active;
+      border-color:     $btn-b-color-border-active;
+  }
+}
+
+.btn-border.disabled {
+  color:            rgba($btn-b-color, 0.25);
+  background-color: rgba($btn-b-color-bg, 0.25);
+  border-color:     rgba($btn-b-color-border, 0.25);
+  cursor:                  default;
+  &:hover,
+  &:active,
+  &:focus {
+      color:            rgba($btn-b-color, 0.25);
+      background-color: rgba($btn-b-color-bg, 0.25);
+      border-color:     rgba($btn-b-color-border, 0.25);
+  }
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-pill {
+    border-radius: 2em;
+}
+
+.btn-pill.btn-xs {
+    padding:         $base-unit-xxs /2 * 1rem  $base-unit-xxs * 2 * 1rem;
+}
+
+.btn-pill.btn-s {
+    padding:            $base-unit-xxs * 1rem  $base-unit-xxs * 4 * 1rem;
+}

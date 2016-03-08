@@ -1,0 +1,11 @@
+{
+  "name": "structure.css",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "latest",
+    "matchdep": "latest"
+  }
+}

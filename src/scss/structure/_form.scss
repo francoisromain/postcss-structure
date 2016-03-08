@@ -1,0 +1,74 @@
+/*
+      Forms
+-------------------------------
+
+*/
+
+fieldset {
+  border: 0 none transparent;
+}
+
+*:focus,
+textarea:focus,
+input:focus {
+	outline: none;
+  outline: 0;
+}
+
+label {
+	cursor: pointer;
+	display: block;
+  margin-bottom: $base-unit-s * 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="tel"],
+select {
+	width: 100%;
+	display: block;
+	padding: $base-unit-xs * 1rem;
+	height: $base-unit-l * 1rem;
+	border: 0 none;
+	background-color: $color-alt;
+	-webkit-appearance: none;
+	-moz-appearance: none; /* mobile firefox too! */
+}
+
+select {
+	-webkit-appearance: none !important;
+	-webkit-border-radius: 0;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
+	background-position: 100% center;
+	background-repeat: no-repeat;
+	padding: 0 $base-unit-s * 1rem;
+}
+
+textarea {
+	width: 100%;
+	display: block;
+	padding: $base-unit-xs * 1rem $base-unit-s * 1rem;
+	height: auto;
+  margin-bottom: $base-unit * 1em;
+	border: 0 none;
+	border-top: 1px dotted #bcb9af;
+  background-color: $color-alt;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+	border-right: 8px solid $color-brand;
+}
+
+input[type="text"].input-alt,
+input[type="email"].input-alt,
+input[type="search"].input-alt,
+input[type="password"].input-alt,
+input[type="tel"].input-alt,
+select.input-alt,
+textarea.input-alt {
+	background-color: $color-bg;
+}

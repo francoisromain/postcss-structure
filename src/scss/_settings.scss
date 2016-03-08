@@ -1,0 +1,144 @@
+/*
+    Settings
+------------------------------- 
+
+*/
+
+//  Debug trick 
+//----------------------------- 
+
+// http://qr.ae/ROqymT
+
+// * { background-color: rgba(255,0,0,.2); }
+// * * { background-color: rgba(0,255,0,.2); }
+// * * * { background-color: rgba(0,0,255,.2); }
+// * * * * { background-color: rgba(255,0,255,.2); }
+// * * * * * { background-color: rgba(0,255,255,.2); }
+// * * * * * * { background-color: rgba(255,255,0,.2); }
+
+
+//  Compass config
+//----------------------------- 
+
+$base-font-size:            16px;
+$base-line-height:          24px;
+$rhythm-unit:               "rem";
+$rem-with-px-fallback:      true;
+
+
+//  Colors
+//----------------------------- 
+
+$color-text:                #666;
+$color-bg:                  white;
+$color-transparent:         rgba(248, 247, 243, 0);
+$color-invert:              #3d3d35;
+$color-neutral:             #bcb9af;
+$color-alt:                 #f8f7f3;
+$color-brand:               #C19A25;
+$color-error:               #E82239;
+$color-warning:             #FF891C; 
+$color-info:                #5798AA; 
+$color-success:             #6EA040; 
+
+
+//  Spacing
+//----------------------------- 
+
+$base-unit:                 $base-line-height / $base-font-size;     // 1.5     = 24px
+$base-unit-line:            $base-unit / 24;                         // 0.0625  = 1px
+$base-unit-xxs:             $base-unit / 6;                          // 0.25    = 4px
+$base-unit-xs:              $base-unit / 3;                          // 0.5     = 8px
+$base-unit-s:               $base-unit / 2;                          // 0.75    = 12px
+$base-unit-m:               $base-unit * 2/3;                        // 1       = 16px
+$base-unit-l:               $base-unit * 3/2;                        // 2.25    = 36px
+$base-unit-xl:              $base-unit * 2;                          // 3       = 48px
+$base-unit-xxl:             $base-unit * 2.5;                        // 2.5     = 60px
+
+//  text-size
+//----------------------------- 
+
+// typographic scale and vertical rhythm:
+// cf http://type-scale.com/ or http://www.gridlover.net/app/
+
+// text-size is relative to $base-font-size (16px)
+//                      text-baseline is relative to $base-line-height (24px)
+
+$text-xs:          5/8;       $baseline-xs:         0.5;               // 10px / 12px
+$text-s:           0.75;      $baseline-s:          1;                 // 12px / 24px
+$text-m:           1;         $baseline-m:          1;                 // 16px / 24px
+$text-l:           1.25;      $baseline-l:          1;                 // 20px / 24px
+$text-xl:          1.5625;    $baseline-xl:         1.5;               // 25px / 36px
+$text-xxl:         2;         $baseline-xxl:        1.5;               // 32px / 36px
+
+$text-lead:        $text-xl;  $baseline-lead:       $baseline-xl; // 20px / 36px
+$text-blockquote:  $text-l;   $baseline-blockquote: $baseline-l;  // 20px / 24px
+
+
+//  Grid
+//----------------------------- 
+
+// responsive breakpoints  // $col    // ($col-width * $col) - $gutter + ($container-padding * 2)
+
+$gutter:    $base-unit;
+$container-padding: $base-unit;
+$col-max:   6;
+$col-min:   2;
+$col-width: 18.75;   //
+$thumb-min-width: 3;
+
+$screens: (
+  xxs:      1,   // 16rem  * 16px = 256px
+  xs:       2,   // 32rem  * 16px = 512px
+  s:        3,   // 48rem  * 16px = 768px
+  m:        4,   // 64rem  * 16px = 1024px
+  l:        5,   // 80rem  * 16px = 1280px
+  xl:       6,   // 96rem  * 16px = 1600px
+  xxl:      7,   // 112rem * 16px = 1600px
+  xxxl:     8    // 112rem * 16px = 1600px
+  );
+
+
+//  Buttons settings
+//----------------------------- 
+
+$btn-radius:                  $base-unit-xs;
+  
+$btn-color:                   $color-brand;
+$btn-color-bg:                $color-transparent;
+$btn-color-active:            $color-alt;
+$btn-color-bg-active:         $color-brand;
+  
+$btn-alt-color:               $color-bg;
+$btn-alt-color-bg:            $color-neutral;
+$btn-alt-color-active:        $color-alt;
+$btn-alt-color-bg-active:     $color-brand;
+  
+$btn-flash-color:             $color-bg;
+$btn-flash-color-bg:          $color-brand;
+$btn-flash-color-active:      $color-alt;
+$btn-flash-color-bg-active:   $color-invert;
+  
+$btn-b-width:                 $base-unit-line;
+$btn-b-style:                 solid;
+$btn-b-color:                 $color-text;
+$btn-b-color-bg:              $color-bg;
+$btn-b-color-border:          $color-alt;
+$btn-b-color-active:          $color-invert;
+$btn-b-color-bg-active:       $color-bg;
+$btn-b-color-border-active:   $color-invert;
+
+
+   
+//  Lists
+//-----------------------------
+
+$list-inline-sep:           ",\00A0";
+
+%transition {
+  -o-transition:      opacity 1.5s, background-color 1.5s;
+  -ms-transition:     opacity 1.5s, background-color 1.5s;
+  -moz-transition:    opacity 1.5s, background-color 1.5s;
+  -webkit-transition: opacity 1.5s, background-color 1.5s;
+  transition:         opacity 1.5s, background-color 1.5s;
+}
