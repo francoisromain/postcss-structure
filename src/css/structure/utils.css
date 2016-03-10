@@ -1,0 +1,114 @@
+/*
+    Utils
+------------------------------- 
+
+*/
+
+.clearfix {
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.full-width {
+  float: left;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.img-left {
+  float: left;
+  margin-right: var(--gutter);
+  max-width: var(--col-width);
+}
+
+.img-right {
+  float: right;
+  margin-left: var(--gutter);
+  max-width: var(--col-width);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.strikethrough {
+  color: var(--color-neutral);
+  text-decoration: line-through;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pad {
+  padding: var(--base-unit-m);
+}
+
+.pad-h {
+  padding-right: var(--base-unit-m);
+  padding-left: var(--base-unit-m);
+}
+
+.color-brand {
+  color: var(--color-brand);
+}
+
+.color-alt {
+  color: var(--color-alt);
+}
+
+.color-neutral {
+  color: var(--color-neutral);
+}
+
+.bg-default {
+  background-color: var(--color-bg);
+}
+
+.bg-brand {
+  background-color: var(--color-brand)
+;
+}
+
+.bg-alt {
+  background-color: var(--color-alt);
+}
+
+.bg-neutral {
+  background-color: var(--color-neutral);
+}

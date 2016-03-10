@@ -1,0 +1,74 @@
+/*
+    Typography
+------------------------------- 
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+h1,
+.xxl {
+  font-size: var(--text-xxl);
+  line-height: var(--baseline-xxl);
+}
+
+h2,
+.xl {
+  font-size: var(--text-xl);
+  line-height: var(--baseline-xl);
+}
+
+h3,
+.l {
+  font-size: var(--text-l);
+  line-height: var(--baseline-l);
+}
+
+h4,
+.m {
+  font-size: var(--text-m);
+  line-height: var(--baseline-m);
+}
+
+h5,
+.s {
+  font-size: var(--text-s);
+  line-height: var(--baseline-s);
+}
+
+h6,
+.xs,
+small {
+  font-size: var(--text-xs);
+  line-height: var(--baseline-s);
+}
+
+.lead {
+  font-size: var(--text-lead);
+  line-height: var(--baseline-lead);
+}
+
+blockquote {
+  font-size: var(--text-blockquote);
+  line-height: var(--baseline-blockquote);
+  font-style: italic;
+  padding-left: var(--base-unit);
+  padding-right: var(--base-unit);
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px dotted var(--color-neutral);
+  margin-bottom: calc(var(--base-unit-xs) - var(--base-unit-line));
+  clear: both;
+}

@@ -1,0 +1,82 @@
+/*
+    UI elements 
+------------------------------- 
+
+*/
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip span {
+  position: absolute;
+  color: var(--color-alt)
+;
+  background: var(--color-neutral);
+  text-align: center;
+  border-radius: var(--base-unit-xs);
+  top: -2px;
+  right: 0;
+  padding: 2px 12px;
+  z-index: 999;
+}
+
+.tooltip span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: var(--base-unit);
+  border-top: var(--base-unit-xs) solid var(--color-neutral);
+  border-right: var(--base-unit-xs) solid transparent;
+  border-left: var(--base-unit-xs) solid transparent;
+}
+
+.alert {
+  width: 100%;
+  padding: 8px 12px;
+  font-style: italic;
+}
+
+.alert-info {
+  color: var(--color-bg);
+  background: var(--color-info)
+;
+}
+
+.alert-error {
+  color: var(--color-bg);
+  background: var(--color-error)
+;
+}
+
+.alert-warning {
+  color: var(--color-bg);
+  background: var(--color-warning)
+;
+}
+
+.alert-success {
+  color: var(--color-bg);
+  background: var(--color-success)
+;
+}
+
+.label {
+  padding: 0 0.8em;
+  text-align: center;
+  color: var(--color-bg);
+  background-color: var(--color-neutral);
+}
+
+.label-color {
+  background-color: var(--color-brand)
+;
+}
+
+.label-s-color {
+  padding: 0.2em 0.6em 0.25em 0.5em;
+  text-align: center;
+  color: var(--color-bg);
+  background-color: var(--color-brand)
+;
+}

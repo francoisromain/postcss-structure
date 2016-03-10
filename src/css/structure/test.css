@@ -1,0 +1,97 @@
+$gutter: 1.5; /* var(--gutter); */
+$col-width: 18.75;
+
+@each $screen, $col in xxs, xs, s, m, l, xl, xxl, xxxl {
+  $width: $col * $col-width - $gutter;
+  @if $col < $col-min {
+    $width: $col-min * $col-width - $gutter;
+  }
+  @else if $col > $col-max {
+    $width: $col-max * $col-width - $gutter;
+  }
+  $container-width: $width + 2 * $container-padding;
+  @media (min-width: $container-width + 2 * $gutter) {
+    .container {
+      width: $container-width;
+    }
+    .show-$(screen) {
+      display: block !important;
+      visibility: visible !important;
+    }
+    %bloc-float-$(screen) {
+      float: left;
+      clear: none;
+    }
+    @for $i from $col-max through 1 {
+      %columns-$(screen)-$(i) {
+        -webkit-column-count: $i;
+        -moz-column-count: $i;
+        column-count: $i;
+      }
+    }
+    @for $i from $col-max through 1 {
+      %bloc-width-$(screen)-$(i) {
+        width: (($col-width * $i) - $gutter);
+      }
+      .bloc-$(screen)-$(i) {
+        @extend %bloc-float-$(screen);
+      }
+      @if $i > 1 and $i < $col-max {
+        @for $j from 1 through $col-max - $i {
+          .bloc-$(screen)-$(i)-$(j) {
+            @extend %bloc-float-$(screen);
+          }
+        }
+      }
+    }
+    .$(screen)-right {
+      float: right;
+    }
+
+    @each $screen-n, $col-n in $screens {
+      @if $col >= $col-n {
+        @for $i from 1 through $col-max {
+          .bloc-$(screen-n)-$(i) {
+            @if $i >= $col {
+              @extend %bloc-width-$(screen)-$(col);
+            }
+            @else if $col-n == $col {
+              @extend %bloc-width-$(screen)-$(i);
+            }
+          }
+          .columns-$(screen-n)-$(i) {
+            @if $i >= $col {
+              @extend %columns-$(screen)-$(col) /* bug */
+            }
+            @else if $col-n == $col {
+              @extend %columns-$(screen)-$(i)
+            }
+          }
+
+          @if $i > 1 and $i < $col-max {
+            @for $j from 1 through $col-max - $i {
+              .bloc-$(screen-n)-$(i)-$(j) {
+                @if $i + $j >=$col and $col - $j > 1 {
+                  @extend %bloc-width-$(screen);
+                  /* 2= #{$col - $j} */
+                }
+                @else if $col==$col-n {
+                  @extend %bloc-width-$(screen)-1;
+                }
+              }
+              .columns-$(screen-n)-$(i)-$(j) {
+                @if $i + $j >=$col and $col - $j > 1 {
+                  @extend %columns-$(screen);
+                  /* 2= #{$col - $j} */
+                }
+                @else if $col==$col-n {
+                  @extend %columns-$(screen)-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

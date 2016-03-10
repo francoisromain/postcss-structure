@@ -1,0 +1,151 @@
+/*
+    Settings
+------------------------------- 
+
+*/
+
+/*
+    Debug trick 
+------------------------------- 
+    http://qr.ae/ROqymT
+*/
+
+
+/*
+ * { background-color: rgba(255,0,0,.2); }
+ * * { background-color: rgba(0,255,0,.2); }
+ * * * { background-color: rgba(0,0,255,.2); }
+ * * * * { background-color: rgba(255,0,255,.2); }
+ * * * * * { background-color: rgba(0,255,255,.2); }
+ * * * * * * { background-color: rgba(255,255,0,.2); }
+*/
+
+:root {
+
+  --base-font-size:           1rem;
+  --base-baseline:            1.5;
+
+/*
+    Colors
+------------------------------- 
+*/
+
+  --color-text:                #666;
+  --color-bg:                  white;
+  --color-transparent:         rgba(248, 247, 243, 0);
+  --color-inverse:             #3d3d35;
+  --color-neutral:             #bcb9af;
+  --color-alt:                 #f8f7f3;
+  --color-brand:               #C19A25;
+  --color-error:               #E82239;
+  --color-warning:             #FF891C; 
+  --color-info:                #5798AA; 
+  --color-success:             #6EA040; 
+
+/*
+    Spacing
+------------------------------- 
+*/
+
+  --base-unit:                 var(--base-baseline)rem;         /* 1.5    rem  = 24 px  */
+  --base-unit-line:            calc(var(--base-baseline) / 24)rem;     /* 0.0625 rem  = 1  px  */
+  --base-unit-xxs:             calc(var(--base-baseline) / 6)rem;      /* 0.25   rem  = 4  px  */
+  --base-unit-xs:              calc(var(--base-baseline) / 3)rem;      /* 0.5    rem  = 8  px  */
+  --base-unit-s:               calc(var(--base-baseline) / 2)rem;      /* 0.75   rem  = 12 px  */
+  --base-unit-m:               calc(var(--base-baseline) * 2/3)rem;    /* 1      rem  = 16 px  */ 
+  --base-unit-l:               calc(var(--base-baseline) * 3/2)rem;    /* 2.25   rem  = 36 px  */
+  --base-unit-xl:              calc(var(--base-baseline) * 2)rem;      /* 3      rem  = 48 px  */
+  --base-unit-xxl:             calc(var(--base-baseline) * 2.5)rem;    /* 2.5    rem  = 60 px  */
+
+/*
+    Text sizes
+------------------------------- 
+ typographic scale and vertical rhythm:
+ cf http://type-scale.com/ or http://www.gridlover.net/app/
+
+ text-size is relative to var(--base-font-size) (16px)
+                                        baseline is relative to var(--base-baseline)) (24px)
+*/
+
+  --text-xs:          calc(5/8)rem;       --baseline-xs:         1.2;               /* 10px / 12px */
+  --text-s:           calc(3/4)rem;       --baseline-s:          2;                 /* 12px / 24px */
+  --text-m:           calc(1)rem;         --baseline-m:          1.5;               /* 16px / 24px */
+  --text-l:           calc(5/4)rem;       --baseline-l:          1;                 /* 20px / 24px */
+  --text-xl:          calc(3/2)rem;       --baseline-xl:         1.5;               /* 24px / 36px */
+  --text-xxl:         calc(2)rem;         --baseline-xxl:        1.125;             /* 32px / 36px */
+  --text-lead:        var(--text-l);      --baseline-lead:       var(--baseline-l); /* 20px / 36px */
+  --text-blockquote:  var(--text-l);      --baseline-blockquote: var(--baseline-l); /* 20px / 24px */
+
+/*
+    Buttons
+------------------------------- 
+*/
+
+  --btn-radius:                  var(--base-unit-xs);
+  
+  --btn-color:                   var(--color-brand);
+  --btn-color-bg:                var(--color-transparent);
+  --btn-color-active:            var(--color-alt);
+  --btn-color-bg-active:         var(--color-brand);
+  
+  --btn-alt-color:               var(--color-bg);
+  --btn-alt-color-bg:            var(--color-neutral);
+  --btn-alt-color-active:        var(--color-alt);
+  --btn-alt-color-bg-active:     var(--color-brand);
+  
+  --btn-flash-color:             var(--color-bg);
+  --btn-flash-color-bg:          var(--color-brand);
+  --btn-flash-color-active:      var(--color-alt);
+  --btn-flash-color-bg-active:   var(--color-inverse);
+  
+  --btn-b-width:                 var(--base-unit-line);
+  --btn-b-style:                 solid;
+  --btn-b-color:                 var(--color-text);
+  --btn-b-color-bg:              var(--color-bg);
+  --btn-b-color-border:          var(--color-alt);
+  --btn-b-color-active:          var(--color-inverse);
+  --btn-b-color-bg-active:       var(--color-bg);
+  --btn-b-color-border-active:   var(--color-inverse);
+
+
+/*
+    Lists
+------------------------------- 
+*/   
+
+  --list-inline-sep: ",\00A0";
+
+/*
+    Grid
+------------------------------- 
+  responsive breakpoints  // $col    // ($col-width * $col) - $gutter + ($container-padding * 2)
+*/
+
+  --gutter:            var(--base-unit);
+  --container-padding: var(--base-unit);
+  --col-max:           6;
+  --col-min:           2;
+  --col-width:         18.75rem;
+  --thumb-min-width:   3;
+
+  $screens: (xxs: 1, xs: 2, s: 3, m: 4, l: 5, xl: 6, xxl: 7, xxxl: 8);
+
+  --one-half: calc((var(--col-width) / 2) - var(--gutter));
+  --one-third: calc((var(--col-width) / 3) - var(--gutter));
+  --two-third: 10.33rem;
+
+  --n: 1;
+
+  @while ((var(--col-width) / $n) - var(--gutter) > $thumb-min-width) {
+    --n: calc(var(--n) + 1);
+  }
+
+  --thumb: (var(--col-width) / ($n - 1)) - var(--gutter);
+
+
+
+}
+
+@define-mixin transition {
+  transition: opacity 1.5s, background-color 1.5s;
+}

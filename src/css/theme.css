@@ -5,9 +5,9 @@
 */
 
 html {
-  background-color: $color-bg;
+  background-color: var(--color-bg);
   font-family: 'Roboto', sans-serif;
-  color: $color-text;
+  color: var(--color-text);
 }
 
 .page {
@@ -15,31 +15,35 @@ html {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: $base-unit-xl * -1rem;
+  margin-bottom: var(--base-unit-xl);
 }
 
 .page .push-footer {
-  height: $base-unit-xl * 1rem;
+  height: var(--base-unit-xl)
+;
 }
 
 .footer {
   clear: both;
   position: relative;
-  height: $base-unit-xl * 1rem;
+  height: var(--base-unit-xl)
+;
 }
 
 a {
   text-decoration: none;
   border-bottom: 1px solid;
-  color: $color-invert;
+  color: var(--color-inverse);
   &:hover {
-    color: $color-brand;
+    color: var(--color-brand)
+;
   }
   &:active {
-    color: $color-brand;
+    color: var(--color-brand)
+;
   }
   &:visited {
-    color: $color-invert;
+    color: var(--color-inverse);
   }
   &:focus {
     color: color-brand;
@@ -66,7 +70,7 @@ h6,
 }
 
 blockquote {
-  color: $color-invert;
+  color: var(--color-inverse);
 }
 
 b,
@@ -77,10 +81,10 @@ strong,
 
 .language-switch {
   position: absolute;
-  right: $base-unit * 1rem;
-  margin-top: $base-unit-xs * 1rem;
+  right: $base-unit;
+  margin-top: $base-unit-xs;
   > ul {
-    margin-right: -$base-unit-xs * 1rem;
+    margin-right: -$base-unit-xs;
   }
 }
 
@@ -98,21 +102,23 @@ strong,
 .menu {
   margin-bottom: 0;
   > li a {
-    padding: $base-unit-s * 1rem;
+    padding: $base-unit-s;
     display: block;
-    border-left: $base-unit-line * 1rem solid transparent;
+    border-left: $base-unit-line solid transparent;
     margin-right: 1.5em;
     white-space: nowrap;
   }
   > li.active a,
   > li a:hover {
-    color: $color-invert;
-    border-left: $base-unit-line * 1rem solid $color-invert;
+    color: var(--color-inverse);
+    border-left: $base-unit-line solid var(--color-inverse);
   }
   > li.active a,
   > li.active a:hover {
-    color: $color-brand;
-    border-left: $base-unit-line * 1rem solid $color-brand;
+    color: var(--color-brand)
+;
+    border-left: $base-unit-line solid var(--color-brand)
+;
   }
 }
 
@@ -123,20 +129,22 @@ strong,
       > a {
         padding-right: 0;
         padding-left: 0;
-        margin-bottom: - $base-unit-line * 1rem;
-        border-bottom: $base-unit-line * 1rem solid transparent;
-        border-left: 0 none $color-bg;
+        margin-bottom: - $base-unit-line;
+        border-bottom: $base-unit-line solid transparent;
+        border-left: 0 none var(--color-bg);
       }
       > a:hover {
-        border-bottom: $base-unit-line * 1rem solid $color-invert;
-        border-left: 0 none $color-bg;
+        border-bottom: $base-unit-line solid var(--color-inverse);
+        border-left: 0 none var(--color-bg);
       }
     }
     > li.active a,
     > li.active a:hover {
-      color: $color-brand;
-      border-bottom: $base-unit-line * 1rem solid $color-brand;
-      border-left: 0 none $color-bg;
+      color: var(--color-brand)
+;
+      border-bottom: $base-unit-line solid var(--color-brand)
+;
+      border-left: 0 none var(--color-bg);
     }
   }
 }
@@ -148,7 +156,9 @@ strong,
   overflow: hidden;
   width: 150px;
   height: 150px;
-  border: $color-alt 10px solid;
+  border: var(
+--color-alt)
+ 10px solid;
 }
 
 .circle div {

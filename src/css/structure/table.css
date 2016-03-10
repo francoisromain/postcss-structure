@@ -14,7 +14,7 @@ th {
 }
 
 tr {
-  border-bottom: $base-unit-line * 1rem dotted silver;
+  border-bottom: var(--base-unit-line) dotted silver;
 }
 td, th {
   vertical-align: top;

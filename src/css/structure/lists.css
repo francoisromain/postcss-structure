@@ -1,0 +1,77 @@
+/*
+      Lists
+-------------------------------
+
+*/
+
+ul,
+ol,
+dd {
+  list-style-position: inside;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+.list-dash {
+  list-style: none;
+  > li:before {
+    content: "―";
+    margin-right: var(--base-unit-xs);
+    color: var(--color-neutral);
+  }
+  > li:empty {
+    display: none;
+  }
+}
+
+.list-dash .list-dash {
+  margin-left: var(--base-unit);
+}
+
+.list-sans {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-inline,
+.list-inline-spaced {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  > li {
+    margin-bottom: var(--base-unit-xxs);
+    margin-right: var(--base-unit-xxs);
+    float: left;
+  }
+}
+
+.list-inline-spaced li {
+  margin-right: var(--base-unit);
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  &.list-inline {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+}
+
+.list-separator {
+  list-style: none;
+  > li {
+    &:after {
+      content: var(--list-inline-sep);
+    }
+    &:last-child:after {
+      content: none;
+    }
+  }
+}

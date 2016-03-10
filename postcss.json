@@ -1,0 +1,10 @@
+{
+  "use": ["postcss-import", "postcss-cssnext", "precss"],
+  "output": "dist/css/styles.css",
+  "precss": {
+    "parser": "postcss-scss"
+  },
+  "postcss-cssnext": {
+    "browsers": "> 5%"
+  }
+}

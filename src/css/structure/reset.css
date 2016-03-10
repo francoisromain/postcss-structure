@@ -12,8 +12,6 @@
 
 html,
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -21,8 +19,6 @@ html,
   &,
   &:before,
   &:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
     box-sizing: inherit;
   }
 }
@@ -33,27 +29,16 @@ html,
 From Inuit.css
 https://github.com/inuitcss/base.page/blob/master/_base.page.scss
 
- * 1. Set the default `font-size` and `line-height` for the entire project,
- *    sourced from our default variables. The `font-size` is calculated to exist
- *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
- *    navigating between pages that do/do not have enough content to produce
- *    scrollbars naturally.
- * 3. Ensure the page always fills at least the entire height of the viewport.
  * 4. Prevent certain mobile browsers from automatically zooming fonts.
  * 5. Fonts on OSX will look more consistent with other systems that do not
  *    render text using sub-pixel anti-aliasing.
- */
+*/
 
 html {
-  font-size: $base-font-size / 16px * 1rem;
-  /* [1] */
-  line-height: $base-unit;
-  /* [1] */
+  font-size: var(--base-font-size);
+  line-height: var(--base-baseline);
   overflow-y: scroll;
-  /* [2] */
   min-height: 100%;
-  /* [3] */
   -webkit-text-size-adjust: 100%;
   /* [4] */
   -ms-text-size-adjust: 100%;
@@ -128,65 +113,42 @@ fieldset,
 figure,
 pre,
 hr {
-  margin-bottom: $base-unit-s * $base-font-size;
-  margin-bottom: $base-unit-s * 1rem;
+  margin-bottom: var(--$base-unit-s);
 }
-
-
-/*
-  Give a help cursor to elements on `:hover`
-*/
 
 abbr[title],
 dfn[title] {
   cursor: help;
 }
 
-
-/*
-    Remove underlines from potentially troublesome elements.
-*/
-
 u,
 ins {
   text-decoration: none;
 }
 
-
-/*
-    Apply faux underlines to inserted text via `border-bottom`.
-*/
-
 ins {
   border-bottom: 1px solid;
 }
 
-
-/*
-    1. Responsive images
-    2. Offset `alt` text from surrounding copy
-    3. Removes the whitespace that appears under `img`
-*/
-
 img {
   max-width: 100%;
-  /* [1] */
   font-style: italic;
-  /* [2] */
   vertical-align: middle;
-  /* [3] */
   height: auto;
   outline: 0;
   border: 0;
 }
 
-// remove yellow bg on automplete in chrome
+/* remove yellow bg on automplete in chrome */
 input:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
-// remove round corner on iOs
-input {
+/* remove round corner on iOs */
+
+input, select {
+  -moz-appearance: none;
+  -webkit-appearance: none !important;
   border-radius: 0;
 }
