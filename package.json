@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "css": "postcss -c postcss.json src/css/styles.css"
@@ -15,11 +15,7 @@
     "postcss": "^5.0.19",
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.4.0",
-    "postcss-extend": "^1.0.1",
     "postcss-import": "^8.0.2",
-    "postcss-mixins": "^4.0.1",
-    "postcss-scss": "^0.1.7",
-    "postcss-structure": "^0.1.2",
-    "precss": "^1.4.0"
+    "postcss-structure": "^0.1.2"
   }
 }
