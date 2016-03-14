@@ -49,7 +49,7 @@ textarea {
   height: auto;
   margin-bottom: var(--base-unit);
   border: 0 none;
-  border-top: 1px dotted #bcb9af;
+  border-top: var(--base-unit-line) dotted #bcb9af;
   background-color: var(--color-alt)
 ;
 }
@@ -57,7 +57,7 @@ textarea {
 textarea:focus,
 input:focus,
 select:focus {
-  border-right: 8px solid var(--color-brand);
+  border-right: var(--base-unit-s) solid var(--color-brand);
 }
 
 input[type="text"].input-alt,

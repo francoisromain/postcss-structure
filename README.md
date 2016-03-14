@@ -2,9 +2,9 @@
 
 todo
 - [x] remove compass 
-- [ ] replace grunt with gulp
-- [ ] replace contrib-sass with postcss-sass
-- [ ] replace sass with cssnext
+- [x] replace grunt with gulp
+- [x] replace sass / compass with postcss / cssnext
+- [x] write postcss plugin for grid: postcss-structure
 - [ ] create variable page
 - [ ] em vs rem
 - [ ] media object

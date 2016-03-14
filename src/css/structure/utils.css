@@ -40,14 +40,14 @@
 
 .img-left {
   float: left;
-  margin-right: var(--gutter);
-  max-width: var(--col-width);
+  margin-right: var(--structure-gutter);
+  max-width: var(--structure-width);
 }
 
 .img-right {
   float: right;
-  margin-left: var(--gutter);
-  max-width: var(--col-width);
+  margin-left: var(--structure-gutter);
+  max-width: var(--structure-width);
 }
 
 .capitalize {

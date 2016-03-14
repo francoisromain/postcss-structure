@@ -121,29 +121,14 @@
   responsive breakpoints  // $col    // ($col-width * $col) - $gutter + ($container-padding * 2)
 */
 
-  --gutter:            var(--base-unit);
-  --container-padding: var(--base-unit);
-  --col-max:           6;
-  --col-min:           2;
-  --col-width:         18.75rem;
-  --thumb-min-width:   3;
-
-  $screens: (xxs: 1, xs: 2, s: 3, m: 4, l: 5, xl: 6, xxl: 7, xxxl: 8);
-
-  --one-half: calc((var(--col-width) / 2) - var(--gutter));
-  --one-third: calc((var(--col-width) / 3) - var(--gutter));
-  --two-third: 10.33rem;
-
-  --n: 1;
-
-  @while ((var(--col-width) / $n) - var(--gutter) > $thumb-min-width) {
-    --n: calc(var(--n) + 1);
-  }
-
-  --thumb: (var(--col-width) / ($n - 1)) - var(--gutter);
-
-
-
+  --structure-width:    12;  
+  --structure-gutter:   var(--base-baseline); 
+  --structure-padding:  var(--base-baseline);
+  --structure-max:      8;    
+  --structure-min:      2;    
+  --structure-thumb:    3;
+  --structure-display:  "float";
+  --structure-align:    "center";
 }
 
 @define-mixin transition {
