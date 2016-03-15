@@ -2,11 +2,11 @@
 @import "print.css";
 @import "reset.css";
 @import "typography.css";
-@import "lists.css";
-@import "buttons.css";
+@import "list.css";
+@import "button.css";
 @import "form.css";
 @import "table.css";
 @import "grid.css";
 @import "utils.css";
-@import "margins.css";
+@import "margin.css";
 @import "ui.css";

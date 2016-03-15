@@ -11,20 +11,20 @@ dd {
 }
 
 li {
-  > ul,
-  > ol {
+  & > ul,
+  & > ol {
     margin-bottom: 0;
   }
 }
 
 .list-dash {
   list-style: none;
-  > li:before {
+  & > li:before {
     content: "―";
     margin-right: var(--base-unit-xs);
     color: var(--color-neutral);
   }
-  > li:empty {
+  & > li:empty {
     display: none;
   }
 }
@@ -44,7 +44,7 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
-  > li {
+  & > li {
     margin-bottom: var(--base-unit-xxs);
     margin-right: var(--base-unit-xxs);
     float: left;
@@ -66,7 +66,7 @@ ol {
 
 .list-separator {
   list-style: none;
-  > li {
+  & > li {
     &:after {
       content: var(--list-inline-sep);
     }

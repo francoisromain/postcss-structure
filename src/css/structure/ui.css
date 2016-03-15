@@ -10,8 +10,7 @@
 
 .tooltip span {
   position: absolute;
-  color: var(--color-alt)
-;
+  color: var(--color-alt);
   background: var(--color-neutral);
   text-align: center;
   border-radius: var(--base-unit-xs);
@@ -39,26 +38,22 @@
 
 .alert-info {
   color: var(--color-bg);
-  background: var(--color-info)
-;
+  background: var(--color-info);
 }
 
 .alert-error {
   color: var(--color-bg);
-  background: var(--color-error)
-;
+  background: var(--color-error);
 }
 
 .alert-warning {
   color: var(--color-bg);
-  background: var(--color-warning)
-;
+  background: var(--color-warning);
 }
 
 .alert-success {
   color: var(--color-bg);
-  background: var(--color-success)
-;
+  background: var(--color-success);
 }
 
 .label {
@@ -69,14 +64,12 @@
 }
 
 .label-color {
-  background-color: var(--color-brand)
-;
+  background-color: var(--color-brand);
 }
 
 .label-s-color {
   padding: 0.2em 0.6em 0.25em 0.5em;
   text-align: center;
   color: var(--color-bg);
-  background-color: var(--color-brand)
-;
+  background-color: var(--color-brand);
 }

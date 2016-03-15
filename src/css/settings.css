@@ -134,6 +134,8 @@
   --structure-thumb:    2.5;
   --structure-display:  "flex";
   --structure-align:    "center";
+  --structure-columns:  1;
+  --structure-blocs:    1;
 }
 
 @define-mixin transition {

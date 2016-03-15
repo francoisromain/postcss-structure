@@ -15,7 +15,9 @@
   padding:  var(--structure-padding);  
   max:      var(--structure-max);        
   min:      var(--structure-min);        
-  thumb:    var(--structure-thumb);         
+  thumb:    var(--structure-thumb);
   display:  var(--structure-display);
-  align:    var(--structure-align);    
+  align:    var(--structure-align);
+  columns:  var(--structure-columns);
+  blocs:    var(--structure-blocs);  
 }
