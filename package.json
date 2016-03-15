@@ -1,10 +1,6 @@
 {
   "name": "francoisromain.github.io.structure.css",
   "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "css": "postcss -c postcss.json src/css/styles.css"
-  },
   "devDependencies": {
     "cssfmt": "^2.1.4",
     "cssnano": "^3.5.2",

@@ -8,7 +8,7 @@ gulp.task('css', function () {
         .pipe(postcss([
             require('postcss-import'),
             require('postcss-custom-properties'),
-            require('./postcss-structure'),
+            require('postcss-structure'),
             require('postcss-cssnext')({ browsers: "> 2%" }),
             require('cssnano')({ discardComments: { removeAll: true }, autoprefixer: false })
         ]))
