@@ -113,7 +113,8 @@
 ------------------------------- 
 */   
 
-  --list-inline-sep: ",\00A0";
+  --list-sep-post: ",";
+  --list-sep-pre: "―";
 
 /*
     Grid
@@ -132,7 +133,7 @@
   --structure-max:      8;    
   --structure-min:      2;    
   --structure-thumb:    2.5;
-  --structure-display:  "flex";
+  --structure-display:  "float";
   --structure-align:    "center";
   --structure-columns:  1;
   --structure-blocs:    1;
