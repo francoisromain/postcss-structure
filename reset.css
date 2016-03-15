@@ -37,6 +37,8 @@ https://github.com/inuitcss/base.page/blob/master/_base.page.scss
 html {
   font-size: var(--base-font-size);
   line-height: var(--base-baseline);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   overflow-y: scroll;
   min-height: 100%;
   -webkit-text-size-adjust: 100%;
