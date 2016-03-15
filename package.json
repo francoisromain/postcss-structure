@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/francoisromain/postcss-structure/issues"
   },
-  "homepage": "https://github.com/francoisromain/postcss-structure",
+  "homepage": "http://francoisromain.github.io/structure.css/",
   "dependencies": {
     "postcss": "^5.0.16",
     "postcss-cssnext": "^2.4.0",
