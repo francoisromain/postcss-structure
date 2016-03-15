@@ -19,15 +19,13 @@ html {
 }
 
 .page .push-footer {
-  height: var(--base-unit-xl)
-;
+  height: var(--base-unit-xl);
 }
 
 .footer {
   clear: both;
   position: relative;
-  height: var(--base-unit-xl)
-;
+  height: var(--base-unit-xl);
 }
 
 a {
@@ -35,12 +33,10 @@ a {
   border-bottom: 1px solid;
   color: var(--color-inverse);
   &:hover {
-    color: var(--color-brand)
-;
+    color: var(--color-brand);
   }
   &:active {
-    color: var(--color-brand)
-;
+    color: var(--color-brand);
   }
   &:visited {
     color: var(--color-inverse);
@@ -77,105 +73,4 @@ b,
 strong,
 .strong {
   font-weight: 700;
-}
-
-.language-switch {
-  position: absolute;
-  right: $base-unit;
-  margin-top: $base-unit-xs;
-  > ul {
-    margin-right: -$base-unit-xs;
-  }
-}
-
-#content,
-#content img {
-  opacity: 1;
-}
-
-.logo {
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-right: 1.5rem;
-}
-
-.menu {
-  margin-bottom: 0;
-  > li a {
-    padding: $base-unit-s;
-    display: block;
-    border-left: $base-unit-line solid transparent;
-    margin-right: 1.5em;
-    white-space: nowrap;
-  }
-  > li.active a,
-  > li a:hover {
-    color: var(--color-inverse);
-    border-left: $base-unit-line solid var(--color-inverse);
-  }
-  > li.active a,
-  > li.active a:hover {
-    color: var(--color-brand)
-;
-    border-left: $base-unit-line solid var(--color-brand)
-;
-  }
-}
-
-@media (min-width: 48rem) {
-  .menu {
-    > li {
-      float: left;
-      > a {
-        padding-right: 0;
-        padding-left: 0;
-        margin-bottom: - $base-unit-line;
-        border-bottom: $base-unit-line solid transparent;
-        border-left: 0 none var(--color-bg);
-      }
-      > a:hover {
-        border-bottom: $base-unit-line solid var(--color-inverse);
-        border-left: 0 none var(--color-bg);
-      }
-    }
-    > li.active a,
-    > li.active a:hover {
-      color: var(--color-brand)
-;
-      border-bottom: $base-unit-line solid var(--color-brand)
-;
-      border-left: 0 none var(--color-bg);
-    }
-  }
-}
-
-@media (min-width: 63rem) {}
-
-.circle {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 150px;
-  height: 150px;
-  border: var(
---color-alt)
- 10px solid;
-}
-
-.circle div {
-  display: block;
-  /* Stretch
-      height: 100%;
-      width: 100%; */
-  min-width: 100%;
-  min-height: 100%;
-}
-
-
-/**
- * 1. Google Maps breaks if `max-width: 100%` acts upon it;
- *    use their selector to remove the effects.
- */
-
-.gm-style img {
-  max-width: none;
 }

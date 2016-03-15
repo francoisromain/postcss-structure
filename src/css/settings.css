@@ -7,9 +7,9 @@
 /*
     Debug trick 
 ------------------------------- 
+    Un-comment to see in action
     http://qr.ae/ROqymT
 */
-
 
 /*
  * { background-color: rgba(255,0,0,.2); }
@@ -118,16 +118,21 @@
 /*
     Grid
 ------------------------------- 
-  responsive breakpoints  // $col    // ($col-width * $col) - $gutter + ($container-padding * 2)
+  breakpoints formula 
+
+  for (col = min; col <= max; col ++) {
+    containerWidth = (width * col) - gutter + (padding * 2);
+  }
+
 */
 
-  --structure-width:    12;  
+  --structure-width:    18;  
   --structure-gutter:   var(--base-baseline); 
   --structure-padding:  var(--base-baseline);
   --structure-max:      8;    
   --structure-min:      2;    
-  --structure-thumb:    3;
-  --structure-display:  "float";
+  --structure-thumb:    2.5;
+  --structure-display:  "flex";
   --structure-align:    "center";
 }
 

@@ -77,27 +77,26 @@
 }
 
 .btn-xxs {
-    padding:         var(--base-unit-xxs)  var(--base-unit-xxs);
+    padding:         var(--base-unit-xxs)  calc(var(--base-unit-xxs) * 2);
 }
 
 .btn-xs {
-    padding:         var(--base-unit-xxs)  var(--base-unit-xxs);
-    height: 		     var(--base-unit-l);
+    padding:         var(--base-unit-xs)  calc(var(--base-unit-xs) * 2);
 }
 
 .btn-s {
-    padding:         var(--base-unit-xs)   var(--base-unit-xs);
+    padding:         var(--base-unit-s)   calc(var(--base-unit-s) * 2);
 }  
   
 .btn-m {  
-  padding:           var(--base-unit-s )   var(--base-unit-s);
+  padding:           var(--base-unit-m )   calc(var(--base-unit-m) * 2);
 }  
   
 .btn-l {  
-    padding:         var(--base-unit-m)    var(--base-unit-m);
+    padding:         var(--base-unit-l)    calc(var(--base-unit-l) * 2);
 }  
 .btn-xl {  
-    padding:         var(--base-unit-l)    var(--base-unit-l);
+    padding:         var(--base-unit-xl)    calc(var(--base-unit-xl) * 2);
 }
 
 .btn-border,
@@ -135,12 +134,4 @@
 
 .btn-pill {
     border-radius: 2em;
-}
-
-.btn-pill.btn-xs {
-    padding:         var(--base-unit-xxs)  var(--base-unit-xxs);
-}
-
-.btn-pill.btn-s {
-    padding:            var(--base-unit-xxs)  var(--base-unit-xxs);
 }

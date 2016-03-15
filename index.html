@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Grid System</title>
+  <title>Structure.css</title>
   <meta name="description" content="A css grid-system based on sass">
   <meta name="keywords" content="Grid system, css, sass, grunt, masonry">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic">
@@ -15,39 +15,27 @@
   <div class="page">
     <div class="container">
       <header role="banner" class="margin-top">
-        <h1>Grid System</h1>
+        <h1>Structure.css</h1>
       </header>
       <hr />
     </div>
     <main class="container" role="main">
       <ul class="list-dash">
-        <li><a href="#">imports</a></li>
         <li><a href="#">normalize</a></li>
         <li><a href="#">print</a></li>
         <li><a href="#">settings</a></li>
-        <li><a href="#">glide</a></li>
-        <li><a href="#">pace</a></li>
-        <li><a href="#">oembed</a></li>
         <li><a href="#">reset</a></li>
         <li><a href="#">base</a></li>
-        <li><a href="#">lists</a></li>
+        <li><a href="#">list</a></li>
         <li><a href="#">buttons</a></li>
         <li><a href="#">form</a></li>
         <li><a href="#">table</a></li>
-        <li><a href="#">grid-float</a></li>
+        <li><a href="#">grid</a></li>
         <li><a href="#">utils</a></li>
         <li><a href="#">margins</a></li>
         <li><a href="#">ui</a></li>
-        <li><a href="#">icons</a></li>
         <li><a href="#">theme</a></li>
       </ul>
-      <hr />
-      <div class="grid">
-        <div class="bloc bloc-3-8 margin-top">
-          <h2>Imports</h2>
-          <p>Font Imports.</p>
-        </div>
-      </div>
       <hr />
       <div class="grid">
         <div class="bloc bloc-3-8 margin-top">
@@ -67,7 +55,7 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
       <div class="grid">
         <div class="bloc bloc-3-8 margin-top">
           <h2>Settings</h2>
-          <p><a href="http://sass-lang.com/">Sass</a> configuration variables and ratios for font sizes, line heights, colors.</p>
+          <p><a href="http://postcss.org/">PostCSS</a> / <a href="http://cssnext.io/">cssnext</a> configuration variables and ratios for font sizes, line heights, colors.</p>
         </div>
       </div>
       <hr />
@@ -75,18 +63,6 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
         <div class="bloc bloc-3-8 margin-top">
           <h2>Reset</h2>
           <p>Basic styles for Html tag, responsive images, constant margins on elements.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="grid">
-        <div class="bloc bloc-3-8 margin-top">
-          <h2>Glide, Pace, oEmbed</h2>
-          <p>Plugin css: </p>
-          <ul class="list-dash">
-            <li><a href="http://glide.jedrzejchalubek.com/">Glide.js</a>: Touch-friendly jQuery carousel</li>
-            <li><a href="http://github.hubspot.com/pace/docs/welcome/">Pace.js</a>: Automatic page load progress bar</li>
-            <li><a href="https://github.com/distantnative/oembed">oEmbed</a> for <a href="https://getkirby.com/">Kirby</a>: Media embed plugin</li>
-          </ul>
         </div>
       </div>
       <hr />
@@ -164,38 +140,44 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
         <div class="bloc bloc-3-8 margin-top">
           <h2>Buttons</h2>
           <h3>Default buttons</h3>
+          <a class="btn btn-xxs">Button xxs</a>
           <a class="btn btn-xs">Button xs</a>
           <a class="btn btn-s">Button s</a>
           <a class="btn btn-m">Button m</a>
           <a class="btn btn-l">Button l</a>
           <h3>Rounded corner buttons</h3>
+          <a class="btn btn-xxs btn-rnd">Button xxs</a>
           <a class="btn btn-xs btn-rnd">Button xs</a>
           <a class="btn btn-s btn-rnd">Button s</a>
           <a class="btn btn-m btn-rnd">Button m</a>
           <a class="btn btn-l btn-rnd">Button l</a>
           <h3>Pills buttons</h3>
+          <a class="btn btn-xxs btn-pill">Button xxs</a>
           <a class="btn btn-xs btn-pill">Button xs</a>
           <a class="btn btn-s btn-pill">Button s</a>
           <a class="btn btn-m btn-pill">Button m</a>
           <a class="btn btn-l btn-pill">Button l</a>
           <h3>Alternate buttons</h3>
+          <a class="btn btn-xxs btn-alt">Button xxs</a>
           <a class="btn btn-xs btn-alt">Button xs</a>
           <a class="btn btn-s btn-alt">Button s</a>
           <a class="btn btn-m btn-alt">Button m</a>
           <a class="btn btn-l btn-alt">Button l</a>
           <h3>Flash buttons</h3>
+          <a class="btn btn-xxs btn-flash">Button xxs</a>
           <a class="btn btn-xs btn-flash">Button xs</a>
           <a class="btn btn-s btn-flash">Button s</a>
           <a class="btn btn-m btn-flash">Button m</a>
           <a class="btn btn-l btn-flash">Button l</a>
           <h3>Bordered buttons</h3>
+          <a class="btn btn-xxs btn-border">Button xxs</a>
           <a class="btn btn-xs btn-border">Button xs</a>
           <a class="btn btn-s btn-border">Button s</a>
           <a class="btn btn-m btn-border">Button m</a>
           <a class="btn btn-l btn-border">Button l</a>
           <h3>Example of combination</h3>
           <a class="btn btn-m btn-alt l btn-rnd margin-bottom">Medium button with large text rounded corners flash background</a>
-          <a class="btn btn-xl btn-flash xl btn-full margin-bottom">Full width large button with xl text flash background</a><a class="btn btn-s btn-border s btn-pill margin-bottom">Small button small text pill shape border</a><a class="btn btn-s btn-alt s btn-pill margin-bottom">Small button small text pill shape</a>
+          <a class="btn btn-xl btn-flash xl btn-full margin-bottom">Full width xl button with xl text flash background</a><a class="btn btn-xxs btn-border s btn-pill margin-bottom">Small button small text pill shape border</a><a class="btn btn-xs btn-alt s btn-pill margin-bottom">Small button small text pill shape</a>
         </div>
       </div>
       <hr />
@@ -264,6 +246,7 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
       <div class="grid">
         <div class="bloc bloc-3-8 margin-top">
           <h2>Grid</h2>
+          <p>PostCSS Structure</p>
           <p>This grid system is based on a fixed column width. The breakpoints depends on the number of blocs that can fit into the screen. </p>
           <h3>Available breakpoints, columns, screen size</h3>
           <p>$screen_size = ($bloc_width - $gutter) * $col + (2 * $container_padding)</p>
@@ -284,12 +267,12 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
           <div class="grid">
             <div class="bloc bloc-2-1 bg-alt pad">bloc-2-1</div>
             <div class="bloc bloc-2-2 bg-alt pad">bloc-2-2</div>
-            <div class="bloc bloc-2-3 bg-alt pad">bloc-2-3</div>
-            <div class="bloc bloc-2-4 bg-alt pad">bloc-2-4</div>
-            <div class="bloc bloc-2-5 bg-alt pad">bloc-2-5</div>
-            <div class="bloc bloc-2-6 bg-alt pad">bloc-2-6</div>
-            <div class="bloc bloc-2-7 bg-alt pad">bloc-2-7</div>
-            <div class="bloc bloc-2-8 bg-alt pad">bloc-2-8</div>
+            <div class="bloc bloc-3-3 bg-alt pad">bloc-3-3</div>
+            <div class="bloc bloc-4-4 bg-alt pad">bloc-4-4</div>
+            <div class="bloc bloc-5-5 bg-alt pad">bloc-5-5</div>
+            <div class="bloc bloc-6-6 bg-alt pad">bloc-6-6</div>
+            <div class="bloc bloc-7-7 bg-alt pad">bloc-7-7</div>
+            <div class="bloc bloc-8-8 bg-alt pad">bloc-8-8</div>
           </div>
           <h3>Bloc sizes depending on screen size</h3>
           <p>bloc-$screen_size-$width. A bloc takes full width until the screen width correspond to its $screen-size.</p>
@@ -340,12 +323,19 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
           </div>
           <h3>Other bloc utilities</h3>
           <div class="grid">
+            <div class="bloc bloc-one-half bg-alt pad">1/2</div>
+            <div class="bloc bloc-one-half bg-alt pad">1/2</div>
             <div class="bloc bloc-one-third bg-alt pad">1/3</div>
             <div class="bloc bloc-two-third bg-alt pad">2/3</div>
-            <div class="bloc bloc-n bg-alt pad">bloc-n: fluid width depending on its content </div>
+            <div class="bloc bloc-thumb bg-alt pad s">T</div>
+            <div class="bloc bloc-thumb bg-alt pad s">T</div>
+            <div class="bloc bloc-thumb bg-alt pad s">T</div>
+            <div class="bloc bloc-thumb bg-alt pad s">T</div>
+            <div class="bloc bloc-thumb bg-alt pad s">T</div>
+            <div class="bloc bloc-left bg-alt pad">bloc-left: fluid width depending on its content </div>
           </div>
           <h3>Columns</h3>
-          <div class="columns-3-6 margin-top-m margin-bottom">
+          <div class="columns-3-8 margin-top-m margin-bottom">
             <p>Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -382,7 +372,7 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
       </div>
       <hr />
       <div class="grid">
-        <div class="bloc bloc-3-8 margin-top">
+        <div class="bloc margin-top">
           <h2>Utils</h2>
           <p>Clearfix, hide</p>
           <div class="grid">
@@ -391,17 +381,17 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
             <div class="bloc bloc-2-6 pad bg-alt text-center">Center</div>
             <div class="bloc bloc-2-6 pad bg-alt text-right">Text-right</div>
           </div>
+          <p class="capitalize">capitalize</p>
+          <p class="pointer">Pointer (mouse over)</p>
+          <p class="strikethrough">Strikethrough</p>
+          <p class="pad">pad</p>
+          <p class="color-brand">color-brand</p>
+          <p class="color-clear">color-clear</p>
+          <p class="color-neutral">color-neutral</p>
+          <p class="bg-brand">bg-brand</p>
+          <p class="bg-alt">bg-alt</p>
+          <p class="bg-neutral">bg-neutral</p>
         </div>
-        <p class="capitalize">capitalize</p>
-        <p class="pointer">Pointer (mouse over)</p>
-        <p class="strikethrough">Strikethrough</p>
-        <p class="pad">pad</p>
-        <p class="color-brand">color-brand</p>
-        <p class="color-clear">color-clear</p>
-        <p class="color-neutral">color-neutral</p>
-        <p class="bg-brand">bg-brand</p>
-        <p class="bg-alt">bg-alt</p>
-        <p class="bg-neutral">bg-neutral</p>
       </div>
       <hr />
       <div class="grid">

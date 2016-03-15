@@ -6,6 +6,7 @@ todo
 - [x] replace sass / compass with postcss / cssnext
 - [x] write postcss plugin for grid: postcss-structure
 - [ ] create variable page
+- [ ] publish on npm
 - [ ] em vs rem
 - [ ] media object
-- [ ] publish on npm
+- [ ] code styles
