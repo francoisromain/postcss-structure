@@ -1167,6 +1167,15 @@ th {
   background-color: #bcb9af;
 }
 
+.pad {
+  padding: 1rem;
+}
+
+.pad-h {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /*
       Grid 
 -------------------------------
@@ -1230,12 +1239,6 @@ th {
   clear: none;
 }
 
-.pad {
-  padding: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
 .bloc-one-half {
   width: 7.875rem;
 }
@@ -1251,23 +1254,6 @@ th {
 .bloc-thumb {
   text-align: center;
   width: 3.1875rem;
-}
-
-.pad .bloc-one-half {
-  width: 6.875rem;
-}
-
-.pad .bloc-one-third {
-  width: 4.083333333333333rem;
-}
-
-.pad .bloc-two-third {
-  width: 9.666666666666666rem;
-}
-
-.pad .bloc-thumb {
-  text-align: center;
-  width: 4.083333333333333rem;
 }
 
 .columns {
