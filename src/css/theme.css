@@ -5,9 +5,7 @@
 */
 
 html {
-  background-color: var(--color-bg);
   font-family: 'Roboto', sans-serif;
-  color: var(--color-text);
 }
 
 .page {
