@@ -26,14 +26,14 @@
 }
 
 .btn.disabled {
-  color:            rgba(var(--btn-color), 0.25);
-  background-color: rgba(var(--btn-color-bg), 0.25);
+  color:            color(var(--btn-color) a(0.25));
+  background-color: color(var(--btn-color-bg) a(0.25));
   cursor:                  default;
   &:hover,
   &:active,
   &:focus {
-      color:            rgba(var(--btn-color), 0.25);
-      background-color: rgba(var(--btn-color-bg), 0.25);
+      color:            color(var(--btn-color) a(0.25));
+      background-color: color(var(--btn-color-bg) a(0.25));
   }
 }
 
@@ -115,16 +115,16 @@
 }
 
 .btn-border.disabled {
-  color:            rgba(var(--btn-b-color), 0.25);
-  background-color: rgba(var(--btn-b-color-bg), 0.25);
-  border-color:     rgba(var(--btn-b-color-border), 0.25);
+  color:            color(var(--btn-b-color) a(0.25));
+  background-color: color(var(--btn-b-color-bg) a(0.25));
+  border-color:     color(var(--btn-b-color-border) a(0.25));
   cursor:                  default;
   &:hover,
   &:active,
   &:focus {
-      color:            rgba(var(--btn-b-color), 0.25);
-      background-color: rgba(var(--btn-b-color-bg), 0.25);
-      border-color:     rgba(var(--btn-b-color-border), 0.25);
+      color:            color(var(--btn-b-color) a(0.25));
+      background-color: color(var(--btn-b-color-bg) a(0.25));
+      border-color:     color(var(--btn-b-color-border) a(0.25));
   }
 }
 
