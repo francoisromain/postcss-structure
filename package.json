@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "structure.css",
   "description": "Minimal CSS boilerplate made with PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [
@@ -25,10 +25,10 @@
   },
   "homepage": "http://francoisromain.github.io/structure.css/",
   "dependencies": {
-    "postcss": "^5.0.16",
+    "postcss": "^5.0.19",
     "postcss-cssnext": "^2.5.1",
     "postcss-import": "^8.0.2",
-    "postcss-structure": "^0.1.5",
+    "postcss-structure": "^0.1.6",
     "normalize.css": "^3.0.3"
   },
   "devDependencies": {
