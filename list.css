@@ -27,8 +27,7 @@ li {
   list-style: none;
 }
 
-.list-inline,
-.list-inline-spaced {
+.list-inline {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -39,7 +38,7 @@ li {
   }
 }
 
-.list-inline-spaced li {
+.list-space li {
   margin-right: var(--base-unit);
 }
 
@@ -52,20 +51,20 @@ ol {
   }
 }
 
-.list-sep-pre {
+.list-prefix {
   list-style: none;
   & > li:before {
-    content: var(--list-sep-pre);
+    content: var(--list-prefix);
     margin-right: var(--base-unit-xs);
     color: var(--color-neutral);
   }
 }
 
-.list-sep-post {
+.list-postfix {
   list-style: none;
   & > li {
     &:after {
-      content: var(--list-sep-post);
+      content: var(--list-postfix);
     }
     &:last-child:after {
       content: none;

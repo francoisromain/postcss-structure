@@ -111,8 +111,8 @@
 ------------------------------- 
 */   
 
-  --list-sep-post: ",";
-  --list-sep-pre: "―";
+  --list-postfix: ",";
+  --list-prefix: "―";
 
 /*
     Grid
@@ -135,8 +135,5 @@
   --structure-align:    "center";
   --structure-columns:  0;
   --structure-blocs:    1;
-
-  --viewporttest: calc(3 * var(--structure-width) - var(--structure-gutter) + 4 * var(--structure-padding))rem;
-
 
 }
