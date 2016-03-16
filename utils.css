@@ -55,15 +55,6 @@
   bottom: 0;
 }
 
-.pad {
-  padding: var(--base-unit-m);
-}
-
-.pad-h {
-  padding-right: var(--base-unit-m);
-  padding-left: var(--base-unit-m);
-}
-
 .color-brand {
   color: var(--color-brand);
 }

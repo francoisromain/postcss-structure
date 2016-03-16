@@ -133,5 +133,5 @@
 }
 
 .btn-pill {
-    border-radius: 2em;
+    border-radius: var(--base-unit-xl);
 }

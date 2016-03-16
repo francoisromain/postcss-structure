@@ -32,7 +32,8 @@
 @structure {
   width:    var(--structure-width);     
   gutter:   var(--structure-gutter);   
-  padding:  var(--structure-padding);  
+  padding:  var(--structure-padding);
+  margin:   var(--structure-margin); 
   max:      var(--structure-max);        
   min:      var(--structure-min);        
   thumb:    var(--structure-thumb);
