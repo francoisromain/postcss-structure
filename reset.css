@@ -149,10 +149,9 @@ select:-webkit-autofill {
 
 /* remove round corner on iOs */
 
-input, select {
-  -moz-appearance: none;
-  -webkit-appearance: none !important;
-  border-radius: 0;
+input:not([type="radio"]):not([type="checkbox"]), select {
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 /*
