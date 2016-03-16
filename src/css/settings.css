@@ -23,7 +23,7 @@
 :root {
 
   --base-font-size:           1rem;
-  --base-baseline:            1.5;
+  --base-baseline:            1.5rem;
 
 /*
     Colors
@@ -47,15 +47,15 @@
 ------------------------------- 
 */
 
-  --base-unit:                 var(--base-baseline)rem;         /* 1.5    rem  = 24 px  */
-  --base-unit-line:            calc(var(--base-baseline) / 24)rem;     /* 0.0625 rem  = 1  px  */
-  --base-unit-xxs:             calc(var(--base-baseline) / 6)rem;      /* 0.25   rem  = 4  px  */
-  --base-unit-xs:              calc(var(--base-baseline) / 3)rem;      /* 0.5    rem  = 8  px  */
-  --base-unit-s:               calc(var(--base-baseline) / 2)rem;      /* 0.75   rem  = 12 px  */
-  --base-unit-m:               calc(var(--base-baseline) * 2/3)rem;    /* 1      rem  = 16 px  */ 
-  --base-unit-l:               calc(var(--base-baseline) * 3/2)rem;    /* 2.25   rem  = 36 px  */
-  --base-unit-xl:              calc(var(--base-baseline) * 2)rem;      /* 3      rem  = 48 px  */
-  --base-unit-xxl:             calc(var(--base-baseline) * 2.5)rem;    /* 2.5    rem  = 60 px  */
+  --base-unit:                 var(--base-baseline);                /* 1.5    rem  = 24 px  */
+  --base-unit-line:            calc(var(--base-baseline) / 24);     /* 0.0625 rem  = 1  px  */
+  --base-unit-xxs:             calc(var(--base-baseline) / 6);      /* 0.25   rem  = 4  px  */
+  --base-unit-xs:              calc(var(--base-baseline) / 3);      /* 0.5    rem  = 8  px  */
+  --base-unit-s:               calc(var(--base-baseline) / 2);      /* 0.75   rem  = 12 px  */
+  --base-unit-m:               calc(var(--base-baseline) * 2/3);    /* 1      rem  = 16 px  */ 
+  --base-unit-l:               calc(var(--base-baseline) * 3/2);    /* 2.25   rem  = 36 px  */
+  --base-unit-xl:              calc(var(--base-baseline) * 2);      /* 3      rem  = 48 px  */
+  --base-unit-xxl:             calc(var(--base-baseline) * 2.5);    /* 2.5    rem  = 60 px  */
 
 /*
     Text sizes
@@ -63,18 +63,16 @@
  typographic scale and vertical rhythm:
  cf http://type-scale.com/ or http://www.gridlover.net/app/
 
- text-size is relative to var(--base-font-size) (16px)
-                                        baseline is relative to var(--base-baseline)) (24px)
 */
 
-  --text-xs:          calc(5/8)rem;       --baseline-xs:         1.2;               /* 10px / 12px */
-  --text-s:           calc(3/4)rem;       --baseline-s:          2;                 /* 12px / 24px */
-  --text-m:           calc(1)rem;         --baseline-m:          1.5;               /* 16px / 24px */
-  --text-l:           calc(5/4)rem;       --baseline-l:          1;                 /* 20px / 24px */
-  --text-xl:          calc(3/2)rem;       --baseline-xl:         1.5;               /* 24px / 36px */
-  --text-xxl:         calc(2)rem;         --baseline-xxl:        1.125;             /* 32px / 36px */
-  --text-lead:        var(--text-l);      --baseline-lead:       var(--baseline-l); /* 20px / 36px */
-  --text-blockquote:  var(--text-l);      --baseline-blockquote: var(--baseline-l); /* 20px / 24px */
+  --text-xs:          calc(5/8)rem;   --baseline-xs:         calc(var(--base-baseline) / 2);       /* 10px / 12px */
+  --text-s:           calc(3/4)rem;   --baseline-s:          var(--base-baseline);                 /* 12px / 24px */
+  --text-m:           calc(1)rem;     --baseline-m:          var(--base-baseline);                 /* 16px / 24px */
+  --text-l:           calc(5/4)rem;   --baseline-l:          var(--base-baseline);                 /* 20px / 24px */
+  --text-xl:          calc(3/2)rem;   --baseline-xl:         calc(var(--base-baseline) / 1.5);     /* 24px / 36px */
+  --text-xxl:         calc(2)rem;     --baseline-xxl:        calc(var(--base-baseline) / 1.5);     /* 24px / 36px */
+  --text-lead:        var(--text-l);  --baseline-lead:       var(--baseline-l);                    /* 20px / 36px */
+  --text-blockquote:  var(--text-l);  --baseline-blockquote: var(--baseline-l);                    /* 20px / 24px */
 
 /*
     Buttons
@@ -90,12 +88,12 @@
   
   --btn-alt-color:               var(--color-bg);
   --btn-alt-color-bg:            var(--color-neutral);
-  --btn-alt-color-active:        var(--color-alt);
+  --btn-alt-color-active:        var(--color-bg);
   --btn-alt-color-bg-active:     var(--color-brand);
   
   --btn-flash-color:             var(--color-bg);
   --btn-flash-color-bg:          var(--color-brand);
-  --btn-flash-color-active:      var(--color-alt);
+  --btn-flash-color-active:      var(--color-bg);
   --btn-flash-color-bg-active:   var(--color-inverse);
   
   --btn-b-width:                 var(--base-unit-line);
@@ -113,8 +111,8 @@
 ------------------------------- 
 */   
 
-  --list-sep-post: ",";
-  --list-sep-pre: "―";
+  --list-postfix: ",";
+  --list-prefix: "―";
 
 /*
     Grid
@@ -127,18 +125,16 @@
 
 */
 
-  --structure-width:    18;  
-  --structure-gutter:   var(--base-baseline); 
-  --structure-padding:  var(--base-baseline);
-  --structure-max:      8;    
+  --structure-width:    18.75;  
+  --structure-gutter:   1.5; 
+  --structure-padding:  1;
+  --structure-margin:   1.5;
+  --structure-max:      6;    
   --structure-min:      2;    
-  --structure-thumb:    2.5;
+  --structure-thumb:    3;
   --structure-display:  "float";
   --structure-align:    "center";
   --structure-columns:  1;
   --structure-blocs:    1;
-}
 
-@define-mixin transition {
-  transition: opacity 1.5s, background-color 1.5s;
 }

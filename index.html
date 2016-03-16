@@ -186,6 +186,19 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
           <h2>Forms</h2>
           <form method="post">
             <fieldset>
+              <div class="margin-bottom clearfix">
+                <label class="xs">Gender</label>
+                <ul class="list-inline list-space">
+                  <li>
+                    <label>
+                      <input type="radio" name="id_gender" id="id_gender1" value="1" checked="checked" /> M.</label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="id_gender" id="id_gender2" value="2" /> Mme</label>
+                  </li>
+                </ul>
+              </div>
               <div class="tooltip margin-bottom">
                 <label class="xs" for="contactform-name">Nom</label>
                 <input type="text" id="contactform-name" name="name" value="" class="input" />
@@ -299,7 +312,7 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
             <div class="bloc bloc-3-3-3 bg-alt pad">bloc-3-3-3</div>
             <div class="bloc bloc-3-3-4 bg-alt pad">bloc-3-3-4</div>
             <div class="bloc bloc-3-3-5 bg-alt pad">bloc-3-3-5</div>
-            <div class="bloc bloc-4-4-1 bg-alt pad">bloc-4-4-1</div>
+            <div class="bloc bloc-3-4-1 bg-alt pad">bloc-3-4-1</div>
             <div class="bloc bloc-4-4-2 bg-alt pad">bloc-4-4-2</div>
             <div class="bloc bloc-4-4-3 bg-alt pad">bloc-4-4-3</div>
             <div class="bloc bloc-4-4-4 bg-alt pad">bloc-4-4-4</div>
@@ -330,7 +343,7 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
             <div class="bloc bloc-2-1 bg-alt pad right-7">right-7</div>
             <div class="bloc bloc-2-1 bg-alt pad right-8">right-8</div>
           </div>
-          <h3>Other bloc utilities</h3>
+          <h3>Sub-blocs</h3>
           <div class="row">
             <div class="bloc bloc-one-half bg-alt pad">1/2</div>
             <div class="bloc bloc-one-half bg-alt pad">1/2</div>
@@ -341,6 +354,37 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
             <div class="bloc bloc-thumb bg-alt pad s">T</div>
             <div class="bloc bloc-thumb bg-alt pad s">T</div>
             <div class="bloc bloc-thumb bg-alt pad s">T</div>
+            <div class="bloc bloc-left bg-alt pad">bloc-left: fluid width depending on its content </div>
+          </div>
+          <h3>Sub-blocs with padding</h3>
+          <div class="row">
+            <div class="bloc bloc-2-1 bg-alt pad">
+              <div class="row">
+                <div class="bloc bloc-one-half bg-default pad">1/2</div>
+                <div class="bloc bloc-one-half bg-default pad">1/2</div>
+              </div>
+            </div>
+            <div class="bloc bloc-2-1 bg-alt pad">
+              <div class="row">
+                <div class="bloc bloc-one-third bg-default pad">1/3</div>
+                <div class="bloc bloc-two-third bg-default pad">2/3</div>
+              </div>
+            </div>
+            <div class="bloc bloc-2-2 bg-alt pad">
+              <div class="row">
+                <div class="bloc bloc-two-third bg-default pad">2/3</div>
+                <div class="bloc bloc-two-third bg-default pad">2/3</div>
+                <div class="bloc bloc-two-third bg-default pad">2/3</div>
+              </div>
+            </div>
+            <div class="bloc bloc-2-1 bg-alt pad">
+              <div class="row">
+                <div class="bloc bloc-thumb bg-default pad s">T</div>
+                <div class="bloc bloc-thumb bg-default pad s">T</div>
+                <div class="bloc bloc-thumb bg-default pad s">T</div>
+                <div class="bloc bloc-thumb bg-default pad s">T</div>
+              </div>
+            </div>
             <div class="bloc bloc-left bg-alt pad">bloc-left: fluid width depending on its content </div>
           </div>
           <h3>Columns</h3>
