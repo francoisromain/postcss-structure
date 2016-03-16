@@ -85,10 +85,10 @@
 }
 
 .pad {
-    padding: var(--padding);
+    padding: var(--pad);
 }
 
 .pad-h {
-    padding-left: var(--padding);
-    padding-right: var(--padding);
+    padding-left: var(--pad);
+    padding-right: var(--pad);
 }
