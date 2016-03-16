@@ -83,3 +83,12 @@
 .bg-neutral {
   background-color: var(--color-neutral);
 }
+
+.pad {
+    padding: var(--padding);
+}
+
+.pad-h {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
