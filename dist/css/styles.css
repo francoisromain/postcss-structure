@@ -796,10 +796,6 @@ li > ul {
   margin-bottom: 0;
 }
 
-.list-dash .list-dash {
-  margin-left: 1.5rem;
-}
-
 .list-inline,
 .list-sans {
   margin: 0;
@@ -882,8 +878,8 @@ ol.list-inline {
 .btn.disabled:active,
 .btn.disabled:focus,
 .btn.disabled:hover {
-  color: rgba(#c19a25, .25);
-  background-color: rgba(rgba(248, 247, 243, 0), .25);
+  color: rgba(193, 154, 37, .25);
+  background-color: hsla(48, 26%, 96%, .25);
 }
 
 .btn-rnd {
@@ -979,9 +975,9 @@ ol.list-inline {
 .btn-border.disabled:active,
 .btn-border.disabled:focus,
 .btn-border.disabled:hover {
-  color: rgba(#666, .25);
-  background-color: rgba(white, .25);
-  border-color: rgba(#f8f7f3, .25);
+  color: hsla(0, 0%, 40%, .25);
+  background-color: hsla(0, 0%, 100%, .25);
+  border-color: hsla(48, 26%, 96%, .25);
 }
 
 .btn-full {
