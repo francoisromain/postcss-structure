@@ -17,10 +17,6 @@ li {
   }
 }
 
-.list-dash .list-dash {
-  margin-left: var(--base-unit);
-}
-
 .list-sans {
   margin: 0;
   padding: 0;
