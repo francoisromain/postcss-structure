@@ -9,6 +9,19 @@
   width: 100%;
 }
 
+@structure {
+  width:    var(--structure-width);     
+  gutter:   var(--structure-gutter);   
+  padding:  var(--structure-padding); 
+  max:      var(--structure-max);        
+  min:      var(--structure-min);        
+  thumb:    var(--structure-thumb);
+  display:  var(--structure-display);
+  align:    var(--structure-align);
+  columns:  var(--structure-columns);
+  blocs:    var(--structure-blocs);  
+}
+
 .left {
   float: left;
 }
@@ -27,17 +40,4 @@
   float: right;
   margin-left: var(--structure-gutter);
   max-width: var(--structure-width);
-}
-
-@structure {
-  width:    var(--structure-width);     
-  gutter:   var(--structure-gutter);   
-  padding:  var(--structure-padding); 
-  max:      var(--structure-max);        
-  min:      var(--structure-min);        
-  thumb:    var(--structure-thumb);
-  display:  var(--structure-display);
-  align:    var(--structure-align);
-  columns:  var(--structure-columns);
-  blocs:    var(--structure-blocs);  
 }
