@@ -7,131 +7,123 @@
 .btn, 
 .btn:visited {
   display:                 inline-block;
-  text-align:              center;
   border:                  none;
   margin:                  0;
   cursor:                  pointer;
-
   text-decoration:         none;
   color:                   var(--btn-color);
   background-color:        var(--btn-color-bg);
-
-    &:hover,
-    &:active,
-    &:focus {
-        color:             var(--btn-color-active);
-        background-color:  var(--btn-color-bg-active);
-    }
-  @mixin transition;
-}
-
-.btn.disabled {
-  color:            color(var(--btn-color) a(0.25));
-  background-color: color(var(--btn-color-bg) a(0.25));
-  cursor:                  default;
   &:hover,
   &:active,
   &:focus {
-      color:            color(var(--btn-color) a(0.25));
-      background-color: color(var(--btn-color-bg) a(0.25));
+    color:                 var(--btn-color-active);
+    background-color:      var(--btn-color-bg-active);
+  }
+  &.disabled {
+    color:                 color(var(--btn-color) a(0.25));
+    background-color:      color(var(--btn-color-bg) a(0.25));
+    cursor:                default;
+    &:hover,
+    &:active,
+    &:focus {
+      color:               color(var(--btn-color) a(0.25));
+      background-color:    color(var(--btn-color-bg) a(0.25));
+    }
+  }
+  /*
+   Firefox bug where `input type="submit"` gains 2px extra padding.
+  */
+  &::-moz-focus-inner {
+    border:                0;
+    padding:               0;
   }
 }
 
+.btn-border,
+.btn-border:visited {
+  border:                var(--btn-b-width) var(--btn-b-style) var(--btn-b-color-border);
+  background-color:      var(--btn-b-color-bg);
+  color:                 var(--btn-b-color);
+  &.active,
+  &:hover,
+  &:active,
+  &:focus {
+    color:               var(--btn-b-color-active);
+    background-color:    var(--btn-b-color-bg-active);
+    border-color:        var(--btn-b-color-border-active);
+  }
+  &.disabled {
+    color:                 color(var(--btn-b-color) a(0.25));
+    background-color:      color(var(--btn-b-color-bg) a(0.25));
+    border-color:          color(var(--btn-b-color-border) a(0.25));
+    cursor:                default;
+    &:hover,
+    &:active,
+    &:focus {
+      color:               color(var(--btn-b-color) a(0.25));
+      background-color:    color(var(--btn-b-color-bg) a(0.25));
+      border-color:        color(var(--btn-b-color-border) a(0.25));
+    }
+  }
+}
+
+.btn-xxs {
+  padding:               var(--base-unit-xxs) calc(var(--base-unit-xxs) * 2);
+}
+
+.btn-xs {
+  padding:               var(--base-unit-xs)  calc(var(--base-unit-xs) * 2);
+}
+
+.btn-s {
+  padding:               var(--base-unit-s)   calc(var(--base-unit-s) * 2);
+}
+
+.btn-m {
+  padding:               var(--base-unit-m )  calc(var(--base-unit-m) * 2);
+}
+
+.btn-l {
+  padding:               var(--base-unit-l)   calc(var(--base-unit-l) * 2);
+}
+
+.btn-xl {
+  padding:               var(--base-unit-xl)  calc(var(--base-unit-xl) * 2);
+}
+
+.btn-full {
+  width: 100%;
+  text-align:            center;
+}
+
+.btn-pill {
+  border-radius:         var(--base-unit-xl);
+}
+
 .btn-rnd {
-  border-radius: var(--btn-radius);
+  border-radius:           var(--btn-radius);
 }
 
 .btn-alt,
 .btn-alt:visited {
   color:                   var(--btn-alt-color);
   background-color:        var(--btn-alt-color-bg);
-
-    &:hover,
-    &:active,
-    &:focus {
-        color:              var(--btn-alt-color-active);
-        background-color:   var(--btn-alt-color-bg-active);
-    }
-
+  &:hover,
+  &:active,
+  &:focus {
+    color:                 var(--btn-alt-color-active);
+    background-color:      var(--btn-alt-color-bg-active);
+  }
 }
 
 .btn-flash,
 .btn-flash:visited {
-  color:                var(--btn-flash-color);
-  background-color:     var(--btn-flash-color-bg);
-
-    &:hover,
-    &:active,
-    &:focus {
-        color:         var(--btn-flash-color-active);
-        background-color:   var(--btn-flash-color-bg-active);
-    }
-}
-
-/**
- * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
- */
-.btn::-moz-focus-inner,  {
-    border:          0;
-    padding:         0;
-}
-
-.btn-xxs {
-    padding:         var(--base-unit-xxs)  calc(var(--base-unit-xxs) * 2);
-}
-
-.btn-xs {
-    padding:         var(--base-unit-xs)  calc(var(--base-unit-xs) * 2);
-}
-
-.btn-s {
-    padding:         var(--base-unit-s)   calc(var(--base-unit-s) * 2);
-}  
-  
-.btn-m {  
-  padding:           var(--base-unit-m )   calc(var(--base-unit-m) * 2);
-}  
-  
-.btn-l {  
-    padding:         var(--base-unit-l)    calc(var(--base-unit-l) * 2);
-}  
-.btn-xl {  
-    padding:         var(--base-unit-xl)    calc(var(--base-unit-xl) * 2);
-}
-
-.btn-border,
-.btn-border:visited {
-  border: var(--btn-b-width) var(--btn-b-style) var(--btn-b-color-border);
-  background-color:     var(--btn-b-color-bg);
-  color:                var(--btn-b-color);
-  &.active,
+  color:                 var(--btn-flash-color);
+  background-color:      var(--btn-flash-color-bg);
   &:hover,
   &:active,
   &:focus {
-      color:            var(--btn-b-color-active);
-      background-color: var(--btn-b-color-bg-active);
-      border-color:     var(--btn-b-color-border-active);
+      color:             var(--btn-flash-color-active);
+      background-color:  var(--btn-flash-color-bg-active);
   }
-}
-
-.btn-border.disabled {
-  color:            color(var(--btn-b-color) a(0.25));
-  background-color: color(var(--btn-b-color-bg) a(0.25));
-  border-color:     color(var(--btn-b-color-border) a(0.25));
-  cursor:                  default;
-  &:hover,
-  &:active,
-  &:focus {
-      color:            color(var(--btn-b-color) a(0.25));
-      background-color: color(var(--btn-b-color-bg) a(0.25));
-      border-color:     color(var(--btn-b-color-border) a(0.25));
-  }
-}
-
-.btn-full {
-    width: 100%;
-}
-
-.btn-pill {
-    border-radius: var(--base-unit-xl);
 }
