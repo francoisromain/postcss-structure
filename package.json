@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.1.13",
+  "version": "0.1.15",
   "main": "structure.css",
   "description": "Minimal CSS boilerplate made with PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [
@@ -28,16 +28,7 @@
     "postcss": "^5.0.19",
     "postcss-cssnext": "^2.5.1",
     "postcss-import": "^8.0.2",
-    "postcss-structure": "^0.1.9",
-    "normalize.css": "^3.0.3"
-  },
-  "devDependencies": {
-    "cssfmt": "^2.1.5",
-    "cssnano": "^3.5.2",
-    "gulp": "^3.9.1",
-    "gulp-cssfmt": "^1.0.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-postcss": "^6.1.0",
-    "gulp-watch": "^4.3.5"
+    "postcss-structure": "^0.1.10",
+    "normalize.css": "^4.0.0"
   }
 }

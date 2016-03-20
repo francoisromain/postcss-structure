@@ -6,36 +6,35 @@
 button, 
 .btn, 
 .btn:visited {
-  display:                 inline-block;
-  border:                  none;
-  margin:                  0;
-  cursor:                  pointer;
-  text-decoration:         none;
-  color:                   var(--btn-color);
-  background-color:        var(--btn-color-bg);
+  display:               inline-block;
+  border:                none;
+  margin:                0;
+  cursor:                pointer;
+  text-decoration:       none;
+  color:                 var(--btn-color);
+  background-color:      var(--btn-color-bg);
   &:hover,
   &:active,
   &:focus {
-    color:                 var(--btn-color-active);
-    background-color:      var(--btn-color-bg-active);
+    color:               var(--btn-color-active);
+    background-color:    var(--btn-color-bg-active);
   }
-  &.disabled {
-    color:                 color(var(--btn-color) a(0.25));
-    background-color:      color(var(--btn-color-bg) a(0.25));
-    cursor:                default;
+  &.disabled, 
+  &:disabled {
+    opacity:             0.25;
+    cursor:              default;
     &:hover,
     &:active,
     &:focus {
-      color:               color(var(--btn-color) a(0.25));
-      background-color:    color(var(--btn-color-bg) a(0.25));
+      opacity:           0.25;
     }
   }
   /*
    Firefox bug where `input type="submit"` gains 2px extra padding.
   */
   &::-moz-focus-inner {
-    border:                0;
-    padding:               0;
+    border:              0;
+    padding:             0;
   }
 }
 
@@ -52,17 +51,14 @@ button,
     background-color:    var(--btn-b-color-bg-active);
     border-color:        var(--btn-b-color-border-active);
   }
-  &.disabled {
-    color:                 color(var(--btn-b-color) a(0.25));
-    background-color:      color(var(--btn-b-color-bg) a(0.25));
-    border-color:          color(var(--btn-b-color-border) a(0.25));
-    cursor:                default;
+  &.disabled, 
+  &:disabled {
+    opacity:             0.25;
+    cursor:              default;
     &:hover,
     &:active,
     &:focus {
-      color:               color(var(--btn-b-color) a(0.25));
-      background-color:    color(var(--btn-b-color-bg) a(0.25));
-      border-color:        color(var(--btn-b-color-border) a(0.25));
+      opacity:           0.25;
     }
   }
 }
@@ -101,18 +97,18 @@ button,
 }
 
 .btn-rnd {
-  border-radius:           var(--btn-radius);
+  border-radius:         var(--btn-radius);
 }
 
 .btn-alt,
 .btn-alt:visited {
-  color:                   var(--btn-alt-color);
-  background-color:        var(--btn-alt-color-bg);
+  color:                 var(--btn-alt-color);
+  background-color:      var(--btn-alt-color-bg);
   &:hover,
   &:active,
   &:focus {
-    color:                 var(--btn-alt-color-active);
-    background-color:      var(--btn-alt-color-bg-active);
+    color:               var(--btn-alt-color-active);
+    background-color:    var(--btn-alt-color-bg-active);
   }
 }
 

@@ -10,6 +10,10 @@ dd {
   list-style-position: inside;
 }
 
+ol {
+  list-style-type: decimal;
+}
+
 li {
   & > ul,
   & > ol {
@@ -36,15 +40,6 @@ li {
 
 .list-space li {
   margin-right: var(--base-unit);
-}
-
-ol {
-  list-style-type: decimal;
-  list-style-position: inside;
-  &.list-inline {
-    list-style-type: decimal;
-    list-style-position: inside;
-  }
 }
 
 .list-prefix {
