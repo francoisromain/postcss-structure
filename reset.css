@@ -29,7 +29,6 @@ html,
 From Inuit.css
 https://github.com/inuitcss/base.page/blob/master/_base.page.scss
 
- * 4. Prevent certain mobile browsers from automatically zooming fonts.
  * 5. Fonts on OSX will look more consistent with other systems that do not
  *    render text using sub-pixel anti-aliasing.
 */
@@ -41,24 +40,11 @@ html {
   color: var(--color-text);
   overflow-y: scroll;
   min-height: 100%;
-  -webkit-text-size-adjust: 100%;
-  /* [4] */
-  -ms-text-size-adjust: 100%;
-  /* [4] */
   -moz-osx-font-smoothing: grayscale;
   /* [5] */
   -webkit-font-smoothing: antialiased;
   /* [5] */
   text-rendering: optimizeLegibility;
-}
-
-
-/*
-  Remove the dotted outline on clicked link in FF and IE
-*/
-
-a {
-  outline: 0;
 }
 
 
@@ -152,18 +138,6 @@ select:-webkit-autofill {
 input:not([type="radio"]):not([type="checkbox"]), select {
     -webkit-appearance: none;
     border-radius: 0;
-}
-
-/*
-Overwrite normalize.css 
-
-input {
-  line-height: normal;
-}
-*/
-
-input {
-  line-height: var(--base-baseline);
 }
 
 /**
