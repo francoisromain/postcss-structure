@@ -7,34 +7,26 @@ button,
 .btn, 
 .btn:visited {
   display:               inline-block;
-  border:                none;
   margin:                0;
   cursor:                pointer;
   text-decoration:       none;
+  border:                none;
   color:                 var(--btn-color);
   background-color:      var(--btn-color-bg);
+  &.active,
   &:hover,
-  &:active,
-  &:focus {
+  &:active {
     color:               var(--btn-color-active);
     background-color:    var(--btn-color-bg-active);
   }
   &.disabled, 
   &:disabled {
-    opacity:             0.25;
+    opacity:             .25;
     cursor:              default;
     &:hover,
-    &:active,
-    &:focus {
-      opacity:           0.25;
+    &:active {
+      opacity:           .25;
     }
-  }
-  /*
-   Firefox bug where `input type="submit"` gains 2px extra padding.
-  */
-  &::-moz-focus-inner {
-    border:              0;
-    padding:             0;
   }
 }
 
@@ -45,20 +37,21 @@ button,
   color:                 var(--btn-b-color);
   &.active,
   &:hover,
-  &:active,
-  &:focus {
+  &:active {
     color:               var(--btn-b-color-active);
     background-color:    var(--btn-b-color-bg-active);
     border-color:        var(--btn-b-color-border-active);
   }
   &.disabled, 
   &:disabled {
-    opacity:             0.25;
-    cursor:              default;
+    border-color:        var(--btn-b-color-border);
+    background-color:    var(--btn-b-color-bg);
+    color:               var(--btn-b-color);
     &:hover,
-    &:active,
-    &:focus {
-      opacity:           0.25;
+    &:active {
+      border-color:      var(--btn-b-color-border);
+      background-color:  var(--btn-b-color-bg);
+      color:             var(--btn-b-color);
     }
   }
 }

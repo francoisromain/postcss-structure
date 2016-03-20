@@ -140,6 +140,14 @@ input:not([type="radio"]):not([type="checkbox"]), select {
     border-radius: 0;
 }
 
+/*
+ Firefox bug where `input type="submit"` gains 2px extra padding.
+*/
+button::-moz-focus-inner {
+  border:              0;
+  padding:             0;
+}
+
 /**
  * 1. Google Maps breaks if `max-width: 100%` acts upon it;
  *    use their selector to remove the effects.
@@ -148,3 +156,5 @@ input:not([type="radio"]):not([type="checkbox"]), select {
 .gm-style img {
   max-width: none;
 }
+
+
