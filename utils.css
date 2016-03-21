@@ -70,6 +70,10 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   color: var(--color-neutral);
 }
 
+.color-inverse {
+  color: var(--color-inverse);
+}
+
 .bg-default {
   background-color: var(--color-bg);
 }
@@ -84,6 +88,10 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 
 .bg-neutral {
   background-color: var(--color-neutral);
+}
+
+.bg-inverse {
+  background-color: var(--color-inverse);
 }
 
 .pad {

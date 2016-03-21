@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "style": "structure.css",
   "description": "Minimal CSS boilerplate made with PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [
