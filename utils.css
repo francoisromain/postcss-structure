@@ -4,15 +4,15 @@
 
 */
 
+
 /* 
 http://cssmojo.com/the-very-latest-clearfix-reloaded/
 */
 
 .clearfixn:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .hide {
@@ -75,8 +75,7 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 .bg-brand {
-  background-color: var(--color-brand)
-;
+  background-color: var(--color-brand);
 }
 
 .bg-alt {
@@ -88,10 +87,10 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 .pad {
-    padding: var(--pad);
+  padding: var(--pad);
 }
 
 .pad-h {
-    padding-left: var(--pad);
-    padding-right: var(--pad);
+  padding-left: var(--pad);
+  padding-right: var(--pad);
 }
