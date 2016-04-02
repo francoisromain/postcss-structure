@@ -1,7 +1,8 @@
 /*
-    Settings
+    Structure.css / settings
 ------------------------------- 
 
+http://francoisromain.github.io/structure.css
 */
 
 /*
@@ -22,9 +23,6 @@
 
 :root {
 
-  --base-font-size:           1rem;
-  --base-baseline:            1.5rem;
-
 /*
     Colors
 ------------------------------- 
@@ -43,19 +41,19 @@
   --color-success:             #6EA040; 
 
 /*
-    Spacing
+    Base units
 ------------------------------- 
 */
-
-  --base-unit:                 var(--base-baseline);                /* 1.5    rem  = 24 px  */
-  --base-unit-line:            calc(var(--base-baseline) / 24);     /* 0.0625 rem  = 1  px  */
-  --base-unit-xxs:             calc(var(--base-baseline) / 6);      /* 0.25   rem  = 4  px  */
-  --base-unit-xs:              calc(var(--base-baseline) / 3);      /* 0.5    rem  = 8  px  */
-  --base-unit-s:               calc(var(--base-baseline) / 2);      /* 0.75   rem  = 12 px  */
-  --base-unit-m:               calc(var(--base-baseline) * 2/3);    /* 1      rem  = 16 px  */ 
-  --base-unit-l:               calc(var(--base-baseline) * 3/2);    /* 2.25   rem  = 36 px  */
-  --base-unit-xl:              calc(var(--base-baseline) * 2);      /* 3      rem  = 48 px  */
-  --base-unit-xxl:             calc(var(--base-baseline) * 2.5);    /* 2.5    rem  = 60 px  */
+  --base-font-size:            1rem;                          /* font-size: 1      rem  = 16 px  */
+  --base-unit:                 1.5rem;                        /* base:      1.5    rem  = 24 px  */
+  --base-unit-line:            calc(var(--base-unit) / 24);   /* line:      0.0625 rem  = 1  px  */
+  --base-unit-xxs:             calc(var(--base-unit) / 6);    /* xxs:       0.25   rem  = 4  px  */
+  --base-unit-xs:              calc(var(--base-unit) / 3);    /* xs:        0.5    rem  = 8  px  */
+  --base-unit-s:               calc(var(--base-unit) / 2);    /* s:         0.75   rem  = 12 px  */
+  --base-unit-m:               calc(var(--base-unit) * 2/3);  /* m:         1      rem  = 16 px  */
+  --base-unit-l:               calc(var(--base-unit) * 3/2);  /* l:         2.25   rem  = 36 px  */
+  --base-unit-xl:              calc(var(--base-unit) * 2);    /* xl:        3      rem  = 48 px  */
+  --base-unit-xxl:             calc(var(--base-unit) * 2.5);  /* xxl:       2.5    rem  = 60 px  */
   
 /*
     Text sizes
@@ -64,16 +62,17 @@
  cf http://type-scale.com/ or http://www.gridlover.net/app/
 
 */
-
-  --text-xs:          calc(5/8)rem;   --baseline-xs:         1/2;  /* 10px / 12px */
-  --text-s:           calc(3/4)rem;   --baseline-s:          1;      /* 12px / 24px */
-  --text-m:           calc(1)rem;     --baseline-m:          1;      /* 16px / 24px */
-  --text-l:           calc(5/4)rem;   --baseline-l:          1;      /* 20px / 24px */
-  --text-xl:          calc(3/2)rem;   --baseline-xl:         3/2;    /* 24px / 36px */
-  --text-xxl:         calc(2)rem;     --baseline-xxl:        3/2;    /* 24px / 36px */
-  --text-lead:        var(--text-l);  --baseline-lead:       1;      /* 20px / 36px */
-  --text-blockquote:  var(--text-l);  --baseline-blockquote: 1;      /* 20px / 24px */
-  --baseline-margin-bottom:        1;
+                                                                     /* style:       font-size 
+                                                                                     / line-height */
+  --text-xs:          calc(5/8)rem;   --baseline-xs:            1/2; /* h6, .xs:     10px / 12px */
+  --text-s:           calc(3/4)rem;   --baseline-s:             1;   /* h5, .s:      12px / 24px */
+  --text-m:           calc(1)rem;     --baseline-m:             1;   /* h4, .m:      16px / 24px */
+  --text-l:           calc(5/4)rem;   --baseline-l:             1;   /* h3, .l:      20px / 24px */
+  --text-xl:          calc(3/2)rem;   --baseline-xl:            3/2; /* h2, .xl:     24px / 36px */
+  --text-xxl:         calc(2)rem;     --baseline-xxl:           3/2; /* h1, .xxl:    24px / 36px */
+  --text-lead:        var(--text-l);  --baseline-lead:          1;   /* .lead:       20px / 36px */
+  --text-blockquote:  var(--text-l);  --baseline-blockquote:    1;   /* .blockquote: 20px / 24px */
+                                      --baseline-margin-bottom: 1;   /* margin-bottom:      24px */
   
 
 /*

@@ -4,8 +4,9 @@
 
 */
 
+body,
 html {
-  font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
 .page {
@@ -40,7 +41,7 @@ a {
     color: var(--color-inverse);
   }
   &:focus {
-    color: color-brand;
+    color: var(--color-brand);
   }
 }
 
