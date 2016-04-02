@@ -5,6 +5,22 @@
 http://francoisromain.github.io/structure.css
 */
 
+/*
+    Debug trick 
+------------------------------- 
+    Un-comment to see in action
+    http://qr.ae/ROqymT
+*/
+
+/*
+ * { background-color: rgba(255,0,0,.2); }
+ * * { background-color: rgba(0,255,0,.2); }
+ * * * { background-color: rgba(0,0,255,.2); }
+ * * * * { background-color: rgba(255,0,255,.2); }
+ * * * * * { background-color: rgba(0,255,255,.2); }
+ * * * * * * { background-color: rgba(255,255,0,.2); }
+*/
+
 @import "normalize.css";
 @import "print.css";
 @import "reset.css";

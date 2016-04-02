@@ -5,22 +5,6 @@
 http://francoisromain.github.io/structure.css
 */
 
-/*
-    Debug trick 
-------------------------------- 
-    Un-comment to see in action
-    http://qr.ae/ROqymT
-*/
-
-/*
- * { background-color: rgba(255,0,0,.2); }
- * * { background-color: rgba(0,255,0,.2); }
- * * * { background-color: rgba(0,0,255,.2); }
- * * * * { background-color: rgba(255,0,255,.2); }
- * * * * * { background-color: rgba(0,255,255,.2); }
- * * * * * * { background-color: rgba(255,255,0,.2); }
-*/
-
 :root {
 
 /*
@@ -126,17 +110,17 @@ http://francoisromain.github.io/structure.css
 
 */
 
-  --structure-width:    18.75;  
-  --structure-gutter:   1.5; 
-  --structure-padding:  1.5;
-  --structure-max:      8;    
-  --structure-min:      2;    
-  --structure-thumb:    3;
-  --structure-display:  "float";
-  --structure-align:    "center";
-  --structure-columns:  1;
-  --structure-blocs:    1;
+  --structure-width:    18.75;        /* width of a bloc in rem */  
+  --structure-gutter:   1.5;          /* width of the gutter in rem */  
+  --structure-padding:  1.5;          /* padding of the main conatiner in rem */  
+  --structure-max:      8;            /* maximum number of blocs */ 
+  --structure-min:      2;            /* minimum number of blocs */ 
+  --structure-thumb:    3;            /* number of bloc-thumb fitting in one bloc */ 
+  --structure-display:  "float";      /* float or flex */
+  --structure-align:    "center";     /* center or left */
+  --structure-columns:  1;            /* activate (1) or desactivate (0) columns */
+  --structure-blocs:    1;            /* activate (1) or desactivate (0) blocs */
 
-  --pad:    1rem;
+  --pad:    1rem;                     /* adding of class .pad and .pad-h */
 
 }
