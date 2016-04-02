@@ -17,12 +17,12 @@ http://francoisromain.github.io/structure.css/
 
 Structure.css will install the following dependencies:
 
-- (postCSS)[https://www.npmjs.com/package/postcss]
-- (postcss-cssnext)[https://www.npmjs.com/package/postcss-cssnext]
-- (postcss-import)[https://www.npmjs.com/package/postcss-import]
-- (postcss-structure)[https://www.npmjs.com/package/postcss-structure]
-- (postcss-cli)[https://www.npmjs.com/package/postcss-cli]
-- (normalize.css)[https://www.npmjs.com/package/normalize-css]
+- [postCSS](https://www.npmjs.com/package/postcss)
+- [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext)
+- [postcss-import](https://www.npmjs.com/package/postcss-import)
+- [postcss-structure](https://www.npmjs.com/package/postcss-structure)
+- [postcss-cli](https://www.npmjs.com/package/postcss-cli)
+- [normalize.css](https://www.npmjs.com/package/normalize-css)
 
 ### 2. Configure
 
@@ -61,7 +61,7 @@ Then:
 
     $ npm run css
 
-From your html file point to `dist/css/styles.css`
+From your html file point to `dist/css/styles.css`.
 
 ## todo
 
