@@ -35,7 +35,7 @@ https://github.com/inuitcss/base.page/blob/master/_base.page.scss
 
 html {
   font-size: var(--base-font-size);
-  line-height: var(--base-baseline);
+  line-height: var(--base-unit);
   background-color: var(--color-bg);
   color: var(--color-text);
   overflow-y: scroll;
@@ -101,7 +101,7 @@ fieldset,
 figure,
 pre,
 hr {
-  margin-bottom: calc(var(--base-baseline) * var(--baseline-margin-bottom));
+  margin-bottom: calc(var(--base-unit) * var(--baseline-margin-bottom));
 }
 
 abbr[title],
