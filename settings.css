@@ -56,7 +56,7 @@
   --base-unit-l:               calc(var(--base-baseline) * 3/2);    /* 2.25   rem  = 36 px  */
   --base-unit-xl:              calc(var(--base-baseline) * 2);      /* 3      rem  = 48 px  */
   --base-unit-xxl:             calc(var(--base-baseline) * 2.5);    /* 2.5    rem  = 60 px  */
-  --base-margin-bottom:        var(--base-baseline);
+  
 /*
     Text sizes
 ------------------------------- 
@@ -65,15 +65,15 @@
 
 */
 
-  --text-xs:          calc(5/8)rem;   --baseline-xs:         calc(var(--base-baseline) / 2);       /* 10px / 12px */
-  --text-s:           calc(3/4)rem;   --baseline-s:          var(--base-baseline);                 /* 12px / 24px */
-  --text-m:           calc(1)rem;     --baseline-m:          var(--base-baseline);                 /* 16px / 24px */
-  --text-l:           calc(5/4)rem;   --baseline-l:          var(--base-baseline);                 /* 20px / 24px */
-  --text-xl:          calc(3/2)rem;   --baseline-xl:         calc(var(--base-baseline) / 1.5);     /* 24px / 36px */
-  --text-xxl:         calc(2)rem;     --baseline-xxl:        calc(var(--base-baseline) / 1.5);     /* 24px / 36px */
-  --text-lead:        var(--text-l);  --baseline-lead:       var(--baseline-l);                    /* 20px / 36px */
-  --text-blockquote:  var(--text-l);  --baseline-blockquote: var(--baseline-l);                    /* 20px / 24px */
-
+  --text-xs:          calc(5/8)rem;   --baseline-xs:         1/2;  /* 10px / 12px */
+  --text-s:           calc(3/4)rem;   --baseline-s:          1;      /* 12px / 24px */
+  --text-m:           calc(1)rem;     --baseline-m:          1;      /* 16px / 24px */
+  --text-l:           calc(5/4)rem;   --baseline-l:          1;      /* 20px / 24px */
+  --text-xl:          calc(3/2)rem;   --baseline-xl:         3/2;    /* 24px / 36px */
+  --text-xxl:         calc(2)rem;     --baseline-xxl:        3/2;    /* 24px / 36px */
+  --text-lead:        var(--text-l);  --baseline-lead:       1;      /* 20px / 36px */
+  --text-blockquote:  var(--text-l);  --baseline-blockquote: 1;      /* 20px / 24px */
+  --baseline-margin-bottom:        1;
   
 
 /*

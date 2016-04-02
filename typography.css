@@ -18,48 +18,48 @@ h6 {
 h1,
 .xxl {
   font-size: var(--text-xxl);
-  line-height: var(--baseline-xxl);
+  line-height: calc(var(--base-baseline) * var(--baseline-xxl));
 }
 
 h2,
 .xl {
   font-size: var(--text-xl);
-  line-height: var(--baseline-xl);
+  line-height: calc(var(--base-baseline) * var(--baseline-xl));
 }
 
 h3,
 .l {
   font-size: var(--text-l);
-  line-height: var(--baseline-l);
+  line-height: calc(var(--base-baseline) * var(--baseline-l));
 }
 
 h4,
 .m {
   font-size: var(--text-m);
-  line-height: var(--baseline-m);
+  line-height: calc(var(--base-baseline) * var(--baseline-m));
 }
 
 h5,
 .s {
   font-size: var(--text-s);
-  line-height: var(--baseline-s);
+  line-height: calc(var(--base-baseline) * var(--baseline-s));
 }
 
 h6,
 .xs,
 small {
   font-size: var(--text-xs);
-  line-height: var(--baseline-s);
+  line-height: calc(var(--base-baseline) * var(--baseline-s));
 }
 
 .lead {
   font-size: var(--text-lead);
-  line-height: var(--baseline-lead);
+  line-height: calc(var(--base-baseline) * var(--baseline-lead));
 }
 
 blockquote {
   font-size: var(--text-blockquote);
-  line-height: var(--baseline-blockquote);
+  line-height: calc(var(--base-baseline) * var(--baseline-blockquote));
   font-style: italic;
   padding-left: var(--base-unit);
   padding-right: var(--base-unit);

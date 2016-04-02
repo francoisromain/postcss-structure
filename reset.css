@@ -101,7 +101,7 @@ fieldset,
 figure,
 pre,
 hr {
-  margin-bottom: var(--base-margin-bottom);
+  margin-bottom: calc(var(--base-baseline) * var(--baseline-margin-bottom));
 }
 
 abbr[title],
