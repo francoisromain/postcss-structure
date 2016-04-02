@@ -9,11 +9,11 @@ http://francoisromain.github.io/structure.css
 @import "print.css";
 @import "reset.css";
 @import "typography.css";
-@import "list.css";
-@import "button.css";
-@import "form.css";
-@import "table.css";
+@import "lists.css";
+@import "buttons.css";
+@import "forms.css";
+@import "tables.css";
 @import "utils.css";
-@import "grid.css";
-@import "margin.css";
+@import "grids.css";
+@import "margins.css";
 @import "ui.css";
