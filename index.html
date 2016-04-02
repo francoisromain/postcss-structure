@@ -15,12 +15,19 @@
     <div class="container">
       <header role="banner" class="margin-top">
         <h1>Structure.css</h1>
-        <h4>Mini CSS framework based on <a href="http://postcss.org/">PostCSS</a> / <a href="http://cssnext.io/">cssnext</a>.</h4>
-        <p><a href="https://github.com/francoisromain/structure.css">Github</a></p>
+        <h4>Mini CSS framework based on:
+          <ul class="list-prefix">
+            <li><a href="http://postcss.org/">PostCSS</a></li>
+            <li><a href="http://cssnext.io/">cssnext</a></li>
+            <li><a href="https://github.com/francoisromain/postcss-structure">PostCSS-structure</a></li>
+          </ul>
+        </h4>
+        <p><a href="https://github.com/francoisromain/structure.css">Structure.css on Github</a></p>
       </header>
       <hr />
     </div>
     <main class="container" role="main">
+      <h2 class="margin-top">Included modules</h2>
       <ul class="list-dash">
         <li><a href="#normalize">normalize</a></li>
         <li><a href="#print">print</a></li>
@@ -251,8 +258,8 @@ https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css">HTML5 bo
       <div class="row" id="grids">
         <div class="bloc bloc-3-8 margin-top">
           <h2>Grids</h2>
-          <p>The grid system of Structure.css is based on <a href="https://github.com/francoisromain/postcss-structure">PostCSS-structure</a>.</p>
-          <p>This grid system is based on a fixed column width. The breakpoints depends on the number of blocs that can fit into the screen. </p>
+          <p>The grid system of <a href="https://github.com/francoisromain/structure.css">Structure.css</a> use <a href="https://github.com/francoisromain/postcss-structure">PostCSS-structure</a>.</p>
+          <p>PostCSS-structure creates a grid based on the width of a "bloc". This bloc has the same width whatever the size of the screen is. Media-queries are created depending the number of bloc that fits in the page. </p>
           <h3>Bloc sizes</h3>
           <p>bloc-(screen-size)-(width).</p>
           <div class="row">

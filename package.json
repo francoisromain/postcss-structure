@@ -1,20 +1,15 @@
 {
   "name": "francoisromain.github.io.structure.css",
   "version": "0.1.0",
+  "scripts": {
+    "css": "postcss -u postcss-import -u postcss-custom-properties -u postcss-calc -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
+  },
   "devDependencies": {
-    "cssfmt": "^2.1.5",
-    "cssnano": "^3.5.2",
-    "gulp": "^3.9.1",
-    "gulp-cssfmt": "^1.0.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-postcss": "^6.1.0",
-    "gulp-watch": "^4.3.5",
-    "normalize.css": "^4.0.0",
     "postcss": "^5.0.19",
     "postcss-cli": "^2.5.1",
     "postcss-cssnext": "^2.5.1",
     "postcss-import": "^8.0.2",
-    "postcss-structure": "^0.1.11",
-    "structure.css": "^0.2.2"
+    "postcss-structure": "0.1.12",
+    "structure.css": "^0.2.5"
   }
 }
