@@ -15,17 +15,18 @@ http://francoisromain.github.io/structure.css/
 
     $ npm install structure.css --save-dev
 
-Structure.css will install the following dependencies: 
+Structure.css will install the following dependencies:
 
 - (postCSS)[https://www.npmjs.com/package/postcss]
 - (postcss-cssnext)[https://www.npmjs.com/package/postcss-cssnext]
 - (postcss-import)[https://www.npmjs.com/package/postcss-import]
 - (postcss-structure)[https://www.npmjs.com/package/postcss-structure]
+- (postcss-cli)[https://www.npmjs.com/package/postcss-cli]
 - (normalize.css)[https://www.npmjs.com/package/normalize-css]
 
 ### 2. Configure
 
-Make your src/css look like this: 
+Make your src/css look like this:
 
     .
     +-- css
@@ -34,13 +35,13 @@ Make your src/css look like this:
         +-- theme.css
 
 
-In `styles.css`: 
+In `styles.css`:
 
     @import "settings.css";
     @import "structure.css"; // PostCSS-import will import from node_modules/structure.css/structure.css
     @import "theme.css";
 
-In `settings.css`, copy the content of [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) and set the variables to your preference. 
+In `settings.css`, copy the content of [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) and set the variables to your preference.
 
 In `theme.css`, put your own CSS. 
 
@@ -50,15 +51,13 @@ In `theme.css`, put your own CSS.
 
 You can use [`postcss-cli`](https://www.npmjs.com/package/postcss-cli).
 
-    $ npm install postcss postcss-cli postcss-import postcss-cssnext --save-dev
-
-Add this to your `package.json`: 
+Add this to your `package.json`:
 
     "scripts": {
-        "css": "postcss -u postcss-import -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
+        "css": "postcss -u postcss-import -u postcss-custom-properties -u postcss-calc -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
      }
 
-Then: 
+Then:
 
     $ npm run css
 

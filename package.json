@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "style": "structure.css",
   "description": "Minimal CSS boilerplate made with PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [
@@ -11,14 +11,14 @@
     "grid-system",
     "flexbox",
     "float",
-    "masonry", 
+    "masonry",
     "postcss-structure"
   ],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url":  "https://github.com/francoisromain/structure.css.git"
+    "url": "https://github.com/francoisromain/structure.css.git"
   },
   "bugs": {
     "url": "https://github.com/francoisromain/postcss-structure/issues"
@@ -30,5 +30,8 @@
     "postcss-import": "^8.0.2",
     "postcss-structure": "^0.1.12",
     "normalize.css": "^4.0.0"
+  },
+  "devDependencies": {
+    "postcss-cli": "^2.5.1"
   }
 }
