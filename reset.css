@@ -101,7 +101,7 @@ fieldset,
 figure,
 pre,
 hr {
-  margin-bottom: var(--base-unit-s);
+  margin-bottom: var(--base-margin-bottom);
 }
 
 abbr[title],

@@ -56,7 +56,7 @@
   --base-unit-l:               calc(var(--base-baseline) * 3/2);    /* 2.25   rem  = 36 px  */
   --base-unit-xl:              calc(var(--base-baseline) * 2);      /* 3      rem  = 48 px  */
   --base-unit-xxl:             calc(var(--base-baseline) * 2.5);    /* 2.5    rem  = 60 px  */
-
+  --base-margin-bottom:        var(--base-baseline);
 /*
     Text sizes
 ------------------------------- 
@@ -73,6 +73,8 @@
   --text-xxl:         calc(2)rem;     --baseline-xxl:        calc(var(--base-baseline) / 1.5);     /* 24px / 36px */
   --text-lead:        var(--text-l);  --baseline-lead:       var(--baseline-l);                    /* 20px / 36px */
   --text-blockquote:  var(--text-l);  --baseline-blockquote: var(--baseline-l);                    /* 20px / 24px */
+
+  
 
 /*
     Buttons
