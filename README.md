@@ -38,7 +38,7 @@ Make your src/css look like this:
 In `styles.css`:
 
     @import "settings.css";
-    @import "structure.css"; // PostCSS-import will import from node_modules/structure.css/structure.css
+    @import "structure.css"; // imported from node_modules/structure.css/structure.css by PostCSS-import
     @import "theme.css";
 
 In `settings.css`, copy the content of [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) and set the variables to your preference.
@@ -47,7 +47,7 @@ In `theme.css`, put your own CSS.
 
 ### 3. Compile
 
-#### With `npm scripts`
+#### With Npm scripts
 
 You can use [`postcss-cli`](https://www.npmjs.com/package/postcss-cli).
 
@@ -62,6 +62,10 @@ Then:
     $ npm run css
 
 From your html file point to `dist/css/styles.css`.
+
+#### With Grunt, Gulp, Webpack…
+
+Check [PostCSS doc](https://github.com/postcss/postcss#gulp).
 
 ## todo
 
