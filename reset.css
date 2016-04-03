@@ -13,25 +13,12 @@
 html,
 * {
   box-sizing: border-box;
-}
-
-* {
   &,
   &:before,
   &:after {
     box-sizing: inherit;
   }
 }
-
-
-/*
-
-From Inuit.css
-https://github.com/inuitcss/base.page/blob/master/_base.page.scss
-
- * 5. Fonts on OSX will look more consistent with other systems that do not
- *    render text using sub-pixel anti-aliasing.
-*/
 
 html {
   font-size: var(--base-font-size);
@@ -41,16 +28,9 @@ html {
   overflow-y: scroll;
   min-height: 100%;
   -moz-osx-font-smoothing: grayscale;
-  /* [5] */
   -webkit-font-smoothing: antialiased;
-  /* [5] */
   text-rendering: optimizeLegibility;
 }
-
-
-/*
-  Remove margins 
-*/
 
 body,
 h1,
@@ -78,11 +58,6 @@ hr {
   margin: 0;
   padding: 0;
 }
-
-
-/*
-  `margin-bottom` as base line-height
-*/
 
 h1,
 h2,
@@ -127,26 +102,33 @@ img {
   border: 0;
 }
 
+
 /* remove yellow bg on automplete in chrome */
+
 input:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+
 /* remove round corner on iOs */
 
-input:not([type="radio"]):not([type="checkbox"]), select {
-    -webkit-appearance: none;
-    border-radius: 0;
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
+
 
 /*
  Firefox bug where `input type="submit"` gains 2px extra padding.
 */
+
 button::-moz-focus-inner {
-  border:              0;
-  padding:             0;
+  border: 0;
+  padding: 0;
 }
+
 
 /**
  * 1. Google Maps breaks if `max-width: 100%` acts upon it;
@@ -156,5 +138,3 @@ button::-moz-focus-inner {
 .gm-style img {
   max-width: none;
 }
-
-
