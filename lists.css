@@ -57,8 +57,9 @@ li {
     &:after {
       content: var(--list-postfix);
     }
-    &:last-child:after {
-      content: none;
-    }
   }
+}
+
+.list-inline.list-postfix li:last-child:after {
+  content: none;
 }
