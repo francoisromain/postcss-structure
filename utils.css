@@ -9,7 +9,7 @@
 http://cssmojo.com/the-very-latest-clearfix-reloaded/
 */
 
-.clearfixn:after {
+.clearfix:after {
   content: "";
   display: block;
   clear: both;
