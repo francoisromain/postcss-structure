@@ -75,6 +75,22 @@ http://francoisromain.github.io/structure.css
 http://francoisromain.github.io/structure.css
 */
 
+/*
+    Debug trick 
+------------------------------- 
+    Un-comment to see in action
+    http://qr.ae/ROqymT
+*/
+
+/*
+ * { background-color: rgba(255,0,0,.2); }
+ * * { background-color: rgba(0,255,0,.2); }
+ * * * { background-color: rgba(0,0,255,.2); }
+ * * * * { background-color: rgba(255,0,255,.2); }
+ * * * * * { background-color: rgba(0,255,255,.2); }
+ * * * * * * { background-color: rgba(255,255,0,.2); }
+*/
+
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -1175,7 +1191,7 @@ td, th {
 http://cssmojo.com/the-very-latest-clearfix-reloaded/
 */
 
-.clearfixn:after {
+.clearfix:after {
   content: "";
   display: block;
   clear: both;
