@@ -571,27 +571,18 @@ Black prints faster: http://www.sanbeiji.com/archives/953
 
 html,
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
-* {
-}
-
-*,
+html,
+  html:before,
+  html:after,
+  *,
   *:before,
   *:after {
 box-sizing: inherit;
 
 }
-
-/*
-
-From Inuit.css
-https://github.com/inuitcss/base.page/blob/master/_base.page.scss
-
- * 5. Fonts on OSX will look more consistent with other systems that do not
- *    render text using sub-pixel anti-aliasing.
-*/
 
 html {
   font-size: 16px;
@@ -603,15 +594,9 @@ html {
   overflow-y: scroll;
   min-height: 100%;
   -moz-osx-font-smoothing: grayscale;
-  /* [5] */
   -webkit-font-smoothing: antialiased;
-  /* [5] */
   text-rendering: optimizeLegibility;
 }
-
-/*
-  Remove margins 
-*/
 
 body,
 h1,
@@ -639,10 +624,6 @@ hr {
   margin: 0;
   padding: 0;
 }
-
-/*
-  `margin-bottom` as base line-height
-*/
 
 h1,
 h2,
@@ -697,9 +678,10 @@ select:-webkit-autofill {
 
 /* remove round corner on iOs */
 
-input:not([type="radio"]):not([type="checkbox"]), select {
-    -webkit-appearance: none;
-    border-radius: 0;
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 /*
@@ -707,8 +689,8 @@ input:not([type="radio"]):not([type="checkbox"]), select {
 */
 
 button::-moz-focus-inner {
-  border:              0;
-  padding:             0;
+  border: 0;
+  padding: 0;
 }
 
 /**
