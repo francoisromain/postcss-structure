@@ -1,6 +1,6 @@
 # Structure.css
 
-Mini CSS framework based on 
+CSS framework based on 
 
 - [PostCSS](http://postcss.org/)
 - [cssnext](http://cssnext.io)
@@ -26,7 +26,7 @@ Structure.css will install the following dependencies:
 
 ### 2. Configure
 
-Make your src/css look like this:
+##### Example directory structure
 
     .
     +-- css
@@ -35,33 +35,38 @@ Make your src/css look like this:
         +-- theme.css
 
 
-In `styles.css`:
+##### In `styles.css`
 
     @import "settings.css";
     @import "structure.css"; // imported from node_modules/structure.css/structure.css by PostCSS-import
     @import "theme.css";
 
-In `settings.css`, copy the content of [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) and set the variables to your preference.
+##### In `settings.css`
 
-In `theme.css`, put your own CSS. 
+Copy the content of [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) and __set the variables__.
 
-### 3. Compile
+##### In `theme.css`
+
+Project specific CSS. 
+
+### 3. Build 
 
 #### With Npm scripts
 
-You can use [`postcss-cli`](https://www.npmjs.com/package/postcss-cli).
+- [Npm scripts](https://docs.npmjs.com/misc/scripts)
+- [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 
-Add this to your `package.json`:
+##### In `package.json`:
 
     "scripts": {
         "css": "postcss -u postcss-import -u postcss-custom-properties -u postcss-calc -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
      }
 
-Then:
+##### Compile
 
     $ npm run css
 
-From your html file point to `dist/css/styles.css`.
+##### From the html file, point to `dist/css/styles.css`.
 
 #### With Grunt, Gulp, Webpack…
 
@@ -69,6 +74,6 @@ Check [PostCSS doc](https://github.com/postcss/postcss#gulp).
 
 ## todo
 
-- [ ] media object
-- [ ] code styles
-- [ ] indent list in list
+- [ ] feat: add media object
+- [ ] feat: add code styles
+- [ ] fix: indent list in list
