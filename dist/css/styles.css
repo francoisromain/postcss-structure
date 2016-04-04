@@ -585,7 +585,7 @@ html {
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
-  background-color: rgba(252, 252, 247, 1.0);
+  background-color: white;
   color: #666;
   overflow-y: scroll;
   min-height: 100%;
@@ -933,7 +933,7 @@ opacity: .25;
 .btn-border:visited {
   border: 1px solid #f8f7f3;
   border: 0.0625rem solid #f8f7f3;
-  background-color: rgba(252, 252, 247, 1.0);
+  background-color: white;
   color: #666
 }
 
@@ -944,7 +944,7 @@ opacity: .25;
   .btn-border:visited:hover,
   .btn-border:visited:active {
 color: #3d3d35;
-background-color: rgba(252, 252, 247, 1.0);
+background-color: white;
 border-color: #3d3d35;
 
 }
@@ -954,7 +954,7 @@ border-color: #3d3d35;
   .btn-border:visited.disabled, 
   .btn-border:visited:disabled {
 border-color: #f8f7f3;
-background-color: rgba(252, 252, 247, 1.0);
+background-color: white;
 color: #666;
 
 }
@@ -968,7 +968,7 @@ color: #666;
     .btn-border:visited:disabled:hover,
     .btn-border:visited:disabled:active {
 border-color: #f8f7f3;
-background-color: rgba(252, 252, 247, 1.0);
+background-color: white;
 color: #666;
 
 }
@@ -1020,7 +1020,7 @@ color: #666;
 
 .btn-alt,
 .btn-alt:visited {
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background-color: #bcb9af
 }
 
@@ -1030,14 +1030,14 @@ color: #666;
   .btn-alt:visited:hover,
   .btn-alt:visited:active,
   .btn-alt:visited:focus {
-color: rgba(252, 252, 247, 1.0);
+color: white;
 background-color: #bf3f00;
 
 }
 
 .btn-flash,
 .btn-flash:visited {
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background-color: #bf3f00
 }
 
@@ -1047,7 +1047,7 @@ background-color: #bf3f00;
   .btn-flash:visited:hover,
   .btn-flash:visited:active,
   .btn-flash:visited:focus {
-color: rgba(252, 252, 247, 1.0);
+color: white;
 background-color: #3d3d35;
 
 }
@@ -1109,8 +1109,6 @@ textarea {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   border: 0 none;
-  border-top: 1px dotted #bcb9af;
-  border-top: 0.0625rem dotted #bcb9af;
   background-color: #f8f7f3;
 }
 
@@ -1128,7 +1126,7 @@ input[type="password"].input-alt,
 input[type="tel"].input-alt,
 select.input-alt,
 textarea.input-alt {
-  background-color: rgba(252, 252, 247, 1.0);
+  background-color: white;
 }
 
 /*
@@ -1217,7 +1215,7 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 .color-bg {
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
 }
 
 .color-brand {
@@ -1237,7 +1235,7 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 .bg-bg {
-  background-color: rgba(252, 252, 247, 1.0);
+  background-color: white;
 }
 
 .bg-brand {
@@ -2113,29 +2111,29 @@ width: 148.5rem;
 }
 
 .alert-info {
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background: #5798AA;
 }
 
 .alert-error {
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background: #E82239;
 }
 
 .alert-warning {
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background: #FF891C;
 }
 
 .alert-success {
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background: #6EA040;
 }
 
 .label {
   padding: 0 0.8em;
   text-align: center;
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background-color: #bcb9af;
 }
 
@@ -2146,7 +2144,7 @@ width: 148.5rem;
 .label-s-color {
   padding: 0.2em 0.6em 0.25em 0.5em;
   text-align: center;
-  color: rgba(252, 252, 247, 1.0);
+  color: white;
   background-color: #bf3f00;
 }
 
