@@ -29,12 +29,12 @@ http://francoisromain.github.io/structure.css
 */
 
   --color-text:                #666;
-  --color-bg:                  white;
+  --color-bg:                  rgba(252, 252, 247, 1.0);
   --color-transparent:         rgba(248, 247, 243, 0);
   --color-inverse:             #3d3d35;
   --color-neutral:             #bcb9af;
   --color-alt:                 #f8f7f3;
-  --color-brand:               #C19A25;
+  --color-brand:               #bf3f00;
   --color-error:               #E82239;
   --color-warning:             #FF891C; 
   --color-info:                #5798AA; 

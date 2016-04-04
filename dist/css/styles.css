@@ -585,7 +585,7 @@ html {
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem;
-  background-color: white;
+  background-color: rgba(252, 252, 247, 1.0);
   color: #666;
   overflow-y: scroll;
   min-height: 100%;
@@ -884,7 +884,7 @@ button,
   cursor:                pointer;
   text-decoration:       none;
   border:                none;
-  color: #C19A25;
+  color: #bf3f00;
   background-color: rgba(248, 247, 243, 0)
 }
 
@@ -898,7 +898,7 @@ button.active,
   .btn:visited:hover,
   .btn:visited:active {
 color: #f8f7f3;
-background-color: #C19A25;
+background-color: #bf3f00;
 
 }
 
@@ -933,7 +933,7 @@ opacity: .25;
 .btn-border:visited {
   border: 1px solid #f8f7f3;
   border: 0.0625rem solid #f8f7f3;
-  background-color: white;
+  background-color: rgba(252, 252, 247, 1.0);
   color: #666
 }
 
@@ -944,7 +944,7 @@ opacity: .25;
   .btn-border:visited:hover,
   .btn-border:visited:active {
 color: #3d3d35;
-background-color: white;
+background-color: rgba(252, 252, 247, 1.0);
 border-color: #3d3d35;
 
 }
@@ -954,7 +954,7 @@ border-color: #3d3d35;
   .btn-border:visited.disabled, 
   .btn-border:visited:disabled {
 border-color: #f8f7f3;
-background-color: white;
+background-color: rgba(252, 252, 247, 1.0);
 color: #666;
 
 }
@@ -968,7 +968,7 @@ color: #666;
     .btn-border:visited:disabled:hover,
     .btn-border:visited:disabled:active {
 border-color: #f8f7f3;
-background-color: white;
+background-color: rgba(252, 252, 247, 1.0);
 color: #666;
 
 }
@@ -1020,7 +1020,7 @@ color: #666;
 
 .btn-alt,
 .btn-alt:visited {
-  color: white;
+  color: rgba(252, 252, 247, 1.0);
   background-color: #bcb9af
 }
 
@@ -1030,15 +1030,15 @@ color: #666;
   .btn-alt:visited:hover,
   .btn-alt:visited:active,
   .btn-alt:visited:focus {
-color: white;
-background-color: #C19A25;
+color: rgba(252, 252, 247, 1.0);
+background-color: #bf3f00;
 
 }
 
 .btn-flash,
 .btn-flash:visited {
-  color: white;
-  background-color: #C19A25
+  color: rgba(252, 252, 247, 1.0);
+  background-color: #bf3f00
 }
 
 .btn-flash:hover,
@@ -1047,7 +1047,7 @@ background-color: #C19A25;
   .btn-flash:visited:hover,
   .btn-flash:visited:active,
   .btn-flash:visited:focus {
-color: white;
+color: rgba(252, 252, 247, 1.0);
 background-color: #3d3d35;
 
 }
@@ -1117,8 +1117,8 @@ textarea {
 textarea:focus,
 input:focus,
 select:focus {
-  border-right: 12px solid #C19A25;
-  border-right: 0.75rem solid #C19A25;
+  border-right: 12px solid #bf3f00;
+  border-right: 0.75rem solid #bf3f00;
 }
 
 input[type="text"].input-alt,
@@ -1128,7 +1128,7 @@ input[type="password"].input-alt,
 input[type="tel"].input-alt,
 select.input-alt,
 textarea.input-alt {
-  background-color: white;
+  background-color: rgba(252, 252, 247, 1.0);
 }
 
 /*
@@ -1151,9 +1151,10 @@ tr {
   border-bottom: 0.0625rem dotted silver;
 }
 
-td, th {
+td,
+th {
   vertical-align: top;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
 
 /*
@@ -1216,11 +1217,11 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 .color-bg {
-  color: white;
+  color: rgba(252, 252, 247, 1.0);
 }
 
 .color-brand {
-  color: #C19A25;
+  color: #bf3f00;
 }
 
 .color-alt {
@@ -1236,11 +1237,11 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 .bg-bg {
-  background-color: white;
+  background-color: rgba(252, 252, 247, 1.0);
 }
 
 .bg-brand {
-  background-color: #C19A25;
+  background-color: #bf3f00;
 }
 
 .bg-alt {
@@ -2112,41 +2113,41 @@ width: 148.5rem;
 }
 
 .alert-info {
-  color: white;
+  color: rgba(252, 252, 247, 1.0);
   background: #5798AA;
 }
 
 .alert-error {
-  color: white;
+  color: rgba(252, 252, 247, 1.0);
   background: #E82239;
 }
 
 .alert-warning {
-  color: white;
+  color: rgba(252, 252, 247, 1.0);
   background: #FF891C;
 }
 
 .alert-success {
-  color: white;
+  color: rgba(252, 252, 247, 1.0);
   background: #6EA040;
 }
 
 .label {
   padding: 0 0.8em;
   text-align: center;
-  color: white;
+  color: rgba(252, 252, 247, 1.0);
   background-color: #bcb9af;
 }
 
 .label-color {
-  background-color: #C19A25;
+  background-color: #bf3f00;
 }
 
 .label-s-color {
   padding: 0.2em 0.6em 0.25em 0.5em;
   text-align: center;
-  color: white;
-  background-color: #C19A25;
+  color: rgba(252, 252, 247, 1.0);
+  background-color: #bf3f00;
 }
 
 /*
@@ -2187,23 +2188,11 @@ a {
   color: #3d3d35
 }
 
-a:hover {
-color: #C19A25;
-
-}
-
-a:active {
-color: #C19A25;
-
-}
-
-a:visited {
-color: #3d3d35;
-
-}
-
-a:focus {
-color: #C19A25;
+a:hover,
+  a:active,
+  a:visited,
+  a:focus {
+color: #bf3f00;
 
 }
 
@@ -2217,17 +2206,6 @@ h4,
 .m {
   letter-spacing: -0.01em;
   font-weight: 700;
-}
-
-h6,
-.xs {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-}
-
-blockquote {
-  color: #3d3d35;
 }
 
 b,

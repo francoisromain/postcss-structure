@@ -31,15 +31,9 @@ a {
   text-decoration: none;
   border-bottom: 1px solid;
   color: var(--color-inverse);
-  &:hover {
-    color: var(--color-brand);
-  }
-  &:active {
-    color: var(--color-brand);
-  }
-  &:visited {
-    color: var(--color-inverse);
-  }
+  &:hover,
+  &:active,
+  &:visited,
   &:focus {
     color: var(--color-brand);
   }
@@ -55,17 +49,6 @@ h4,
 .m {
   letter-spacing: -0.01em;
   font-weight: 700;
-}
-
-h6,
-.xs {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-}
-
-blockquote {
-  color: var(--color-inverse);
 }
 
 b,
