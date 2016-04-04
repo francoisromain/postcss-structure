@@ -1215,6 +1215,10 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   bottom: 0;
 }
 
+.color-bg {
+  color: white;
+}
+
 .color-brand {
   color: #C19A25;
 }
@@ -1231,7 +1235,7 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   color: #3d3d35;
 }
 
-.bg-default {
+.bg-bg {
   background-color: white;
 }
 
