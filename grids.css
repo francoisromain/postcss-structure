@@ -9,6 +9,14 @@
   width: 100%;
 }
 
+/*
+      PostCSS-structure 
+-------------------------------
+
+https://github.com/francoisromain/postcss-structure
+
+*/
+
 @structure {
   width:    var(--structure-width);     
   gutter:   var(--structure-gutter);   
