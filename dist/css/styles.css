@@ -571,17 +571,13 @@ Black prints faster: http://www.sanbeiji.com/archives/953
 
 html,
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-html,
-  html:before,
-  html:after,
-  *,
-  *:before,
-  *:after {
-box-sizing: inherit;
-
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
