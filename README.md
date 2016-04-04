@@ -11,9 +11,9 @@ CSS framework based on
 
 ## Usage
 
-* * *
-
 ### 1. Install
+
+* * *
 
     $ npm install structure.css --save-dev
 
@@ -26,9 +26,9 @@ This installs the following dev-dependencies:
 - [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 - [normalize.css](https://www.npmjs.com/package/normalize-css)
 
-* * *
-
 ### 2. Configure
+
+* * *
 
 ##### Example directory structure
 
@@ -53,9 +53,10 @@ Copy the content of [`node_modules/structure.css/settings`](https://raw.githubus
 
 Project specific CSS. 
 
-* * *
 
 ### 3. Build 
+
+* * *
 
 #### With Npm scripts
 
