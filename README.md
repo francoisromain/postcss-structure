@@ -33,10 +33,11 @@ This installs the following dev-dependencies:
 ##### Example directory structure
 
     .
-    +-- css
-        +-- settings.css
-        +-- styles.css
-        +-- theme.css
+    +-- src
+        +-- css
+            +-- settings.css
+            +-- styles.css
+            +-- theme.css
 
 
 ##### In `styles.css`
@@ -54,11 +55,9 @@ Copy the content of [`node_modules/structure.css/settings`](https://raw.githubus
 Project specific CSS. 
 
 
-### 3. Build 
+### 3. Build (with Npm scripts)
 
 * * *
-
-#### With Npm scripts
 
 - [Npm scripts](https://docs.npmjs.com/misc/scripts)
 - [postcss-cli](https://www.npmjs.com/package/postcss-cli)
@@ -75,8 +74,7 @@ Project specific CSS.
 
 ##### From the html file, point to `dist/css/styles.css`.
 
-
-#### With Grunt, Gulp, Webpack…
+### Other build options (Grunt, Gulp, Webpack…)
 
 Check [PostCSS doc](https://github.com/postcss/postcss#gulp).
 
