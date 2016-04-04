@@ -1,8 +1,8 @@
 {
   "name": "structure.css",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "style": "structure.css",
-  "description": "Minimal CSS boilerplate made with PostCSS, cssnext, and PostCSS-Structure",
+  "description": "CSS framework based on PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [
     "postcss",
     "css",
@@ -24,14 +24,12 @@
     "url": "https://github.com/francoisromain/postcss-structure/issues"
   },
   "homepage": "http://francoisromain.github.io/structure.css/",
-  "dependencies": {
+  "devDependencies": {
+    "postcss-cli": "^2.5.1",
     "postcss": "^5.0.19",
     "postcss-cssnext": "^2.5.1",
     "postcss-import": "^8.0.2",
     "postcss-structure": "^0.1.14",
     "normalize.css": "^4.0.0"
-  },
-  "devDependencies": {
-    "postcss-cli": "^2.5.1"
   }
 }

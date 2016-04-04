@@ -16,7 +16,9 @@ th {
 tr {
   border-bottom: var(--base-unit-line) dotted silver;
 }
-td, th {
+
+td,
+th {
   vertical-align: top;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }

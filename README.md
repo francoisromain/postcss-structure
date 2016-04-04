@@ -1,21 +1,23 @@
 # Structure.css
 
+http://francoisromain.github.io/structure.css/
+
 CSS framework based on 
 
 - [PostCSS](http://postcss.org/)
 - [cssnext](http://cssnext.io)
 - [PostCSS-structure](https://github.com/francoisromain/postcss-structure)
 
-http://francoisromain.github.io/structure.css/
-
 
 ## Usage
+
+* * *
 
 ### 1. Install
 
     $ npm install structure.css --save-dev
 
-Structure.css will install the following dependencies:
+This installs the following dev-dependencies:
 
 - [postCSS](https://www.npmjs.com/package/postcss)
 - [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext)
@@ -23,6 +25,8 @@ Structure.css will install the following dependencies:
 - [postcss-structure](https://www.npmjs.com/package/postcss-structure)
 - [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 - [normalize.css](https://www.npmjs.com/package/normalize-css)
+
+* * *
 
 ### 2. Configure
 
@@ -49,6 +53,8 @@ Copy the content of [`node_modules/structure.css/settings`](https://raw.githubus
 
 Project specific CSS. 
 
+* * *
+
 ### 3. Build 
 
 #### With Npm scripts
@@ -67,6 +73,7 @@ Project specific CSS.
     $ npm run css
 
 ##### From the html file, point to `dist/css/styles.css`.
+
 
 #### With Grunt, Gulp, Webpack…
 

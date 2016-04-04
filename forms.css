@@ -49,7 +49,6 @@ textarea {
   height: auto;
   margin-bottom: var(--base-unit);
   border: 0 none;
-  border-top: var(--base-unit-line) dotted #bcb9af;
   background-color: var(--color-alt)
 ;
 }
