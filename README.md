@@ -48,21 +48,20 @@ This installs the following dev-dependencies:
 
 ##### In `settings.css`
 
-Copy the content of [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) and __set the variables__.
+Copy the content from [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) and __set the variables__.
 
 ##### In `theme.css`
 
 Project specific CSS. 
 
 
-### 3. Build (with Npm scripts)
+### 3. Build
 
 * * *
 
-- [Npm scripts](https://docs.npmjs.com/misc/scripts)
-- [postcss-cli](https://www.npmjs.com/package/postcss-cli)
+Example with [Npm scripts](https://docs.npmjs.com/misc/scripts) and [postcss-cli](https://www.npmjs.com/package/postcss-cli). For other build options (Grunt, Gulp, Webpack,…), check [PostCSS instructions](https://github.com/postcss/postcss#gulp).
 
-##### In `package.json`:
+##### In `package.json`, add:
 
     "scripts": {
         "css": "postcss -u postcss-import -u postcss-custom-properties -u postcss-calc -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
@@ -72,11 +71,9 @@ Project specific CSS.
 
     $ npm run css
 
-##### From the html file, point to `dist/css/styles.css`.
+##### Link 
 
-### Other build options (Grunt, Gulp, Webpack…)
-
-Check [PostCSS doc](https://github.com/postcss/postcss#gulp).
+From the html file, point to `dist/css/styles.css`.
 
 ## todo
 
