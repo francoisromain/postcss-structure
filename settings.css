@@ -121,8 +121,8 @@ http://francoisromain.github.io/structure.css
   --structure-columns:  1;        /* on (1) / off (0) .columns-(screen-size)-(col) */
   --structure-blocs:    1;        /* on (1) / off (0) .bloc-(screen-size)-(col)-(offset) */
   --structure-blobs:    1;        /* on (1) / off (0) .blob-(screen-size)-(ratio)-(total) */
-  --structure-right:    1;        /* on (1) / off (0) .right-(screen-size) */
-  --structure-show:     1;        /* on (1) / off (0) .show-(screen-size) */
+  --structure-rights:   1;        /* on (1) / off (0) .right-(screen-size) */
+  --structure-shows:    1;        /* on (1) / off (0) .show-(screen-size) */
 
 /*
     Utils

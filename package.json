@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "style": "structure.css",
   "description": "CSS framework based on PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [

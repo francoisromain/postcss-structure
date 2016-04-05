@@ -29,8 +29,8 @@ https://github.com/francoisromain/postcss-structure
   columns:  var(--structure-columns);
   blocs:    var(--structure-blocs);
   blobs:    var(--structure-blobs);
-  right:    var(--structure-right);
-  show:     var(--structure-show);
+  right:    var(--structure-rights);
+  show:     var(--structure-shows);
 }
 
 .left {
