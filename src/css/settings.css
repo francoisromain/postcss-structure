@@ -126,17 +126,26 @@ http://francoisromain.github.io/structure.css
 
 */
 
-  --structure-width:    18.75;  
-  --structure-gutter:   1.5; 
-  --structure-padding:  1.5;
-  --structure-max:      8;    
-  --structure-min:      2;    
-  --structure-thumb:    3;
-  --structure-display:  "float";
-  --structure-align:    "center";
-  --structure-columns:  1;
-  --structure-blocs:    1;
+  --structure-width:    18.75;    /* width of a bloc in rem */  
+  --structure-gutter:   1.5;      /* width of the gutter in rem */  
+  --structure-padding:  1.5;      /* padding of the main conatiner in rem */  
+  --structure-max:      8;        /* maximum number of blocs */ 
+  --structure-min:      2;        /* minimum number of blocs */ 
+  --structure-thumb:    3;        /* number of bloc-thumb fitting in one bloc */ 
+  --structure-display:  "float";  /* float or flex */
+  --structure-align:    "center"; /* center or left */
+  --structure-columns:  1;        /* on (1) / off (0) .columns-(screen-size)-(col) */
+  --structure-blocs:    1;        /* on (1) / off (0) .bloc-(screen-size)-(col)-(offset) */
+  --structure-blobs:    1;        /* on (1) / off (0) .blob-(screen-size)-(ratio)-(total) */
+  --structure-right:    1;        /* on (1) / off (0) .right-(screen-size) */
+  --structure-show:     1;        /* on (1) / off (0) .show-(screen-size) */
 
-  --pad:    1rem;
+/*
+    Utils
+------------------------------- 
+
+*/
+
+  --pad:    1rem;                     /* adding of class .pad and .pad-h */
 
 }
