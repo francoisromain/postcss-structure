@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.2.21",
+  "version": "0.2.22",
   "style": "structure.css",
   "description": "CSS framework based on PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [
@@ -24,7 +24,7 @@
     "url": "https://github.com/francoisromain/postcss-structure/issues"
   },
   "homepage": "http://francoisromain.github.io/structure.css/",
-  "devDependencies": {
+  "dependencies": {
     "postcss-cli": "^2.5.1",
     "postcss": "^5.0.19",
     "postcss-cssnext": "^2.5.2",
