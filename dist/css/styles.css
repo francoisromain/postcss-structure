@@ -1355,6 +1355,15 @@ width: 3.1875rem;
 
 }
 
+.blob {
+margin-right: 24px;
+margin-right: 1.5rem;
+margin-bottom: 24px;
+margin-bottom: 1.5rem;
+clear: both;
+
+}
+
 .columns {
 -webkit-column-gap: 1.5rem;
    -moz-column-gap: 1.5rem;
