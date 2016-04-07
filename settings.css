@@ -112,7 +112,7 @@ http://francoisromain.github.io/structure.css
   https://github.com/francoisromain/postcss-structure
 */
 
-  --structure-width:    18.75;    /* width of a bloc in rem */  
+  --structure-unit:     18.75;    /* width of a bloc in rem */  
   --structure-gutter:   1.5;      /* width of the gutter in rem */  
   --structure-padding:  1.5;      /* padding of the main conatiner in rem */  
   --structure-max:      8;        /* maximum number of blocs */ 
