@@ -102,12 +102,14 @@ http://francoisromain.github.io/structure.css
 /*
     Grid
 ------------------------------- 
-  breakpoints formula 
 
+  breakpoints formula 
   for (col = min; col <= max; col ++) {
     containerWidth = (width * col) - gutter + (padding * 2);
   }
 
+  more infos here:
+  https://github.com/francoisromain/postcss-structure
 */
 
   --structure-width:    18.75;    /* width of a bloc in rem */  
