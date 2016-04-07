@@ -42,13 +42,11 @@ a {
 }
 
 h1,
-.xxl,
 h2,
-.xl,
 h3,
-.l,
 h4,
-.m {
+h5,
+h6 {
   letter-spacing: -0.01em;
   font-weight: 700;
 }

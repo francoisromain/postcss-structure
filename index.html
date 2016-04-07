@@ -193,7 +193,7 @@
           <form method="post">
             <fieldset>
               <div class="margin-bottom clearfix">
-                <label class="xs">Gender</label>
+                <label><h4>Gender</h4></label>
                 <ul class="list-inline list-space">
                   <li>
                     <label>
@@ -206,26 +206,26 @@
                 </ul>
               </div>
               <div class="tooltip margin-bottom">
-                <label class="xs" for="contactform-name">Nom</label>
+                <label for="contactform-name"><h4>Name</h4></label>
                 <input type="text" id="contactform-name" name="name" value="" class="input" />
               </div>
               <div class="tooltip margin-bottom">
-                <label class="xs" for="contactform-email">Email</label>
+                <label for="contactform-email"><h4>Email</h4></label>
                 <input type="text" id="contactform-email" name="email" value="" class="input" />
               </div>
               <div class="tooltip margin-bottom">
-                <label class="xs contactform-label" for="contactform-recipient">Destinataire</label>
+                <label class="contactform-label" for="contactform-recipient"><h4>Recipient</h4></label>
                 <select class="input" id="contactform-recipient" name="recipient">
                   <option value="">—</option>
-                  <option value="Direction">Direction</option>
-                  <option value="Assistante de Direction">Assistante de Direction</option>
-                  <option value="Commercial, France">Commercial, France</option>
-                  <option value="Export">Export</option>
-                  <option value="Assistante Commerciale">Assistante Commerciale</option>
+                  <option value="#">One</option>
+                  <option value="#">Two</option>
+                  <option value="#">Three</option>
+                  <option value="#">Four</option>
+                  <option value="#">Five</option>
                 </select>
               </div>
               <div class="tooltip margin-bottom">
-                <label class="xs contactform-label" for="contactform-message">Message</label>
+                <label class="contactform-label" for="contactform-message"><h4>Message</h4></label>
                 <textarea class="input" name="text" id="contactform-message" rows="6"></textarea>
               </div>
               <input type="submit" name="submit" value="Envoyer" class="btn btn-m btn-rnd btn-alt btn-full margin-bottom" />
@@ -266,22 +266,25 @@
         <div class="bloc bloc-3-8 margin-top">
           <h2><a href="https://github.com/francoisromain/structure.css/blob/master/grids.css">Grids</a></h2>
           <p>The grid system of <a href="https://github.com/francoisromain/structure.css">Structure.css</a> uses <a href="https://github.com/francoisromain/postcss-structure">PostCSS-structure</a>.</p>
-          <p>PostCSS-structure creates a grid based on the width of a "bloc". This bloc has the same width whatever the size of the screen is. Media-queries are created depending the number of bloc that fits in the page. </p>
-          <h3>Bloc sizes</h3>
-          <p>bloc-(screen-size)-(width).</p>
+          <p>PostCSS-structure offers complementary type of elements to build grids:</p>
+          <ul class="list-prefix">
+            <li><a href="#grids-blocs">Blocs</a></li>
+            <li><a href="#grids-blobs">Blobs</a></li>
+            <li><a href="#grids-columns">Columns</a></li>
+            <li><a href="#grids-utilities">Utilities</a></li>
+          </ul>
+          <p>One <code>unit</code> is the width of a single bloc. Media-queries are created depending the number of units that fit into the page. </p>
+          <h3 id="grids-blocs">Blocs</h3>
+          <h4>bloc-(screen-size)-(units)-(offset).</h4>
+          <p>Blocs width does not change depending on the sreen-size.</p>
+          <ul class="list-prefix">
+            <li>screen-size: from which the bloc takes its width. Under this size, the bloc takes full width.</li>
+            <li>units: width of the bloc.</li>
+            <li>offset (optional): if screen-size is smaller than width + offset, then width shrinks first.</li>
+          </ul>
+          <h4>Blocs: active depending on screen size</h4>
           <div class="row">
-            <div class="bloc bloc-2-1 bg-alt pad">bloc-2-1</div>
-            <div class="bloc bloc-2-2 bg-alt pad">bloc-2-2</div>
-            <div class="bloc bloc-3-3 bg-alt pad">bloc-3-3</div>
-            <div class="bloc bloc-4-4 bg-alt pad">bloc-4-4</div>
-            <div class="bloc bloc-5-5 bg-alt pad">bloc-5-5</div>
-            <div class="bloc bloc-6-6 bg-alt pad">bloc-6-6</div>
-            <div class="bloc bloc-7-7 bg-alt pad">bloc-7-7</div>
-            <div class="bloc bloc-8-8 bg-alt pad">bloc-8-8</div>
-          </div>
-          <h3>Bloc sizes depending on screen size</h3>
-          <p>bloc-(screen-size)-(width).</p>
-          <div class="row">
+            <div class="bloc bloc-1-1 bg-alt pad">bloc-1-1</div>
             <div class="bloc bloc-2-1 bg-alt pad">bloc-2-1</div>
             <div class="bloc bloc-3-1 bg-alt pad">bloc-3-1</div>
             <div class="bloc bloc-4-1 bg-alt pad">bloc-4-1</div>
@@ -290,8 +293,18 @@
             <div class="bloc bloc-7-1 bg-alt pad">bloc-7-1</div>
             <div class="bloc bloc-8-1 bg-alt pad">bloc-8-1</div>
           </div>
-          <h3>Blocs with offset</h3>
-          <p>bloc-(screen-size)-(width)-(offset).</p>
+          <h4>Blocs: width</h4>
+          <div class="row">
+            <div class="bloc bloc-1-1 bg-alt pad">bloc-1-1</div>
+            <div class="bloc bloc-1-2 bg-alt pad">bloc-1-2</div>
+            <div class="bloc bloc-1-3 bg-alt pad">bloc-1-3</div>
+            <div class="bloc bloc-1-4 bg-alt pad">bloc-1-4</div>
+            <div class="bloc bloc-1-5 bg-alt pad">bloc-1-5</div>
+            <div class="bloc bloc-1-6 bg-alt pad">bloc-1-6</div>
+            <div class="bloc bloc-1-7 bg-alt pad">bloc-1-7</div>
+            <div class="bloc bloc-1-8 bg-alt pad">bloc-1-8</div>
+          </div>
+          <h4>Blocs: width and offset</h4>
           <div class="row">
             <div class="bloc bloc-3-2-1 bg-alt pad">bloc-3-2-1</div>
             <div class="bloc bloc-3-2-2 bg-alt pad">bloc-3-2-2</div>
@@ -315,27 +328,7 @@
             <div class="bloc bloc-6-6-2 bg-alt pad">bloc-6-6-2</div>
             <div class="bloc bloc-7-7-1 bg-alt pad">bloc-7-7-1</div>
           </div>
-          <h3>Show / hide blocs depending on screen size</h3>
-          <div class="row">
-            <div class="bloc bloc-2-1 bg-alt pad hide show-2">show-2</div>
-            <div class="bloc bloc-2-1 bg-alt pad hide show-3">show-3</div>
-            <div class="bloc bloc-2-1 bg-alt pad hide show-4">show-4</div>
-            <div class="bloc bloc-2-1 bg-alt pad hide show-5">show-5</div>
-            <div class="bloc bloc-2-1 bg-alt pad hide show-6">show-6</div>
-            <div class="bloc bloc-2-1 bg-alt pad hide show-7">show-7</div>
-            <div class="bloc bloc-2-1 bg-alt pad hide show-8">show-8</div>
-          </div>
-          <h3>Align blocs to the right depending on screen size</h3>
-          <div class="row">
-            <div class="bloc bloc-2-1 bg-alt pad right-2">right-2</div>
-            <div class="bloc bloc-2-1 bg-alt pad right-3">right-3</div>
-            <div class="bloc bloc-2-1 bg-alt pad right-4">right-4</div>
-            <div class="bloc bloc-2-1 bg-alt pad right-5">right-5</div>
-            <div class="bloc bloc-2-1 bg-alt pad right-6">right-6</div>
-            <div class="bloc bloc-2-1 bg-alt pad right-7">right-7</div>
-            <div class="bloc bloc-2-1 bg-alt pad right-8">right-8</div>
-          </div>
-          <h3>Sub-blocs</h3>
+          <h4>Sub-blocs utilities</h4>
           <div class="row">
             <div class="bloc bloc-one-half bg-alt pad">1/2</div>
             <div class="bloc bloc-one-half bg-alt pad">1/2</div>
@@ -348,18 +341,72 @@
             <div class="bloc bloc-thumb bg-alt pad s">T</div>
             <div class="bloc bloc-left bg-alt pad">bloc-left: fluid width depending on its content </div>
           </div>
-          <h3>Columns</h3>
+          <h3 id="grids-blobs">Blobs</h3>
+          <h4>blob-(screen-size)-(ratio)-(divider)</h4>
+          <p>Unlike blocs, blobs width will vary depending on the screen-size.</p>
+          <ul class="list-prefix">
+            <li>screen-size: number of blocs that fit in the screen</li>
+            <li>ratio: fraction of the divider in one row</li>
+            <li>divider: aribitrary number to divide one row</li>
+          </ul>
+          <div class="row">
+            <div class="blob blob-3-1-2 bg-alt pad">blob-3-1-2</div>
+            <div class="blob blob-3-1-2 bg-alt pad">blob-3-1-2</div>
+          </div>
+          <div class="row">
+            <div class="blob blob-3-1-3 bg-alt pad">blob-3-1-3</div>
+            <div class="blob blob-3-2-3 bg-alt pad">blob-3-2-3</div>
+          </div>
+          <div class="row">
+            <div class="blob blob-3-1-4 bg-alt pad">blob-3-1-4</div>
+            <div class="blob blob-3-3-4 bg-alt pad">blob-3-3-4</div>
+          </div>
+          <div class="row">
+            <div class="blob blob-3-2-5 bg-alt pad">blob-3-2-5</div>
+            <div class="blob blob-3-3-5 bg-alt pad">blob-3-3-5</div>
+          </div>
+          <div class="row">
+            <div class="blob blob-3-1-6 bg-alt pad">blob-3-1-6</div>
+            <div class="blob blob-3-2-6 bg-alt pad">blob-3-2-6</div>
+            <div class="blob blob-3-4-6 bg-alt pad">blob-3-4-6</div>
+          </div>
+          <div class="row">
+            <div class="blob blob-3-1-7 bg-alt pad">blob-3-1-7</div>
+            <div class="blob blob-3-2-7 bg-alt pad">blob-3-2-7</div>
+            <div class="blob blob-3-4-7 bg-alt pad">blob-3-4-7</div>
+          </div>
+          <div class="row">
+            <div class="blob blob-3-1-8 bg-alt pad">blob-3-1-8</div>
+            <div class="blob blob-3-1-8 bg-alt pad">blob-3-1-8</div>
+            <div class="blob blob-3-2-8 bg-alt pad">blob-3-2-8</div>
+            <div class="blob blob-3-3-8 bg-alt pad">blob-3-3-8</div>
+          </div>
+          <div class="row">
+            <div class="blob blob-0-1-8 bg-alt pad">blob-0-1-8</div>
+            <div class="blob blob-0-1-8 bg-alt pad">blob-0-1-8</div>
+            <div class="blob blob-0-1-4 bg-alt pad">blob-0-1-4</div>
+            <div class="blob blob-0-1-6 bg-alt pad">blob-0-1-6</div>
+            <div class="blob blob-0-1-3 bg-alt pad">blob-0-1-3</div>
+          </div>
+          <h3 id="grids-columns">Columns</h3>
+          <h4>columns-(screen-size)-(units)-(offset)</h4>
+          <ul class="list-prefix">
+            <li>screen-size: from which the bloc takes its width. Under this size, the bloc takes full width.</li>
+            <li>units: number of columns.</li>
+            <li>offset (optional): if screen-size is smaller than width + offset, then width shrinks first.</li>
+          </ul>
           <div class="columns-3-8 margin-top-m margin-bottom">
+            <p>columns-3-8</p>
             <p>Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.</p>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
             <p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
           </div>
-          <h3>Sub columns</h3>
+          <h4>Columns: width with offset</h4>
           <div class="row">
             <div class="bloc bloc-3-2-1">
               <div class="columns-3-2-1 margin-top-m margin-bottom">
-                <h4>columns-3-2-1</h4>
+                <p>columns-3-2-1</p>
                 <p>This will be two columns on a screen wider than size s (3 col). </p>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 <p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -367,7 +414,7 @@
             </div>
             <div class="bloc bloc-4-2-2">
               <div class="columns-4-2-2 margin-top-m margin-bottom">
-                <h4>columns-4-2-2</h4>
+                <p>columns-4-2-2</p>
                 <p>This will be 2 columns on a screen wider than size m (4 col). </p>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 <p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -375,12 +422,33 @@
             </div>
             <div class="bloc bloc-2-2-4">
               <div class="columns-2-2-4 margin-top-m margin-bottom">
-                <h4>columns-2-2-4</h4>
+                <p>columns-2-2-4</p>
                 <p>This will be 2 columns if the screen is wider than 6 columns (2 + 4). </p>
                 <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 <p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
               </div>
             </div>
+          </div>
+          <h3 id="grids-utilities">Grid utilities</h3>
+          <h4>show / hide element depending on screen size</h4>
+          <div class="row">
+            <div class="bloc bloc-2-1 bg-alt pad hide show-2">show-2</div>
+            <div class="bloc bloc-2-1 bg-alt pad hide show-3">show-3</div>
+            <div class="bloc bloc-2-1 bg-alt pad hide show-4">show-4</div>
+            <div class="bloc bloc-2-1 bg-alt pad hide show-5">show-5</div>
+            <div class="bloc bloc-2-1 bg-alt pad hide show-6">show-6</div>
+            <div class="bloc bloc-2-1 bg-alt pad hide show-7">show-7</div>
+            <div class="bloc bloc-2-1 bg-alt pad hide show-8">show-8</div>
+          </div>
+          <h4>Align element to the right depending on screen size</h4>
+          <div class="row">
+            <div class="bloc bloc-2-1 bg-alt pad right-2">right-2</div>
+            <div class="bloc bloc-2-1 bg-alt pad right-3">right-3</div>
+            <div class="bloc bloc-2-1 bg-alt pad right-4">right-4</div>
+            <div class="bloc bloc-2-1 bg-alt pad right-5">right-5</div>
+            <div class="bloc bloc-2-1 bg-alt pad right-6">right-6</div>
+            <div class="bloc bloc-2-1 bg-alt pad right-7">right-7</div>
+            <div class="bloc bloc-2-1 bg-alt pad right-8">right-8</div>
           </div>
         </div>
       </div>

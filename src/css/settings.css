@@ -126,11 +126,11 @@ http://francoisromain.github.io/structure.css
 
 */
 
-  --structure-width:    18.75;    /* width of a bloc in rem */  
+  --structure-unit:     18.75;    /* width of a single bloc in rem */  
   --structure-gutter:   1.5;      /* width of the gutter in rem */  
   --structure-padding:  1.5;      /* padding of the main conatiner in rem */  
   --structure-max:      8;        /* maximum number of blocs */ 
-  --structure-min:      2;        /* minimum number of blocs */ 
+  --structure-min:      1;        /* minimum number of blocs */ 
   --structure-thumb:    3;        /* number of bloc-thumb fitting in one bloc */ 
   --structure-display:  "float";  /* float or flex */
   --structure-align:    "center"; /* center or left */
