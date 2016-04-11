@@ -20,6 +20,14 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
   visibility: hidden;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 .full-width {
   float: left;
   width: 100%;

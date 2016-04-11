@@ -7,7 +7,6 @@ CSS framework based on
 - [PostCSS](http://postcss.org/)
 - [cssnext](http://cssnext.io)
 
-
 ## Usage
 
 ### 1. Install

@@ -1,18 +1,11 @@
 {
   "name": "structure.css",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "style": "structure.css",
-  "description": "CSS framework based on PostCSS, cssnext, and PostCSS-Structure",
+  "description": "A minimal CSS framework based on PostCSS and cssnext",
   "keywords": [
     "postcss",
-    "css",
-    "postcss-plugin",
-    "grid",
-    "grid-system",
-    "flexbox",
-    "float",
-    "masonry",
-    "postcss-structure"
+    "css"
   ],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
