@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "style": "structure.css",
   "description": "CSS framework based on PostCSS, cssnext, and PostCSS-Structure",
   "keywords": [
@@ -29,7 +29,6 @@
     "postcss": "^5.0.19",
     "postcss-cssnext": "^2.5.2",
     "postcss-import": "^8.1.0",
-    "postcss-structure": "^0.3.0",
     "normalize.css": "^4.0.0"
   }
 }

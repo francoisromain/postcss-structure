@@ -6,7 +6,6 @@ CSS framework based on
 
 - [PostCSS](http://postcss.org/)
 - [cssnext](http://cssnext.io)
-- [PostCSS-structure](https://github.com/francoisromain/postcss-structure)
 
 
 ## Usage
@@ -22,7 +21,6 @@ This installs the following dev-dependencies:
 - [postCSS](https://www.npmjs.com/package/postcss)
 - [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext)
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
-- [postcss-structure](https://www.npmjs.com/package/postcss-structure)
 - [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 - [normalize.css](https://www.npmjs.com/package/normalize-css)
 
@@ -64,7 +62,7 @@ Example with [Npm scripts](https://docs.npmjs.com/misc/scripts) and [postcss-cli
 ##### In `package.json`, add:
 
     "scripts": {
-        "css": "postcss -u postcss-import -u postcss-custom-properties -u postcss-calc -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
+        "css": "postcss -u postcss-import -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
      }
 
 ##### Compile
