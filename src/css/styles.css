@@ -1,3 +1,14 @@
 @import "settings.css";
-@import "../../structure.css";
+@import "normalize.css";
+@import "../../structure.css/print.css";
+@import "../../structure.css/reset.css";
+@import "../../structure.css/typography.css";
+@import "../../structure.css/lists.css";
+@import "../../structure.css/buttons.css";
+@import "../../structure.css/forms.css";
+@import "../../structure.css/tables.css";
+@import "../../structure.css/utils.css";
+@import "./grids.css";
+@import "../../structure.css/margins.css";
+@import "../../structure.css/ui.css";
 @import "theme.css";
