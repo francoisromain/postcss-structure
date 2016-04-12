@@ -10,20 +10,16 @@ html {
 }
 
 .page {
-  clear: both;
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: var(--base-unit-xl);
+  margin-bottom: -var(--base-unit-xl);
 }
 
-.page .push-footer {
-  height: var(--base-unit-xl);
+.page:after {
+  content: "";
+  display: block;
 }
 
-.footer {
-  clear: both;
-  position: relative;
+.footer, .page:after {
   height: var(--base-unit-xl);
 }
 
@@ -55,4 +51,30 @@ b,
 strong,
 .strong {
   font-weight: 700;
+}
+
+header {
+  padding-top: var(--base-unit-xl);
+}
+
+.bloc-mini {
+  float: left;
+  width: 100%;
+}
+
+.bloc-left {
+  float: left;
+  clear: none;
+}
+
+.img-left {
+  float: left;
+  margin-right: var(--structure-gutter);
+  max-width: var(--structure-unit);
+}
+
+.img-right {
+  float: right;
+  margin-left: var(--structure-gutter);
+  max-width: var(--structure-unit);
 }
