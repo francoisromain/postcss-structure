@@ -10,6 +10,6 @@
     "postcss-cssnext": "^2.5.2",
     "postcss-import": "^8.1.0",
     "postcss-structure": "^0.5.4",
-    "structure.css": "^0.4.1"
+    "structure.css": "^0.4.3"
   }
 }
