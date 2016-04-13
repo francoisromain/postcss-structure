@@ -5,17 +5,6 @@
 */
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
-}
-
-h1,
 .xxl {
   font-size: var(--text-xxl);
   line-height: calc(var(--base-unit) * var(--baseline-xxl));
@@ -69,6 +58,6 @@ hr {
   border: 0;
   height: 0;
   border-top: var(--base-unit-line) dotted var(--color-neutral);
-  margin-bottom: calc(var(--base-unit-xs) - var(--base-unit-line));
+  margin-top: -var(--base-unit-line);
   clear: both;
 }

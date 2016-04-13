@@ -80,6 +80,17 @@ hr {
   margin-bottom: calc(var(--base-unit) * var(--baseline-margin-bottom));
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
 abbr[title],
 dfn[title] {
   cursor: help;
