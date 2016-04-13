@@ -1,0 +1,17 @@
+/*
+      PostCSS-structure 
+-------------------------------
+
+https://github.com/francoisromain/postcss-structure
+
+*/
+
+@structure {
+  unit: var(--structure-unit);
+  gutter: var(--structure-gutter);
+  padding: var(--structure-padding);
+  max: var(--structure-max);
+  min: var(--structure-min);
+  display: var(--structure-display);
+  align: var(--structure-align);
+}

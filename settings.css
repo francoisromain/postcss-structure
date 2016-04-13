@@ -116,6 +116,26 @@ http://francoisromain.github.io/structure.css
   --list-prefix: "―";
 
 /*
+    Grid
+------------------------------- 
+  breakpoints formula 
+
+  for (col = min; col <= max; col ++) {
+    containerWidth = (width * col) - gutter + (padding * 2);
+  }
+
+*/
+
+  --structure-unit:     20.5rem;             /* width of a single bloc in rem */  
+  --structure-gutter:   1.5rem;              /* width of the gutter in rem */  
+  --structure-padding:  1.5rem;              /* padding of the main conatiner in rem */  
+  --structure-max:      8;                   /* maximum number of blocs */ 
+  --structure-min:      1;                   /* minimum number of blocs */ 
+  --structure-display:  flex;                /* float or flex */
+  --structure-align:    center;              /* center or left */
+
+
+/*
     Utils
 ------------------------------- 
 
@@ -124,3 +144,5 @@ http://francoisromain.github.io/structure.css
   --pad:    1rem;                     /* adding of class .pad and .pad-h */
 
 }
+
+@import "structure.css";
