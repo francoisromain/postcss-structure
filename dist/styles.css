@@ -1242,15 +1242,15 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 .pad {
-  padding: 16px;
-  padding: 1rem;
+  padding: 12px;
+  padding: 0.75rem;
 }
 
 .pad-h {
-  padding-left: 16px;
-  padding-left: 1rem;
-  padding-right: 16px;
-  padding-right: 1rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
 }
 
 /*
