@@ -125,19 +125,22 @@ http://francoisromain.github.io/structure.css
 This is binded to postcss-structure configuration:
 https://github.com/francoisromain/postcss-structure#configuration
 
-and here to use in your stylesheet:
-https://github.com/francoisromain/postcss-structure#usage
-
 */
 
   --structure-unit:     20.5rem;             /* width of a single bloc in rem */  
-  --structure-gutter:   1.5rem;              /* width of the gutter in rem */  
-  --structure-padding:  1.5rem;              /* padding of the main conatiner in rem */  
+  --structure-gutter:   var(--base-unit);    /* width of the gutter in rem */  
+  --structure-padding:  var(--base-unit);    /* padding of the main conatiner in rem */  
   --structure-max:      8;                   /* maximum number of blocs */ 
   --structure-min:      1;                   /* minimum number of blocs */ 
   --structure-display:  flex;                /* float or flex */
   --structure-align:    center;              /* center or left */
 
+/* 
+
+use the grid your stylesheet:
+https://github.com/francoisromain/postcss-structure#usage
+
+*/
 
 /*
     Utils
