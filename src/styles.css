@@ -3,8 +3,7 @@
 
 /*
     Theme
-------------------------------- 
-
+-------------------------------
 */
 
 .container {
@@ -15,11 +14,29 @@
   structure: bloc 2-6;
 }
 
+.bloc-2-1 {
+  structure: bloc 2-1;
+}
 
-/* 
+.blob-2-1-3 {
+  structure: blob 2-1/3;
+}
+
+.fraction-4-3 {
+  structure: fraction 4/3;
+}
+
+.show-2 {
+  structure: show 2;
+}
+
+.hide-4 {
+  structure: hide 4;
+}
+
+/*
     Sticky footer
-------------------------------- 
-
+-------------------------------
 http://mystrd.at/modern-clean-css-sticky-footer/
 */
 
@@ -97,7 +114,7 @@ header {
 }
 
 html.grid {
-  background-size: var(--structure-unit) calc(var(--base-unit) /2);
+  background-size: var(--structure-unit) calc(var(--base-unit) / 2);
   background-position: center top;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.05) .01rem, transparent .09rem), linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%)
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
 }

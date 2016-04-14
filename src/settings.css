@@ -1,16 +1,10 @@
-/*
-    Structure.css / settings
-------------------------------- 
-
+/* Structure.css / settings
+-------------------------------
 http://francoisromain.github.io/structure.css
 */
 
-/*
-    Debug trick 
-------------------------------- 
-    Un-comment to see in action
-    http://qr.ae/ROqymT
-*/
+/* Debug trick -------------------------------
+http://qr.ae/ROqymT */
 
 /*
  * { background-color: rgba(255,0,0,.2); }
@@ -19,129 +13,159 @@ http://francoisromain.github.io/structure.css
  * * * * { background-color: rgba(255,0,255,.2); }
  * * * * * { background-color: rgba(0,255,255,.2); }
  * * * * * * { background-color: rgba(255,255,0,.2); }
-
 */
+
 :root {
+  /* Colors ------------------------------- */
+  --color-text: #666;
+  --color-bg: white;
+  --color-transparent: rgba(248, 247, 243, 0);
+  --color-inverse: #3d3d35;
+  --color-neutral: #bcb9af;
+  --color-alt: #f8f7f3;
+  --color-brand: #ff5400;
+  --color-error: #e82239;
+  --color-warning: #ff891c;
+  --color-info: #5798aa;
+  --color-success: #6ea040;
 
-/*
-    Colors
-------------------------------- 
-*/
+  /* Base units ------------------------------- */
 
-  --color-text:                #666;
-  --color-bg:                  white;
-  --color-transparent:         rgba(248, 247, 243, 0);
-  --color-inverse:             #3d3d35;
-  --color-neutral:             #bcb9af;
-  --color-alt:                 #f8f7f3;
-  --color-brand:               #bf3f00;
-  --color-error:               #E82239;
-  --color-warning:             #FF891C; 
-  --color-info:                #5798AA; 
-  --color-success:             #6EA040; 
+  /* font-size: 1rem = 16 px */
+  --base-font-size: 1rem;
 
-/*
-    Base units
-------------------------------- 
-*/
-  --base-font-size:            1rem;                          /* font-size: 1      rem  = 16 px  */
-  --base-unit:                 1.5rem;                        /* base:      1.5    rem  = 24 px  */
-  --base-unit-line:            calc(var(--base-unit) / 24);   /* line:      0.0625 rem  = 1  px  */
-  --base-unit-xxs:             calc(var(--base-unit) / 6);    /* xxs:       0.25   rem  = 4  px  */
-  --base-unit-xs:              calc(var(--base-unit) / 3);    /* xs:        0.5    rem  = 8  px  */
-  --base-unit-s:               calc(var(--base-unit) / 2);    /* s:         0.75   rem  = 12 px  */
-  --base-unit-m:               calc(var(--base-unit) * 2/3);  /* m:         1      rem  = 16 px  */
-  --base-unit-l:               calc(var(--base-unit) * 3/2);  /* l:         2.25   rem  = 36 px  */
-  --base-unit-xl:              calc(var(--base-unit) * 2);    /* xl:        3      rem  = 48 px  */
-  --base-unit-xxl:             calc(var(--base-unit) * 2.5);  /* xxl:       2.5    rem  = 60 px  */
-  
-/*
-    Text sizes
-------------------------------- 
- typographic scale and vertical rhythm:
+  /* base: 1.5rem = 24 px */
+  --base-unit: 1.5rem;
+
+  /* line: 0.0625rem = 1px */
+  --base-unit-line: calc(var(--base-unit) / 24);
+
+  /* xxs: 0.25rem = 4px */
+  --base-unit-xxs: calc(var(--base-unit) / 6);
+
+  /* xs: 0.5rem = 8px */
+  --base-unit-xs: calc(var(--base-unit) / 3);
+
+  /* s: 0.75rem = 12px */
+  --base-unit-s: calc(var(--base-unit) / 2);
+
+  /* m: 1rem = 16px */
+  --base-unit-m: calc(var(--base-unit) * 2 / 3);
+
+  /* l: 2.25rem = 36 px */
+  --base-unit-l: calc(var(--base-unit) * 3 / 2);
+
+  /* xl: 3rem = 48px */
+  --base-unit-xl: calc(var(--base-unit) * 2);
+
+  /* xxl: 2.5rem = 60 px */
+  --base-unit-xxl: calc(var(--base-unit) * 2.5);
+
+  /* Text sizes ------------------------------- */
+
+  /* typographic scale and vertical rhythm:
  cf http://type-scale.com/ or http://www.gridlover.net/app/
-
 */
-                                                                     /* style:       font-size 
-                                                                                     / line-height */
-  --text-xs:          calc(5/8)rem;   --baseline-xs:            1/2; /* h6, .xs:     10px / 12px */
-  --text-s:           calc(3/4)rem;   --baseline-s:             1;   /* h5, .s:      12px / 24px */
-  --text-m:           calc(1)rem;     --baseline-m:             1;   /* h4, .m:      16px / 24px */
-  --text-l:           calc(5/4)rem;   --baseline-l:             1;   /* h3, .l:      20px / 24px */
-  --text-xl:          calc(3/2)rem;   --baseline-xl:            3/2; /* h2, .xl:     24px / 36px */
-  --text-xxl:         calc(2)rem;     --baseline-xxl:           3/2; /* h1, .xxl:    24px / 36px */
-  --text-lead:        var(--text-l);  --baseline-lead:          1;   /* .lead:       20px / 36px */
-  --text-blockquote:  var(--text-l);  --baseline-blockquote:    1;   /* .blockquote: 20px / 24px */
-                                      --baseline-margin-bottom: 1;   /* margin-bottom:      24px */
 
-  --hr-style: dashed;  
+  /* style: font-size / line-height */
+
+  /* h6, .xs: 10px / 12px */
+  --text-xs: calc(5 / 8) rem;
+  --baseline-xs: 1 / 2;
+
+  /* h5, .s: 12px / 24px */
+  --text-s: calc(3 / 4) rem;
+  --baseline-s: 1;
+
+  /* h4, .m: 16px / 24px */
+  --text-m: calc(1) rem;
+  --baseline-m: 1;
+
+  /* h3, .l: 20px / 24px */
+  --text-l: calc(5 / 4) rem;
+  --baseline-l: 1;
+
+  /* h2, .xl: 24px / 36px */
+  --text-xl: calc(3 / 2) rem;
+  --baseline-xl: 3 / 2;
+
+  /* h1, .xxl: 24px / 36px */
+  --text-xxl: calc(2) rem;
+  --baseline-xxl: 3 / 2;
+
+  /* .lead: 20px / 36px */
+  --text-lead: var(--text-l);
+  --baseline-lead: 1;
+
+  /* .blockquote: 20px / 24px */
+  --text-blockquote: var(--text-l);
+  --baseline-blockquote: 1;
+
+  /* margin-bottom: 24px */
+  --baseline-margin-bottom: 1;
+  --hr-style: dashed;
   --hr-color: var(--color-inverse);
 
-/*
-    Buttons
-------------------------------- 
-*/
+  /* Buttons ------------------------------- */
+  --btn-radius: var(--base-unit-xs);
+  --btn-color: var(--color-brand);
+  --btn-color-bg: var(--color-transparent);
+  --btn-color-active: var(--color-alt);
+  --btn-color-bg-active: var(--color-brand);
+  --btn-alt-color: var(--color-bg);
+  --btn-alt-color-bg: var(--color-neutral);
+  --btn-alt-color-active: var(--color-bg);
+  --btn-alt-color-bg-active: var(--color-brand);
+  --btn-flash-color: var(--color-bg);
+  --btn-flash-color-bg: var(--color-brand);
+  --btn-flash-color-active: var(--color-bg);
+  --btn-flash-color-bg-active: var(--color-inverse);
+  --btn-b-width: var(--base-unit-line);
+  --btn-b-style: solid;
+  --btn-b-color: var(--color-text);
+  --btn-b-color-bg: var(--color-bg);
+  --btn-b-color-border: var(--color-alt);
+  --btn-b-color-active: var(--color-inverse);
+  --btn-b-color-bg-active: var(--color-bg);
+  --btn-b-color-border-active: var(--color-inverse);
 
-  --btn-radius:                  var(--base-unit-xs);
-  
-  --btn-color:                   var(--color-brand);
-  --btn-color-bg:                var(--color-transparent);
-  --btn-color-active:            var(--color-alt);
-  --btn-color-bg-active:         var(--color-brand);
-  
-  --btn-alt-color:               var(--color-bg);
-  --btn-alt-color-bg:            var(--color-neutral);
-  --btn-alt-color-active:        var(--color-bg);
-  --btn-alt-color-bg-active:     var(--color-brand);
-  
-  --btn-flash-color:             var(--color-bg);
-  --btn-flash-color-bg:          var(--color-brand);
-  --btn-flash-color-active:      var(--color-bg);
-  --btn-flash-color-bg-active:   var(--color-inverse);
-  
-  --btn-b-width:                 var(--base-unit-line);
-  --btn-b-style:                 solid;
-  --btn-b-color:                 var(--color-text);
-  --btn-b-color-bg:              var(--color-bg);
-  --btn-b-color-border:          var(--color-alt);
-  --btn-b-color-active:          var(--color-inverse);
-  --btn-b-color-bg-active:       var(--color-bg);
-  --btn-b-color-border-active:   var(--color-inverse);
-
-
-/*
-    Lists
-------------------------------- 
-*/   
-
+  /* Lists ------------------------------- */
   --list-postfix: ",";
   --list-prefix: "―";
 
-/*
-    Grid
-------------------------------- 
-  breakpoints formula 
+  /* Grid ------------------------------- */
 
-  for (col = min; col <= max; col ++) {
-    containerWidth = (width * col) - gutter + (padding * 2);
-  }
+  /*
+  This is binded to postcss-structure configuration:
+  https://github.com/francoisromain/postcss-structure#configuration
 
-*/
+  use the grid your stylesheet:
+  https://github.com/francoisromain/postcss-structure#usage
+  */
 
-  --structure-unit:     20.5rem;  /* width of a single bloc in rem */  
-  --structure-gutter:   1.5rem;   /* width of the gutter in rem */  
-  --structure-padding:  1.5rem;   /* padding of the main conatiner in rem */  
-  --structure-max:      8;        /* maximum number of blocs */ 
-  --structure-min:      1;        /* minimum number of blocs */ 
-  --structure-display:  float;    /* float or flex */
-  --structure-align:    center;   /* center or left */
+  /* width of a single bloc in rem */
+  --structure-unit: 20.5rem;
 
-/*
-    Utils
-------------------------------- 
+  /* width of the gutter in rem */
+  --structure-gutter: 1.5rem;
 
-*/
+  /* padding of the main conatiner in rem */
+  --structure-padding: 1.5rem;
 
-  --pad:    1rem;                     /* adding of class .pad and .pad-h */
+  /* maximum number of blocs */
+  --structure-max: 8;
 
+  /* minimum number of blocs */
+  --structure-min: 1;
+
+  /* float or flex */
+  --structure-display: float;
+
+  /* center or left */
+  --structure-align: center;
+
+  /* Utils -------------------------------  */
+
+  /* adding of class .pad and .pad-h */
+  --pad: 1rem;
 }

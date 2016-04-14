@@ -2,12 +2,18 @@
   "name": "francoisromain.github.io.structure.css",
   "version": "0.1.0",
   "scripts": {
+    "lint": "stylelint src/*.css && stylelint structure.css/*.css",
     "build": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/styles.css -o dist/styles.css"
   },
   "dependencies": {
-    "structure.css": "^0.5.6"
+    "structure.css": "^0.5.7"
   },
   "devDependencies": {
-    "postcss-cli": "^2.5.1"
+    "postcss-cli": "^2.5.1",
+    "stylelint": "^5.4.0",
+    "stylelint-config-standard": "^5.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
   }
 }
