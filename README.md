@@ -61,7 +61,7 @@ Add a script to package.json:
 
 - [settings](https://github.com/francoisromain/structure.css/blob/master/settings.css)
 
-[cssnext](http://cssnext.io) brings _css variables_, _calc()_, _autoprefixer_ and many other things. Set the variables inside the `:root` declaration and use them inside your CSS.
+[cssnext](http://cssnext.io) brings _css variables_, _calc()_, _autoprefixer_ and many other goodies. In `settings.css`, set the variables in the `:root` declaration and they are available inside your CSS.
 
 ### Reset
 
@@ -69,7 +69,7 @@ Add a script to package.json:
 - [print](https://github.com/francoisromain/structure.css/blob/master/print.css)
 - [reset](https://github.com/francoisromain/structure.css/blob/master/reset.css)
 
-Consistent element render accross browsers and consistent vertical rhythm. 
+, basic  and consistent vertical rhythm. 
 
 
 ### Helper classes
@@ -81,7 +81,7 @@ Consistent element render accross browsers and consistent vertical rhythm.
 - [tables](https://github.com/francoisromain/structure.css/blob/master/tables.css)
 - [utils](https://github.com/francoisromain/structure.css/blob/master/utils.css)
 
-Ready to use helper classes. Inspect [this page](http://francoisromain.github.io/structure.css/) for usage.
+Ready to use helper classes. Inspect elements on the [demo page](http://francoisromain.github.io/structure.css/) to get the class names.
 
 ### Grids
 
@@ -92,12 +92,12 @@ See [postcss-structure](https://github.com/francoisromain/postcss-structure#usag
 
 ### Ui
 
-- [ui]
+- [ui](https://github.com/francoisromain/structure.css/blob/master/ui.css)
 
 ## todo
 
 - [ ] feat: add media object
-- [ ] feat: add code styles
+- [ ] feat: add code and pre styles
 - [ ] fix: indent list in list
 - [ ] fix: tooltip position
 - [ ] feat: add more ui components

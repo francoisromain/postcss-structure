@@ -1,9 +1,7 @@
 /*
     Reset
-------------------------------- 
-
+-------------------------------
 */
-
 
 /*
   css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
@@ -16,8 +14,8 @@ html,
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -114,14 +112,12 @@ img {
   border: 0;
 }
 
-
 /* remove yellow bg on automplete in chrome */
 
 input:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
-
 
 /* remove round corner on iOs */
 
@@ -131,10 +127,7 @@ select {
   border-radius: 0;
 }
 
-/**
- * 1. Google Maps breaks if `max-width: 100%` acts upon it;
- *    use their selector to remove the effects.
- */
+/* Google Maps breaks if max-width: 100% */
 
 .gm-style img {
   max-width: none;

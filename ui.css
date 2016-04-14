@@ -1,7 +1,6 @@
 /*
-    UI elements 
-------------------------------- 
-
+    UI elements
+-------------------------------
 */
 
 .tooltip {
@@ -20,7 +19,7 @@
   z-index: 999;
 }
 
-.tooltip span:after {
+.tooltip span::after {
   content: '';
   position: absolute;
   top: 100%;

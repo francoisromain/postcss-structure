@@ -49,7 +49,7 @@ textarea {
   height: auto;
   margin-bottom: var(--base-unit);
   border: 0 none;
-  background-color: var(--color-alt)
+  background-color: var(--color-alt);
 ;
 }
 

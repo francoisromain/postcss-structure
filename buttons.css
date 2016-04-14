@@ -1,118 +1,118 @@
 /*
       Buttons
 -------------------------------
-
 */
-button, 
-.btn, 
+
+button,
+.btn,
 .btn:visited {
-  display:               inline-block;
-  margin:                0;
-  cursor:                pointer;
-  text-decoration:       none;
-  border:                none;
-  color:                 var(--btn-color);
-  background-color:      var(--btn-color-bg);
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: var(--btn-color);
+  background-color: var(--btn-color-bg);
   &.active,
   &:hover,
   &:active {
-    color:               var(--btn-color-active);
-    background-color:    var(--btn-color-bg-active);
+    color: var(--btn-color-active);
+    background-color: var(--btn-color-bg-active);
   }
-  &.disabled, 
+  &.disabled,
   &:disabled {
-    opacity:             .25;
-    cursor:              default;
+    opacity: 0.25;
+    cursor: default;
     &:hover,
     &:active {
-      opacity:           .25;
+      opacity: 0.25;
     }
   }
 }
 
 .btn-border,
 .btn-border:visited {
-  border:                var(--btn-b-width) var(--btn-b-style) var(--btn-b-color-border);
-  background-color:      var(--btn-b-color-bg);
-  color:                 var(--btn-b-color);
+  border: var(--btn-b-width) var(--btn-b-style) var(--btn-b-color-border);
+  background-color: var(--btn-b-color-bg);
+  color: var(--btn-b-color);
   &.active,
   &:hover,
   &:active {
-    color:               var(--btn-b-color-active);
-    background-color:    var(--btn-b-color-bg-active);
-    border-color:        var(--btn-b-color-border-active);
+    color: var(--btn-b-color-active);
+    background-color: var(--btn-b-color-bg-active);
+    border-color: var(--btn-b-color-border-active);
   }
-  &.disabled, 
+  &.disabled,
   &:disabled {
-    border-color:        var(--btn-b-color-border);
-    background-color:    var(--btn-b-color-bg);
-    color:               var(--btn-b-color);
+    border-color: var(--btn-b-color-border);
+    background-color: var(--btn-b-color-bg);
+    color: var(--btn-b-color);
     &:hover,
     &:active {
-      border-color:      var(--btn-b-color-border);
-      background-color:  var(--btn-b-color-bg);
-      color:             var(--btn-b-color);
+      border-color: var(--btn-b-color-border);
+      background-color: var(--btn-b-color-bg);
+      color: var(--btn-b-color);
     }
   }
 }
 
 .btn-xxs {
-  padding:               var(--base-unit-xxs) calc(var(--base-unit-xxs) * 2);
+  padding: var(--base-unit-xxs) calc(var(--base-unit-xxs) * 2);
 }
 
 .btn-xs {
-  padding:               var(--base-unit-xs)  calc(var(--base-unit-xs) * 2);
+  padding: var(--base-unit-xs) calc(var(--base-unit-xs) * 2);
 }
 
 .btn-s {
-  padding:               var(--base-unit-s)   calc(var(--base-unit-s) * 2);
+  padding: var(--base-unit-s) calc(var(--base-unit-s) * 2);
 }
 
 .btn-m {
-  padding:               var(--base-unit-m )  calc(var(--base-unit-m) * 2);
+  padding: var(--base-unit-m) calc(var(--base-unit-m) * 2);
 }
 
 .btn-l {
-  padding:               var(--base-unit-l)   calc(var(--base-unit-l) * 2);
+  padding: var(--base-unit-l) calc(var(--base-unit-l) * 2);
 }
 
 .btn-xl {
-  padding:               var(--base-unit-xl)  calc(var(--base-unit-xl) * 2);
+  padding: var(--base-unit-xl) calc(var(--base-unit-xl) * 2);
 }
 
 .btn-full {
   width: 100%;
-  text-align:            center;
+  text-align: center;
 }
 
 .btn-pill {
-  border-radius:         var(--base-unit-xl);
+  border-radius: var(--base-unit-xl);
 }
 
 .btn-rnd {
-  border-radius:         var(--btn-radius);
+  border-radius: var(--btn-radius);
 }
 
 .btn-alt,
 .btn-alt:visited {
-  color:                 var(--btn-alt-color);
-  background-color:      var(--btn-alt-color-bg);
+  color: var(--btn-alt-color);
+  background-color: var(--btn-alt-color-bg);
   &:hover,
   &:active,
   &:focus {
-    color:               var(--btn-alt-color-active);
-    background-color:    var(--btn-alt-color-bg-active);
+    color: var(--btn-alt-color-active);
+    background-color: var(--btn-alt-color-bg-active);
   }
 }
 
 .btn-flash,
 .btn-flash:visited {
-  color:                 var(--btn-flash-color);
-  background-color:      var(--btn-flash-color-bg);
+  color: var(--btn-flash-color);
+  background-color: var(--btn-flash-color-bg);
   &:hover,
   &:active,
   &:focus {
-      color:             var(--btn-flash-color-active);
-      background-color:  var(--btn-flash-color-bg-active);
+    color: var(--btn-flash-color-active);
+    background-color: var(--btn-flash-color-bg-active);
   }
 }

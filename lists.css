@@ -42,7 +42,7 @@ li {
 
 .list-prefix {
   list-style: none;
-  & > li:before {
+  & > li::before {
     content: var(--list-prefix);
     margin-right: var(--base-unit-xs);
     color: var(--color-neutral);
@@ -52,12 +52,12 @@ li {
 .list-postfix {
   list-style: none;
   & > li {
-    &:after {
+    &::after {
       content: var(--list-postfix);
     }
   }
 }
 
-.list-inline.list-postfix li:last-child:after {
+.list-inline.list-postfix li:last-child::after {
   content: none;
 }
