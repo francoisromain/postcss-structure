@@ -74,7 +74,8 @@ table,
 fieldset,
 figure,
 pre,
-hr {
+hr,
+textarea {
   margin-bottom: calc(var(--base-unit) * var(--baseline-margin-bottom));
 }
 
@@ -121,7 +122,7 @@ select:-webkit-autofill {
 
 /* remove round corner on iOs */
 
-input:not([type="radio"]):not([type="checkbox"]),
+input:not([type="radio"]):not([type="checkbox"]):not(.btn-rnd),
 select {
   -webkit-appearance: none;
   border-radius: 0;

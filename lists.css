@@ -8,6 +8,7 @@ ul,
 ol,
 dd {
   list-style-position: inside;
+  overflow: auto;
 }
 
 ol {
@@ -30,8 +31,8 @@ li {
   padding: 0;
   list-style: none;
   & > li {
-    margin-bottom: var(--base-unit-xxs);
-    margin-right: var(--base-unit-xxs);
+    margin-bottom: var(--base-unit-xs);
+    margin-right: var(--base-unit-xs);
     float: left;
   }
 }

@@ -57,11 +57,11 @@ Add a script to package.json:
 
 ## Usage
 
-### Variables and cssnext goodness
+### Settings
 
 - [settings](https://github.com/francoisromain/structure.css/blob/master/settings.css)
 
-[cssnext](http://cssnext.io) brings _css variables_, _calc()_, _autoprefixer_ and many other goodies. In `settings.css`, set the variables in the `:root` declaration and they are available inside your CSS.
+[cssnext](http://cssnext.io) brings _css variables_, _calc()_, _autoprefixer_ and many other goodies. In your `settings.css`, set the variables in the `:root` declaration and they are available inside your CSS.
 
 ### Reset
 
@@ -85,7 +85,7 @@ Ready to use helper classes. Inspect elements on the [demo page](http://francois
 
 ### Grids
 
-- [grids](https://github.com/francoisromain/structure.css/blob/master/print.css)
+- [grids](https://github.com/francoisromain/structure.css/blob/master/grids.css)
 - [margins](https://github.com/francoisromain/structure.css/blob/master/margins.css)
 
 See [postcss-structure](https://github.com/francoisromain/postcss-structure#usage) to use the grid in your stylesheet.
@@ -93,6 +93,13 @@ See [postcss-structure](https://github.com/francoisromain/postcss-structure#usag
 ### Ui
 
 - [ui](https://github.com/francoisromain/structure.css/blob/master/ui.css)
+
+### Tools
+
+- [tools](https://github.com/francoisromain/structure.css/blob/master/tools.css)
+
+- Show baseline grid: add the `grid` class to the html element.
+- Debug mode: add the `debug` class to the html element.
 
 ## todo
 

@@ -32,7 +32,7 @@ button,
 
 .btn-border,
 .btn-border:visited {
-  border: var(--btn-b-width) var(--btn-b-style) var(--btn-b-color-border);
+  box-shadow:inset 0 0 0 var(--btn-b-width) var(--btn-b-color-border);
   background-color: var(--btn-b-color-bg);
   color: var(--btn-b-color);
   &.active,
@@ -40,16 +40,16 @@ button,
   &:active {
     color: var(--btn-b-color-active);
     background-color: var(--btn-b-color-bg-active);
-    border-color: var(--btn-b-color-border-active);
+    box-shadow:inset 0 0 0 var(--btn-b-width) var(--btn-b-color-border-active);
   }
   &.disabled,
   &:disabled {
-    border-color: var(--btn-b-color-border);
+    box-shadow:inset 0 0 0 var(--btn-b-width) var(--btn-b-color-border);
     background-color: var(--btn-b-color-bg);
     color: var(--btn-b-color);
     &:hover,
     &:active {
-      border-color: var(--btn-b-color-border);
+      box-shadow:inset 0 0 0 var(--btn-b-width) var(--btn-b-color-border);
       background-color: var(--btn-b-color-bg);
       color: var(--btn-b-color);
     }

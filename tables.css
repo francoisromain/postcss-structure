@@ -5,6 +5,8 @@
 
 table {
   width: 100%;
+  border-collapse: collapse;
+  border: none;
 }
 
 th {
@@ -13,11 +15,13 @@ th {
 }
 
 tr {
-  border-bottom: var(--base-unit-line) dotted silver;
+  border-bottom: var(--table-border-width) var(--table-border-style) var(--table-border-color);
 }
 
 td,
 th {
   vertical-align: top;
   word-wrap: break-word;
+  padding-top: var(--table-pad);
+  padding-bottom: calc(var(--table-pad) - var(--table-border-width));
 }
