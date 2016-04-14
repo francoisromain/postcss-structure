@@ -1,4 +1,4 @@
-# Structure.css
+# structure.css
 
 http://francoisromain.github.io/structure.css/
 
@@ -48,10 +48,11 @@ Add this to package.json:
 
 ## Configuration
 
-1. Copy the content from [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) at the very begining of your CSS.
-2. __Set the variables__ inside the `:root` declaration
-3. Add your own CSS after the line `@import "structure.css";`
-4. See [PostCSS-structure](https://github.com/francoisromain/postcss-structure#usage) to set the grid.
+1. Copy the content from [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) to your own `src/css/settings.css`.
+2. Set the variables inside the `:root` declaration
+3. Add `@import "settings.css";` and `@import "structure.css";` at the top of your stylesheet.
+
+You can use the variables defined in `:root`. See [postcss-structure](https://github.com/francoisromain/postcss-structure#usage) to set the grid.
 
 ## todo
 
