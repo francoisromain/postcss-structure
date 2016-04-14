@@ -13,7 +13,7 @@
   background: var(--color-neutral);
   text-align: center;
   border-radius: var(--base-unit-xs);
-  top: -2px;
+  top: -2rem;
   right: 0;
   padding: 2px 12px;
   z-index: 999;

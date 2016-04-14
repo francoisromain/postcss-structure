@@ -3,6 +3,11 @@
 -------------------------------
 */
 
+.xxxl {
+  font-size: var(--text-xxxl);
+  line-height: calc(var(--base-unit) * var(--baseline-xxxl));
+}
+
 h1,
 .xxl {
   font-size: var(--text-xxl);
