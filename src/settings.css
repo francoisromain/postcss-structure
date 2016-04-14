@@ -73,7 +73,9 @@ http://francoisromain.github.io/structure.css
   --text-lead:        var(--text-l);  --baseline-lead:          1;   /* .lead:       20px / 36px */
   --text-blockquote:  var(--text-l);  --baseline-blockquote:    1;   /* .blockquote: 20px / 24px */
                                       --baseline-margin-bottom: 1;   /* margin-bottom:      24px */
-  
+
+  --hr-style: dashed;  
+  --hr-color: var(--color-inverse);
 
 /*
     Buttons

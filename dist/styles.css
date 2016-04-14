@@ -43,7 +43,6 @@ http://francoisromain.github.io/structure.css
 */
                                                                      /* style:       font-size 
                                                                                      / line-height */ /* h6, .xs:     10px / 12px */   /* h5, .s:      12px / 24px */   /* h4, .m:      16px / 24px */   /* h3, .l:      20px / 24px */ /* h2, .xl:     24px / 36px */ /* h1, .xxl:    24px / 36px */   /* .lead:       20px / 36px */   /* .blockquote: 20px / 24px */   /* margin-bottom:      24px */
-  
 
 /*
     Buttons
@@ -763,8 +762,8 @@ blockquote {
 hr {
   border: 0;
   height: 0;
-  border-top: 1px dotted #bcb9af;
-  border-top: 0.0625rem dotted #bcb9af;
+  border-top: 1px dashed #3d3d35;
+  border-top: 0.0625rem dashed #3d3d35;
   margin-top: -1px;
   margin-top: -0.0625rem;
   clear: both;
