@@ -20,7 +20,7 @@ http://francoisromain.github.io/structure.css
 
   /* s: 0.75rem = 12px */
 
-  /* m: 1rem = 16px */
+  /* m: 1rem = 18px */
 
   /* l: 2.25rem = 36 px */
 
@@ -32,21 +32,22 @@ http://francoisromain.github.io/structure.css
 
   /* typographic scale and vertical rhythm:
      cf http://type-scale.com/ or http://www.gridlover.net/app/
+     default to major third 1.250
   */
-
-  /* style: font-size / line-height */
-
+  
   /* h6, .xs: 10px / 12px */
 
   /* h5, .s: 12px / 24px */
 
   /* h4, .m: 16px / 24px */
 
-  /* h3, .l: 20px / 24px */
+  /* h3, .l: 28.4px / 24px */
 
-  /* h2, .xl: 24px / 36px */
+  /* h2, .xl: 37.9px / 36px */
 
-  /* h1, .xxl: 24px / 36px */
+  /* h1, .xxl: 39px / 48px */
+
+  /* .xxxl: 48px / 48px */
 
   /* .lead: 20px / 36px */
 
@@ -701,28 +702,35 @@ select {
 -------------------------------
 */
 
+.xxxl {
+  font-size: 48.816px;
+  font-size: 3.051rem;
+  line-height: 48px;
+  line-height: 3rem;
+}
+
 h1,
 .xxl {
-  font-size: 32px;
-  font-size: 2rem;
-  line-height: 36px;
-  line-height: 2.25rem;
+  font-size: 39.056px;
+  font-size: 2.441rem;
+  line-height: 48px;
+  line-height: 3rem;
 }
 
 h2,
 .xl {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 31.248px;
+  font-size: 1.953rem;
   line-height: 36px;
   line-height: 2.25rem;
 }
 
 h3,
 .l {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 24px;
-  line-height: 1.5rem;
+  font-size: 25.008px;
+  font-size: 1.563rem;
+  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 h4,
@@ -735,8 +743,8 @@ h4,
 
 h5,
 .s {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 12.8px);
+  font-size: 0.8rem);
   line-height: 24px;
   line-height: 1.5rem;
 }
@@ -744,24 +752,24 @@ h5,
 h6,
 .xs,
 small {
-  font-size: 10px;
-  font-size: 0.625rem;
+  font-size: 10.24px;
+  font-size: 0.64rem;
   line-height: 24px;
   line-height: 1.5rem;
 }
 
 .lead {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 24px;
-  line-height: 1.5rem;
+  font-size: 25.008px;
+  font-size: 1.563rem;
+  line-height: 36px;
+  line-height: 2.25rem;
 }
 
 blockquote {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 24px;
-  line-height: 1.5rem;
+  font-size: 25.008px;
+  font-size: 1.563rem;
+  line-height: 36px;
+  line-height: 2.25rem;
   font-style: italic;
   padding-left: 24px;
   padding-left: 1.5rem;
@@ -964,8 +972,8 @@ button.disabled:hover,
 }
 
 .btn-m {
-  padding: 16px 32px;
-  padding: 1rem 2rem;
+  padding: 18px 36px;
+  padding: 1.125rem 2.25rem;
 }
 
 .btn-l {
@@ -1427,8 +1435,8 @@ https://github.com/francoisromain/postcss-structure
 }
 
 .margin-top-m {
-  margin-top: 16px;
-  margin-top: 1rem;
+  margin-top: 18px;
+  margin-top: 1.125rem;
 }
 
 .margin-top-l {
@@ -1462,8 +1470,8 @@ https://github.com/francoisromain/postcss-structure
 }
 
 .margin-bottom-m {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .margin-bottom-l {
@@ -1495,7 +1503,8 @@ https://github.com/francoisromain/postcss-structure
   background: #bcb9af;
   text-align: center;
   border-radius: 0.375rem;
-  top: -2px;
+  top: -32px;
+  top: -2rem;
   right: 0;
   padding: 2px 12px;
   z-index: 999;
@@ -1631,6 +1640,7 @@ a:hover,
   color: #ff5400;
 }
 
+.xxxl,
 h1,
 h2,
 h3,

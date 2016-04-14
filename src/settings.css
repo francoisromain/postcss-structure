@@ -37,8 +37,8 @@ http://francoisromain.github.io/structure.css
   /* s: 0.75rem = 12px */
   --base-unit-s: calc(var(--base-unit) / 2);
 
-  /* m: 1rem = 16px */
-  --base-unit-m: calc(var(--base-unit) * 2 / 3);
+  /* m: 1rem = 18px */
+  --base-unit-m: calc(var(--base-unit) * 3 / 4);
 
   /* l: 2.25rem = 36 px */
   --base-unit-l: calc(var(--base-unit) * 3 / 2);
@@ -53,41 +53,44 @@ http://francoisromain.github.io/structure.css
 
   /* typographic scale and vertical rhythm:
      cf http://type-scale.com/ or http://www.gridlover.net/app/
+     default to major third 1.250
   */
-
-  /* style: font-size / line-height */
-
+  
   /* h6, .xs: 10px / 12px */
-  --text-xs: calc(5 / 8 * 1rem);
-  --baseline-xs: 1 / 2;
+  --text-xs: 0.64rem;
+  --baseline-xs: 0.5;
 
   /* h5, .s: 12px / 24px */
-  --text-s: calc(3 / 4 * 1rem);
+  --text-s: 0.8rem);
   --baseline-s: 1;
 
   /* h4, .m: 16px / 24px */
-  --text-m: calc(1rem);
+  --text-m: 1rem;
   --baseline-m: 1;
 
-  /* h3, .l: 20px / 24px */
-  --text-l: calc(5 / 4 * 1rem);
-  --baseline-l: 1;
+  /* h3, .l: 28.4px / 24px */
+  --text-l: 1.563rem;
+  --baseline-l: 1.5;
 
-  /* h2, .xl: 24px / 36px */
-  --text-xl: calc(3 / 2 * 1rem);
-  --baseline-xl: 3 / 2;
+  /* h2, .xl: 37.9px / 36px */
+  --text-xl: 1.953rem;
+  --baseline-xl: 1.5;
 
-  /* h1, .xxl: 24px / 36px */
-  --text-xxl: calc(2 * 1rem);
-  --baseline-xxl: 3 / 2;
+  /* h1, .xxl: 39px / 48px */
+  --text-xxl: 2.441rem;
+  --baseline-xxl: 2;
+
+  /* .xxxl: 48px / 48px */
+  --text-xxxl: 3.051rem;
+  --baseline-xxxl: 2;
 
   /* .lead: 20px / 36px */
   --text-lead: var(--text-l);
-  --baseline-lead: 1;
+  --baseline-lead: var(--baseline-l);
 
   /* .blockquote: 20px / 24px */
   --text-blockquote: var(--text-l);
-  --baseline-blockquote: 1;
+  --baseline-blockquote: var(--baseline-l);
 
   /* margin-bottom: 24px */
   --baseline-margin-bottom: 1;
