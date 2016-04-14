@@ -1,6 +1,6 @@
 {
   "name": "structure.css",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "style": "structure.css",
   "description": "A minimal CSS framework based on PostCSS and cssnext",
   "keywords": [
