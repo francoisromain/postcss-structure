@@ -2,14 +2,12 @@
   "name": "francoisromain.github.io.structure.css",
   "version": "0.1.0",
   "scripts": {
-    "build": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
+    "build": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/styles.css -o dist/styles.css"
+  },
+  "dependencies": {
+    "structure.css": "^0.5.2"
   },
   "devDependencies": {
-    "postcss": "^5.0.19",
-    "postcss-cli": "^2.5.1",
-    "postcss-cssnext": "^2.5.2",
-    "postcss-import": "^8.1.0",
-    "postcss-structure": "^0.5.4",
-    "structure.css": "^0.4.3"
+    "postcss-cli": "^2.5.1"
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="grid">
 
 <head>
   <meta charset="utf-8" />
@@ -7,300 +7,252 @@
   <title>Structure.css</title>
   <meta name="description" content="A css grid-system based on sass">
   <meta name="keywords" content="Grid system, css, sass, grunt, masonry">
-  <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="stylesheet" href="dist/styles.css">
 </head>
 
 <body>
-  <div class="page">
-    <div class="container">
-      <header role="banner">
-        <h1>Structure.css</h1>
-        <p><a href="https://github.com/francoisromain/structure.css">Github</a></p>
-        <h4>A minimal CSS framework based on <a href="http://postcss.org/">PostCSS</a> and <a href="http://cssnext.io/">cssnext</a>.</h4>
-      </header>
-      <hr />
-    </div>
-    <main class="container" role="main">
-      <h2 class="margin-top">Included</h2>
-      <ul class="list-prefix">
-        <li><a href="#settings">Settings</a></li>
-        <li><a href="#normalize">Normalize</a></li>
-        <li><a href="#print">Print</a></li>
-        <li><a href="#reset">Reset</a></li>
-        <li><a href="#typography">Typography</a></li>
-        <li><a href="#lists">Lists</a></li>
-        <li><a href="#buttons">Buttons</a></li>
-        <li><a href="#forms">Forms</a></li>
-        <li><a href="#tables">Tables</a></li>
-        <li><a href="#utils">Utils</a></li>
-        <li><a href="#margins">Margins</a></li>
-        <li><a href="#ui">Ui</a></li>
-      </ul>
-      <hr />
-      <div class="row" id="settings">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/settings.css">Settings</a></h2>
-          <p>Variables to define colors, spacing, typographic scale, etc.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="normalize">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css">Normalize</a></h2>
-          <p><a href="https://necolas.github.io/normalize.css/">Normalize.css</a> makes browsers render all elements more consistently and in line with modern standards.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="print">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L203">Print</a></h2>
-          <p><a href="https://html5boilerplate.com/">HTML5 boilerplate</a> simple @print styles.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="reset">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/reset.css">Reset</a></h2>
-          <p>Basic styles for Html tag, responsive images, constant margins on elements.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="typography">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/typography.css">Typography</a></h2>
-          <p>Font styles</p>
-          <h1>h1: Sample text</h1>
-          <h2>h2: Sample text</h2>
-          <h3>h3: Sample text</h3>
-          <h4>h4: Sample text</h4>
-          <h5>h5: Sample text</h5>
-          <h6>h6: Sample text</h6>
-          <p class="lead">Lead: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <p>Paragraph: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-          <blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</blockquote>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="lists">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/lists.css">Lists</a></h2>
-          <h3>Standard list</h3>
-          <ul>
-            <li>Item one</li>
-            <li>Item two</li>
-            <li>Item three</li>
-            <li>Item four</li>
-            <li>Item five</li>
-          </ul>
-          <h3>Ordered list</h3>
-          <ol>
-            <li>Item one</li>
-            <li>Item two</li>
-            <li>Item three</li>
-            <li>Item four</li>
-            <li>Item five</li>
-          </ol>
-          <h3>List sans</h3>
-          <ul class="list-sans">
-            <li>Item one</li>
-            <li>Item two</li>
-            <li>Item three</li>
-            <li>Item four</li>
-            <li>Item five</li>
-          </ul>
-          <h3>List inline</h3>
-          <ul class="list-inline clearfix">
-            <li>Item one</li>
-            <li>Item two</li>
-            <li>Item three</li>
-            <li>Item four</li>
-            <li>Item five</li>
-          </ul>
-          <h3>Prefixed list</h3>
-          <ul class="list-prefix">
-            <li>Item one</li>
-            <li>Item two</li>
-            <li>Item three</li>
-            <li>Item four</li>
-            <li>Item five</li>
-          </ul>
-          <h3>Postfixed list</h3>
-          <ul class="list-postfix list-inline">
-            <li>Item one</li>
-            <li>Item two</li>
-            <li>Item three</li>
-            <li>Item four</li>
-            <li>Item five</li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="buttons">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/buttons.css">Buttons</a></h2>
-          <h3>Default buttons</h3>
-          <a class="btn btn-xxs">Button xxs</a>
-          <a class="btn btn-xs">Button xs</a>
-          <a class="btn btn-s">Button s</a>
-          <a class="btn btn-m">Button m</a>
-          <a class="btn btn-l">Button l</a>
-          <h3>Rounded corner buttons</h3>
-          <a class="btn btn-xxs btn-rnd">Button xxs</a>
-          <a class="btn btn-xs btn-rnd">Button xs</a>
-          <a class="btn btn-s btn-rnd">Button s</a>
-          <a class="btn btn-m btn-rnd">Button m</a>
-          <a class="btn btn-l btn-rnd">Button l</a>
-          <h3>Pills buttons</h3>
-          <a class="btn btn-xxs btn-pill">Button xxs</a>
-          <a class="btn btn-xs btn-pill">Button xs</a>
-          <a class="btn btn-s btn-pill">Button s</a>
-          <a class="btn btn-m btn-pill">Button m</a>
-          <a class="btn btn-l btn-pill">Button l</a>
-          <h3>Alternate buttons</h3>
-          <a class="btn btn-xxs btn-alt">Button xxs</a>
-          <a class="btn btn-xs btn-alt">Button xs</a>
-          <a class="btn btn-s btn-alt">Button s</a>
-          <a class="btn btn-m btn-alt">Button m</a>
-          <a class="btn btn-l btn-alt">Button l</a>
-          <h3>Flash buttons</h3>
-          <a class="btn btn-xxs btn-flash">Button xxs</a>
-          <a class="btn btn-xs btn-flash">Button xs</a>
-          <a class="btn btn-s btn-flash">Button s</a>
-          <a class="btn btn-m btn-flash">Button m</a>
-          <a class="btn btn-l btn-flash">Button l</a>
-          <h3>Bordered buttons</h3>
-          <a class="btn btn-xxs btn-border">Button xxs</a>
-          <a class="btn btn-xs btn-border">Button xs</a>
-          <a class="btn btn-s btn-border">Button s</a>
-          <a class="btn btn-m btn-border">Button m</a>
-          <a class="btn btn-l btn-border">Button l</a>
-          <h3>Example of combination</h3>
-          <a class="btn btn-m btn-alt l btn-rnd margin-bottom">Medium button with large text rounded corners flash background</a>
-          <a class="btn btn-xl btn-flash xl btn-full margin-bottom">Full width xl button with xl text flash background</a><a class="btn btn-xxs btn-border s btn-pill margin-bottom">Small button small text pill shape border</a><a class="btn btn-xs btn-alt s btn-pill margin-bottom">Small button small text pill shape</a>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="forms">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/forms.css">Forms</a></h2>
-          <form method="post">
-            <fieldset>
-              <div class="margin-bottom clearfix">
-                <label><h4>Gender</h4></label>
-                <ul class="list-inline list-space">
-                  <li>
-                    <label>
-                      <input type="radio" name="id_gender" id="id_gender1" value="1" checked="checked" /> M.</label>
-                  </li>
-                  <li>
-                    <label>
-                      <input type="radio" name="id_gender" id="id_gender2" value="2" /> Mme</label>
-                  </li>
-                </ul>
-              </div>
-              <div class="tooltip margin-bottom">
-                <label for="contactform-name"><h4>Name</h4></label>
-                <input type="text" id="contactform-name" name="name" value="" class="input" />
-              </div>
-              <div class="tooltip margin-bottom">
-                <label for="contactform-email"><h4>Email</h4></label>
-                <input type="text" id="contactform-email" name="email" value="" class="input" />
-              </div>
-              <div class="tooltip margin-bottom">
-                <label class="contactform-label" for="contactform-recipient"><h4>Recipient</h4></label>
-                <select class="input" id="contactform-recipient" name="recipient">
-                  <option value="">—</option>
-                  <option value="#">One</option>
-                  <option value="#">Two</option>
-                  <option value="#">Three</option>
-                  <option value="#">Four</option>
-                  <option value="#">Five</option>
-                </select>
-              </div>
-              <div class="tooltip margin-bottom">
-                <label class="contactform-label" for="contactform-message"><h4>Message</h4></label>
-                <textarea class="input" name="text" id="contactform-message" rows="6"></textarea>
-              </div>
-              <input type="submit" name="submit" value="Envoyer" class="btn btn-m btn-rnd btn-alt btn-full margin-bottom" />
-            </fieldset>
-          </form>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="tables">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/tables.css">Tables</a></h2>
-          <table>
-            <tr>
-              <th>Firstname</th>
-              <th>Name</th>
-              <th>Value</th>
-            </tr>
-            <tr>
-              <td>Jill</td>
-              <td>Smith</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Eve</td>
-              <td>Jackson</td>
-              <td>94</td>
-            </tr>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>80</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="utils">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/utils.css">Utils</a></h2>
-          <p>Clearfix, hide</p>
-          <div class="row">
-            <div class="bloc-2-6 pad bg-alt text-center">Center</div>
-            <div class="bloc-2-6 pad bg-alt text-right">Text-right</div>
-          </div>
-          <p class="capitalize">capitalize</p>
-          <p class="pointer">Pointer (mouse over)</p>
-          <p class="strikethrough">Strikethrough</p>
-          <p class="pad">pad</p>
-          <p class="color-brand">color-brand</p>
-          <p class="color-clear">color-clear</p>
-          <p class="color-neutral">color-neutral</p>
-          <p class="bg-brand">bg-brand</p>
-          <p class="bg-alt">bg-alt</p>
-          <p class="bg-neutral">bg-neutral</p>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="margins">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/margins.css">Margins</a></h2>
-          <p>A margin utility</p>
-        </div>
-      </div>
-      <hr />
-      <div class="row" id="ui">
-        <div class="bloc-3-8 margin-top">
-          <h2><a href="https://github.com/francoisromain/structure.css/blob/master/ui.css">Ui</a></h2>
-          <span class="tooltip">Tooltip is better on mouseover.<span>Tooltip text</span></span>
-          <p class="alert alert-info">This is an info alert</p>
-          <p class="alert alert-success">This is a success alert</p>
-          <p class="alert alert-error">This is an error alert</p>
-          <span class="label">label</span>
-          <span class="label label-color">label color</span>
-        </div>
-      </div>
-      <hr />
-    </main>
-  </div>
-  <footer class="footer container">
+  <header class="container" role="banner">
+    <h1>Structure.css</h1>
+    <p><a href="https://github.com/francoisromain/structure.css">Github</a> | <a href="https://twitter.com/francoisromain">Twitter</a></p>
+    <h4>A minimal CSS framework based on <a href="http://postcss.org/">PostCSS</a>, <a href="http://cssnext.io/">cssnext</a> and <a href="http://francoisromain.github.io/postcss-structure/">postcss-structure</a>.</h4>
     <hr />
-    <div class="margin-top-s s">
-      © 2016 <a href="http://francoisromain.com">François Romain</a>
+  </header>
+  <nav class="container" role="navigation">
+    <h2>Included</h2>
+    <ul class="list-prefix">
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#normalize">Normalize</a></li>
+      <li><a href="#print">Print</a></li>
+      <li><a href="#reset">Reset</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#buttons">Buttons</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#utils">Utils</a></li>
+      <li><a href="#margins">Margins</a></li>
+      <li><a href="#ui">Ui</a></li>
+    </ul>
+    <hr />
+  </nav>
+  <main class="container" role="main">
+    <h2 id="settings"><a href="https://github.com/francoisromain/structure.css/blob/master/settings.css">Settings</a></h2>
+    <p>Variables to define colors, spacing, typographic scale, etc.</p>
+    <hr />
+    <h2 id="normalize"><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css">Normalize</a></h2>
+    <p><a href="https://necolas.github.io/normalize.css/">Normalize.css</a> makes browsers render all elements more consistently and in line with modern standards.</p>
+    <hr />
+    <h2 id="print"><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L203">Print</a></h2>
+    <p><a href="https://html5boilerplate.com/">HTML5 boilerplate</a> simple @print styles.</p>
+    <hr />
+    <h2 id="reset"><a href="https://github.com/francoisromain/structure.css/blob/master/reset.css">Reset</a></h2>
+    <p>Basic styles for Html tag, responsive images, constant margins on elements.</p>
+    <hr />
+    <h2 id="typography"><a href="https://github.com/francoisromain/structure.css/blob/master/typography.css">Typography</a></h2>
+    <p>Font styles</p>
+    <h1>h1: Sample text</h1>
+    <h2>h2: Sample text</h2>
+    <h3>h3: Sample text</h3>
+    <h4>h4: Sample text</h4>
+    <h5>h5: Sample text</h5>
+    <h6>h6: Sample text</h6>
+    <p class="lead">Lead: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <p>Paragraph: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    <blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</blockquote>
+    <hr />
+    <h2 id="lists"><a href="https://github.com/francoisromain/structure.css/blob/master/lists.css">Lists</a></h2>
+    <h3>Standard list</h3>
+    <ul>
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+      <li>Item five</li>
+    </ul>
+    <h3>Ordered list</h3>
+    <ol>
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+      <li>Item five</li>
+    </ol>
+    <h3>List sans</h3>
+    <ul class="list-sans">
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+      <li>Item five</li>
+    </ul>
+    <h3>List inline</h3>
+    <ul class="list-inline clearfix">
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+      <li>Item five</li>
+    </ul>
+    <h3>Prefixed list</h3>
+    <ul class="list-prefix">
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+      <li>Item five</li>
+    </ul>
+    <h3>Postfixed list</h3>
+    <ul class="list-postfix list-inline">
+      <li>Item one</li>
+      <li>Item two</li>
+      <li>Item three</li>
+      <li>Item four</li>
+      <li>Item five</li>
+    </ul>
+    <hr />
+    <h2 id="buttons"><a href="https://github.com/francoisromain/structure.css/blob/master/buttons.css">Buttons</a></h2>
+    <h3>Default buttons</h3>
+    <a class="btn btn-xxs">Button xxs</a>
+    <a class="btn btn-xs">Button xs</a>
+    <a class="btn btn-s">Button s</a>
+    <a class="btn btn-m">Button m</a>
+    <a class="btn btn-l">Button l</a>
+    <h3>Rounded corner buttons</h3>
+    <a class="btn btn-xxs btn-rnd">Button xxs</a>
+    <a class="btn btn-xs btn-rnd">Button xs</a>
+    <a class="btn btn-s btn-rnd">Button s</a>
+    <a class="btn btn-m btn-rnd">Button m</a>
+    <a class="btn btn-l btn-rnd">Button l</a>
+    <h3>Pills buttons</h3>
+    <a class="btn btn-xxs btn-pill">Button xxs</a>
+    <a class="btn btn-xs btn-pill">Button xs</a>
+    <a class="btn btn-s btn-pill">Button s</a>
+    <a class="btn btn-m btn-pill">Button m</a>
+    <a class="btn btn-l btn-pill">Button l</a>
+    <h3>Alternate buttons</h3>
+    <a class="btn btn-xxs btn-alt">Button xxs</a>
+    <a class="btn btn-xs btn-alt">Button xs</a>
+    <a class="btn btn-s btn-alt">Button s</a>
+    <a class="btn btn-m btn-alt">Button m</a>
+    <a class="btn btn-l btn-alt">Button l</a>
+    <h3>Flash buttons</h3>
+    <a class="btn btn-xxs btn-flash">Button xxs</a>
+    <a class="btn btn-xs btn-flash">Button xs</a>
+    <a class="btn btn-s btn-flash">Button s</a>
+    <a class="btn btn-m btn-flash">Button m</a>
+    <a class="btn btn-l btn-flash">Button l</a>
+    <h3>Bordered buttons</h3>
+    <a class="btn btn-xxs btn-border">Button xxs</a>
+    <a class="btn btn-xs btn-border">Button xs</a>
+    <a class="btn btn-s btn-border">Button s</a>
+    <a class="btn btn-m btn-border">Button m</a>
+    <a class="btn btn-l btn-border">Button l</a>
+    <h3>Example of combination</h3>
+    <a class="btn btn-m btn-alt l btn-rnd margin-bottom">Medium button with large text rounded corners flash background</a>
+    <a class="btn btn-xl btn-flash xl btn-full margin-bottom">Full width xl button with xl text flash background</a><a class="btn btn-xxs btn-border s btn-pill margin-bottom">Small button small text pill shape border</a><a class="btn btn-xs btn-alt s btn-pill margin-bottom">Small button small text pill shape</a>
+    <hr />
+    <h2 id="forms"><a href="https://github.com/francoisromain/structure.css/blob/master/forms.css">Forms</a></h2>
+    <form method="post">
+      <fieldset>
+        <div class="margin-bottom clearfix">
+          <label><h4>Gender</h4></label>
+          <ul class="list-inline list-space">
+            <li>
+              <label>
+                <input type="radio" name="id_gender" id="id_gender1" value="1" checked="checked" /> M.</label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="id_gender" id="id_gender2" value="2" /> Mme</label>
+            </li>
+          </ul>
+        </div>
+        <div class="tooltip margin-bottom">
+          <label for="contactform-name"><h4>Name</h4></label>
+          <input type="text" id="contactform-name" name="name" value="" class="input" />
+        </div>
+        <div class="tooltip margin-bottom">
+          <label for="contactform-email"><h4>Email</h4></label>
+          <input type="text" id="contactform-email" name="email" value="" class="input" />
+        </div>
+        <div class="tooltip margin-bottom">
+          <label class="contactform-label" for="contactform-recipient"><h4>Recipient</h4></label>
+          <select class="input" id="contactform-recipient" name="recipient">
+            <option value="">—</option>
+            <option value="#">One</option>
+            <option value="#">Two</option>
+            <option value="#">Three</option>
+            <option value="#">Four</option>
+            <option value="#">Five</option>
+          </select>
+        </div>
+        <div class="tooltip margin-bottom">
+          <label class="contactform-label" for="contactform-message"><h4>Message</h4></label>
+          <textarea class="input" name="text" id="contactform-message" rows="6"></textarea>
+        </div>
+        <input type="submit" name="submit" value="Envoyer" class="btn btn-m btn-rnd btn-alt btn-full margin-bottom" />
+      </fieldset>
+    </form>
+    <hr />
+    <h2 id="tables"><a href="https://github.com/francoisromain/structure.css/blob/master/tables.css">Tables</a></h2>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <hr />
+    <h2 id="grids"><a href="https://github.com/francoisromain/structure.css/blob/master/grids.css">Grids</a></h2>
+    <p>Clearfix, hide</p>
+    <hr />
+    <h2 id="utils"><a href="https://github.com/francoisromain/structure.css/blob/master/utils.css">Utils</a></h2>
+    <p>Clearfix, hide</p>
+    <div class="row">
+      <div class="bloc-2-6 pad bg-alt text-center">Center</div>
+      <div class="bloc-2-6 pad bg-alt text-right">Text-right</div>
+    </div>
+    <p class="capitalize">capitalize</p>
+    <p class="pointer">Pointer (mouse over)</p>
+    <p class="strikethrough">Strikethrough</p>
+    <p class="pad">pad</p>
+    <p class="color-brand">color-brand</p>
+    <p class="color-clear">color-clear</p>
+    <p class="color-neutral">color-neutral</p>
+    <p class="bg-brand">bg-brand</p>
+    <p class="bg-alt">bg-alt</p>
+    <p class="bg-neutral">bg-neutral</p>
+    <hr />
+    <h2 id="margins"><a href="https://github.com/francoisromain/structure.css/blob/master/margins.css">Margins</a></h2>
+    <p>A margin utility</p>
+    <hr />
+    <h2 id="ui"><a href="https://github.com/francoisromain/structure.css/blob/master/ui.css">Ui</a></h2>
+    <p><span class="tooltip">Tooltip is better on mouseover.<span>Tooltip text</span></span></p>
+    <p class="alert alert-info">This is an info alert</p>
+    <p class="alert alert-success">This is a success alert</p>
+    <p class="alert alert-error">This is an error alert</p>
+    <span class="label">label</span>
+    <span class="label label-color">label color</span>
+  </main>
+  <footer>
+    <div class="container">
+      <hr />
+      <p class="s">© 2016 <a href="http://francoisromain.com">François Romain</a></p>
     </div>
   </footer>
 </body>

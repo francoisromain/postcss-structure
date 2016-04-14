@@ -1,26 +1,43 @@
+@import "settings.css";
+@import "structure.css";
+
 /*
     Theme
 ------------------------------- 
 
 */
 
-body,
+.container {
+  structure: container;
+}
+
+.bloc-2-6 {
+  structure: bloc 2-6;
+}
+
+
+/* 
+    Sticky footer
+------------------------------- 
+
+http://mystrd.at/modern-clean-css-sticky-footer/
+*/
+
 html {
-  height: 100%;
-}
-
-.page {
   min-height: 100%;
-  margin-bottom: -var(--base-unit-xl);
+  position: relative;
 }
 
-.page:after {
-  content: "";
-  display: block;
+body {
+  margin: 0 0 5rem;
 }
 
-.footer, .page:after {
-  height: var(--base-unit-xl);
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
 }
 
 a {
@@ -77,4 +94,10 @@ header {
   float: right;
   margin-left: var(--structure-gutter);
   max-width: var(--structure-unit);
+}
+
+html.grid {
+  background-size: var(--structure-unit) calc(var(--base-unit) /2);
+  background-position: center top;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.05) .01rem, transparent .09rem), linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%)
 }
