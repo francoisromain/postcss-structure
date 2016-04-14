@@ -69,7 +69,7 @@ Add a script to package.json:
 - [print](https://github.com/francoisromain/structure.css/blob/master/print.css)
 - [reset](https://github.com/francoisromain/structure.css/blob/master/reset.css)
 
-, basic  and consistent vertical rhythm. 
+Consistent styling accross browsers, basic @print reset and consistent vertical rhythm. 
 
 
 ### Helper classes
