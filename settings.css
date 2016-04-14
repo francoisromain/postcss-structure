@@ -70,27 +70,27 @@ http://qr.ae/ROqymT */
   /* style: font-size / line-height */
 
   /* h6, .xs: 10px / 12px */
-  --text-xs: calc(5 / 8) rem;
+  --text-xs: calc(5 / 8)rem;
   --baseline-xs: 1 / 2;
 
   /* h5, .s: 12px / 24px */
-  --text-s: calc(3 / 4) rem;
+  --text-s: calc(3 / 4)rem;
   --baseline-s: 1;
 
   /* h4, .m: 16px / 24px */
-  --text-m: calc(1) rem;
+  --text-m: calc(1)rem;
   --baseline-m: 1;
 
   /* h3, .l: 20px / 24px */
-  --text-l: calc(5 / 4) rem;
+  --text-l: calc(5 / 4)rem;
   --baseline-l: 1;
 
   /* h2, .xl: 24px / 36px */
-  --text-xl: calc(3 / 2) rem;
+  --text-xl: calc(3 / 2)rem;
   --baseline-xl: 3 / 2;
 
   /* h1, .xxl: 24px / 36px */
-  --text-xxl: calc(2) rem;
+  --text-xxl: calc(2)rem;
   --baseline-xxl: 3 / 2;
 
   /* .lead: 20px / 36px */
