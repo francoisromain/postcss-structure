@@ -149,7 +149,7 @@
     <a class="btn btn-m btn-border">Button m</a>
     <a class="btn btn-l btn-border">Button l</a>
     <h3>Example of combination</h3>
-    <a class="btn btn-m btn-alt l btn-rnd margin-bottom">Medium button with large text rounded corners flash background</a>
+    <a class="btn btn-l btn-alt l btn-rnd margin-bottom">Large button with large text rounded corners flash background</a>
     <a class="btn btn-xl btn-flash xl btn-full margin-bottom">Full width xl button with xl text flash background</a><a class="btn btn-xxs btn-border s btn-pill margin-bottom">Small button small text pill shape border</a><a class="btn btn-xs btn-alt s btn-pill margin-bottom">Small button small text pill shape</a>
     <hr />
     <h2 id="forms"><a href="https://github.com/francoisromain/structure.css/blob/master/forms.css">Forms</a></h2>
@@ -160,11 +160,24 @@
           <ul class="list-inline list-space">
             <li>
               <label>
-                <input type="radio" name="id_gender" id="id_gender1" value="1" checked="checked" /> M.</label>
+                <input type="radio" name="id_gender" value="1" checked="checked" /> Mr</label>
             </li>
             <li>
               <label>
-                <input type="radio" name="id_gender" id="id_gender2" value="2" /> Mme</label>
+                <input type="radio" name="id_gender" value="2" /> Ms</label>
+            </li>
+          </ul>
+        </div>
+        <div class="margin-bottom clearfix">
+          <label><h4>Gender</h4></label>
+          <ul class="list-inline list-space">
+            <li>
+              <label>
+                <input type="checkbox" name="id_gender" value="1" checked="checked" /> One</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="id_gender" value="2" /> Two</label>
             </li>
           </ul>
         </div>
@@ -191,7 +204,7 @@
           <label class="contactform-label" for="contactform-message"><h4>Message</h4></label>
           <textarea class="input" name="text" id="contactform-message" rows="6"></textarea>
         </div>
-        <input type="submit" name="submit" value="Envoyer" class="btn btn-m btn-rnd btn-alt btn-full margin-bottom" />
+        <input type="submit" name="submit" value="Envoyer" class="btn btn-s btn-rnd btn-alt btn-full margin-bottom" />
       </fieldset>
     </form>
     <hr />
@@ -201,6 +214,21 @@
         <th>Firstname</th>
         <th>Name</th>
         <th>Value</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
       </tr>
       <tr>
         <td>Jill</td>

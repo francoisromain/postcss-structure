@@ -3,20 +3,8 @@
 http://francoisromain.github.io/structure.css
 */
 
-/* Debug trick -------------------------------
-http://qr.ae/ROqymT */
-
-/*
- * { background-color: rgba(255,0,0,.2); }
- * * { background-color: rgba(0,255,0,.2); }
- * * * { background-color: rgba(0,0,255,.2); }
- * * * * { background-color: rgba(255,0,255,.2); }
- * * * * * { background-color: rgba(0,255,255,.2); }
- * * * * * * { background-color: rgba(255,255,0,.2); }
-*/
-
 :root {
-  /* Colors ------------------------------- */
+  /* Colors        ------------------------------- */
   --color-text: #666;
   --color-bg: white;
   --color-transparent: rgba(248, 247, 243, 0);
@@ -29,7 +17,7 @@ http://qr.ae/ROqymT */
   --color-info: #5798aa;
   --color-success: #6ea040;
 
-  /* Base units ------------------------------- */
+  /* Base units    ------------------------------- */
 
   /* font-size: 1rem = 16 px */
   --base-font-size: 1rem;
@@ -40,11 +28,11 @@ http://qr.ae/ROqymT */
   /* line: 0.0625rem = 1px */
   --base-unit-line: calc(var(--base-unit) / 24);
 
-  /* xxs: 0.25rem = 4px */
-  --base-unit-xxs: calc(var(--base-unit) / 6);
+  /* xxs: 0.1875rem = 3px */
+  --base-unit-xxs: calc(var(--base-unit) / 8);
 
-  /* xs: 0.5rem = 8px */
-  --base-unit-xs: calc(var(--base-unit) / 3);
+  /* xs: 0.375rem = 6px */
+  --base-unit-xs: calc(var(--base-unit) / 4);
 
   /* s: 0.75rem = 12px */
   --base-unit-s: calc(var(--base-unit) / 2);
@@ -61,11 +49,11 @@ http://qr.ae/ROqymT */
   /* xxl: 2.5rem = 60 px */
   --base-unit-xxl: calc(var(--base-unit) * 2.5);
 
-  /* Text sizes ------------------------------- */
+  /* Text sizes    ------------------------------- */
 
   /* typographic scale and vertical rhythm:
- cf http://type-scale.com/ or http://www.gridlover.net/app/
-*/
+     cf http://type-scale.com/ or http://www.gridlover.net/app/
+  */
 
   /* style: font-size / line-height */
 
@@ -106,7 +94,7 @@ http://qr.ae/ROqymT */
   --hr-style: dashed;
   --hr-color: var(--color-inverse);
 
-  /* Buttons ------------------------------- */
+  /* Buttons       ------------------------------- */
   --btn-radius: var(--base-unit-xs);
   --btn-color: var(--color-brand);
   --btn-color-bg: var(--color-transparent);
@@ -129,11 +117,17 @@ http://qr.ae/ROqymT */
   --btn-b-color-bg-active: var(--color-bg);
   --btn-b-color-border-active: var(--color-inverse);
 
-  /* Lists ------------------------------- */
+  /* Lists         ------------------------------- */
   --list-postfix: ",";
   --list-prefix: "―";
 
-  /* Grid ------------------------------- */
+  /* Tables        ------------------------------- */
+  --table-border-style: dotted;
+  --table-border-color: var(--color-neutral);
+  --table-border-width: var(--base-unit-line);
+  --table-pad: var(--base-unit-xs);
+
+  /* Grid          ------------------------------- */
 
   /*
   This is binded to postcss-structure configuration:
@@ -164,8 +158,9 @@ http://qr.ae/ROqymT */
   /* center or left */
   --structure-align: center;
 
-  /* Utils -------------------------------  */
+  /* Utils         -------------------------------  */
 
   /* adding of class .pad and .pad-h */
   --pad: var(--base-unit-s);
 }
+

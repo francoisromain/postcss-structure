@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "scripts": {
     "lint": "stylelint src/*.css && stylelint structure.css/*.css",
-    "build": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/styles.css -o dist/styles.css"
+    "build": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/styles.css -o dist/styles.css",
+    "watch": "onchange 'index.html' 'src/**/*.*' 'structure.css/**/*.*' -- npm run build",
+    "reload": "livereload",
+    "start": "npm-run-all --parallel watch reload"
   },
   "dependencies": {
-    "structure.css": "^0.5.10"
+    "structure.css": "^0.6.0"
   },
   "devDependencies": {
     "postcss-cli": "^2.5.1",
     "stylelint": "^5.4.0",
-    "stylelint-config-standard": "^5.0.0"
+    "stylelint-config-standard": "^5.0.0",
+    "livereload": "^0.4.1",
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.3.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard"
