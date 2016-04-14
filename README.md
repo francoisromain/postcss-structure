@@ -98,8 +98,10 @@ See [postcss-structure](https://github.com/francoisromain/postcss-structure#usag
 
 - [tools](https://github.com/francoisromain/structure.css/blob/master/tools.css)
 
-- Show baseline grid: add the `grid` class to the html element.
-- Debug mode: add the `debug` class to the html element.
+Add classes to the main `html` element: 
+
+- `grid`: display baseline grid
+- `debug`: add a bcaground color to every blocs
 
 ## todo
 
