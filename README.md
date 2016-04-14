@@ -2,45 +2,45 @@
 
 http://francoisromain.github.io/structure.css/
 
-CSS framework based on 
+A minimal CSS framework based on:
 
 - [PostCSS](http://postcss.org/)
 - [cssnext](http://cssnext.io)
+- [postcss-structure](http://francoisromain.github.io/postcss-structure/)
 
 ## Installation
 
     $ npm install structure.css --save-dev
 
-This installs the following dev-dependencies in *node_modules*:
+This installs the following dependencies in */node_modules*:
 
 - [postCSS](https://www.npmjs.com/package/postcss)
 - [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext)
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
-- [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 - [normalize.css](https://www.npmjs.com/package/normalize-css)
 - [postcss-structure](https://www.npmjs.com/package/postcss-structure)
 
-Add the following to the required PostCSS plugins:
+Require the PostCSS plugins:
 
 ``` js
 postcss([ 
-    require('postcss-import'),
-    require('postcss-structure'),
-    require('postcss-cssnext') 
+    require('postcss-import'),            // imports the external css
+    require('postcss-custom-properties'), // converts variables to values
+    require('postcss-structure'),         // makes grids and media-queries
+    require('postcss-cssnext')            // does a lot of stuff
 ])
 ```
 
 See [PostCSS usage instructions](https://github.com/postcss/postcss#usage) to setup with Gulp, Grunt, Webpack, npm scripts…
 
-#### Example
+#### Example with [npm scripts](https://docs.npmjs.com/misc/scripts) and [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 
-With [Npm scripts](https://docs.npmjs.com/misc/scripts) and [postcss-cli](https://www.npmjs.com/package/postcss-cli), add this to package.json:
+Add this to package.json:
 
 ```js
 "scripts": {
-  "build": "postcss -u postcss-import -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
+  "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-structure -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
 }
-// -i is the input -o is the output
 ```
 
     $ npm run build
