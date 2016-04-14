@@ -1300,13 +1300,6 @@ https://github.com/francoisromain/postcss-structure
   clear: both;
 }
 
-@media (min-width: 23rem) {
-
-  .container {
-    width: 22rem;
-  }
-}
-
 @media (min-width: 43.5rem) {
 
   .container {
