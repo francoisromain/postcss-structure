@@ -8,6 +8,8 @@ A minimal CSS framework based on:
 - [cssnext](http://cssnext.io)
 - [postcss-structure](http://francoisromain.github.io/postcss-structure/)
 
+* * * 
+
 ## Installation
 
 Install the [npm module](https://www.npmjs.com/package/structure.css):
@@ -49,11 +51,14 @@ Add a script to package.json:
 
     $ npm run build
 
+* * * 
 
 ## Configuration
 
 1. Copy the content from [`node_modules/structure.css/settings`](https://raw.githubusercontent.com/francoisromain/structure.css/master/settings.css) to your own `src/css/settings.css`.
 2. Add `@import "settings.css";` and `@import "structure.css";` at the top of your stylesheet.
+
+* * * 
 
 ## Usage
 
@@ -102,6 +107,8 @@ Add classes to the main `html` element:
 
 - `grid`: display baseline grid
 - `debug`: add a background color to every blocs
+
+* * * 
 
 ## todo
 
