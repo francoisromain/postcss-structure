@@ -101,7 +101,7 @@ See [postcss-structure](https://github.com/francoisromain/postcss-structure#usag
 Add classes to the main `html` element: 
 
 - `grid`: display baseline grid
-- `debug`: add a bcaground color to every blocs
+- `debug`: add a background color to every blocs
 
 ## todo
 
