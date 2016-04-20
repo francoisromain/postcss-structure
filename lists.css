@@ -30,6 +30,7 @@ li {
 .list-inline {
   padding: 0;
   list-style: none;
+  margin-bottom: calc(var(--base-unit) * var(--baseline-margin-bottom) - var(--base-unit-xs));
   & > li {
     margin-bottom: var(--base-unit-xs);
     margin-right: var(--base-unit-xs);
