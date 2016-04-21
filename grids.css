@@ -1,17 +1,17 @@
 /*
-      postcss-s-grid
+      postcss-grid-system
 -------------------------------
 
-https://github.com/francoisromain/postcss-s-grid
+https://github.com/francoisromain/postcss-grid-system
 
 */
 
 @s-grid {
-  unit: var(--s-grid-unit);
-  gutter: var(--s-grid-gutter);
-  padding: var(--s-grid-padding);
-  max: var(--s-grid-max);
-  min: var(--s-grid-min);
-  display: var(--s-grid-display);
-  align: var(--s-grid-align);
+  unit: var(--gs-unit);
+  gutter: var(--gs-gutter);
+  padding: var(--gs-padding);
+  max: var(--gs-max);
+  min: var(--gs-min);
+  display: var(--gs-display);
+  align: var(--gs-align);
 }

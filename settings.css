@@ -133,33 +133,33 @@ http://francoisromain.github.io/system.css
   /* Grid          ------------------------------- */
 
   /*
-  This is binded to postcss-s-grid configuration:
-  https://github.com/francoisromain/postcss-s-grid#configuration
+  This is binded to postcss-grid-system configuration:
+  https://github.com/francoisromain/postcss-grid-system#configuration
 
   use the grid your stylesheet:
-  https://github.com/francoisromain/postcss-s-grid#usage
+  https://github.com/francoisromain/postcss-grid-system#usage
   */
 
   /* width of a single bloc in rem */
-  --s-grid-unit: 20.5rem;
+  --gs-unit: 20.5rem;
 
   /* width of the gutter in rem */
-  --s-grid-gutter: var(--base-unit);
+  --gs-gutter: var(--base-unit);
 
   /* padding of the main conatiner in rem */
-  --s-grid-padding: var(--base-unit);
+  --gs-padding: var(--base-unit);
 
   /* maximum number of blocs */
-  --s-grid-max: 8;
+  --gs-max: 8;
 
   /* minimum number of blocs */
-  --s-grid-min: 2;
+  --gs-min: 2;
 
   /* float or flex */
-  --s-grid-display: flex;
+  --gs-display: flex;
 
   /* center or left */
-  --s-grid-align: center;
+  --gs-align: center;
 
   /* Utils         -------------------------------  */
 

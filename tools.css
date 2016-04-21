@@ -12,7 +12,7 @@ html.debug * * * * * * { background-color: rgba(255,255,0,.2); }
 
 
 html.grid {
-  background-size: var(--s-grid-unit) calc(var(--base-unit) / 2);
+  background-size: var(--gs-unit) calc(var(--base-unit) / 2);
   background-position: center top;
   background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0.01rem, transparent 0.09rem), linear-gradient(90deg, rgba(255, 0, 0, 0.25) 0, transparent 0.25%), linear-gradient(90deg, transparent 50%, rgba(255, 0, 0, 0.25) 50%, transparent 50.25%);
 }
