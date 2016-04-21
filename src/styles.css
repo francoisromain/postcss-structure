@@ -7,25 +7,25 @@
 */
 
 .container {
-  s-grid: container;
+  gs: container;
 }
 
 .row {
-  s-grid: row;
+  gs: row;
 }
 
-@s-grid-media 2 {
+@gs-media 2 {
   .bloc-2-6 {
-    s-grid: bloc 2-6;
+    gs: bloc 2-6;
   }
 
   .bloc-2-1 {
-    s-grid: bloc 2-1;
+    gs: bloc 2-1;
   }
 }
 
 .fraction-4-3 {
-  s-grid: fraction 4/3;
+  gs: fraction 4/3;
 }
 
 /*
@@ -98,12 +98,12 @@ header {
 
 .img-left {
   float: left;
-  margin-right: var(--s-grid-gutter);
-  max-width: var(--s-grid-unit);
+  margin-right: var(--gs-gutter);
+  max-width: var(--gs-unit);
 }
 
 .img-right {
   float: right;
-  margin-left: var(--s-grid-gutter);
-  max-width: var(--s-grid-unit);
+  margin-left: var(--gs-gutter);
+  max-width: var(--gs-unit);
 }

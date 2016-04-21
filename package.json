@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "scripts": {
     "lint": "stylelint src/*.css && stylelint system.css/*.css",
-    "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-s-grid -u postcss-cssnext -i src/styles.css -o dist/styles.css",
+    "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-grid-system -u postcss-cssnext -i src/styles.css -o dist/styles.css",
     "watch": "onchange 'index.html' 'src/**/*.*' 'system.css/**/*.*' -- npm run build",
     "reload": "livereload",
     "start": "npm-run-all --parallel watch reload"
   },
   "dependencies": {
-    "system.css": "^0.1.3"
+    "system.css": "^0.1.8"
   },
   "devDependencies": {
     "livereload": "^0.4.1",
