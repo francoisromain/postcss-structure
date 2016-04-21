@@ -7,25 +7,25 @@
 */
 
 .container {
-  sstm-grid: container;
+  s-grid: container;
 }
 
 .row {
-  sstm-grid: row;
+  s-grid: row;
 }
 
-@sstm-grid-media 2 {
+@s-grid-media 2 {
   .bloc-2-6 {
-    sstm-grid: bloc 2-6;
+    s-grid: bloc 2-6;
   }
 
   .bloc-2-1 {
-    sstm-grid: bloc 2-1;
+    s-grid: bloc 2-1;
   }
 }
 
 .fraction-4-3 {
-  sstm-grid: fraction 4/3;
+  s-grid: fraction 4/3;
 }
 
 /*
@@ -98,12 +98,12 @@ header {
 
 .img-left {
   float: left;
-  margin-right: var(--sstm-grid-gutter);
-  max-width: var(--sstm-grid-unit);
+  margin-right: var(--s-grid-gutter);
+  max-width: var(--s-grid-unit);
 }
 
 .img-right {
   float: right;
-  margin-left: var(--sstm-grid-gutter);
-  max-width: var(--sstm-grid-unit);
+  margin-left: var(--s-grid-gutter);
+  max-width: var(--s-grid-unit);
 }

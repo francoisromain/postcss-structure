@@ -64,11 +64,11 @@ http://francoisromain.github.io/system.css
   /* Grid          ------------------------------- */
 
   /*
-  This is binded to postcss-sstm-grid configuration:
-  https://github.com/francoisromain/postcss-sstm-grid#configuration
+  This is binded to postcss-s-grid configuration:
+  https://github.com/francoisromain/postcss-s-grid#configuration
 
   use the grid your stylesheet:
-  https://github.com/francoisromain/postcss-sstm-grid#usage
+  https://github.com/francoisromain/postcss-s-grid#usage
   */
 
   /* width of a single bloc in rem */
@@ -1257,10 +1257,10 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 /*
-      postcss-sstm-grid
+      postcss-s-grid
 -------------------------------
 
-https://github.com/francoisromain/postcss-sstm-grid
+https://github.com/francoisromain/postcss-s-grid
 
 */
 
