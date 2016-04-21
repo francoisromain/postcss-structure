@@ -6,7 +6,7 @@ A minimal CSS framework based on:
 
 - [PostCSS](http://postcss.org/)
 - [cssnext](http://cssnext.io)
-- [postcss-sstm](http://francoisromain.github.io/postcss-sstm-grid/)
+- [postcss-s](http://francoisromain.github.io/postcss-s-grid/)
 
 * * * 
 
@@ -22,7 +22,7 @@ This installs the following dependencies in */node_modules*:
 - [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext)
 - [postcss-import](https://www.npmjs.com/package/postcss-import)
 - [normalize.css](https://www.npmjs.com/package/normalize-css)
-- [postcss-sstm-grid](https://www.npmjs.com/package/postcss-sstm)
+- [postcss-s-grid](https://www.npmjs.com/package/postcss-s)
 
 Require the PostCSS plugins:
 
@@ -30,7 +30,7 @@ Require the PostCSS plugins:
 postcss([ 
     require('postcss-import'),            // imports the external css
     require('postcss-custom-properties'), // converts variables to values
-    require('postcss-sstm-grid'),         // makes grids and media-queries
+    require('postcss-s-grid'),         // makes grids and media-queries
     require('postcss-cssnext')            // does a lot of stuffs
 ])
 ```
@@ -45,7 +45,7 @@ Add a script to package.json:
 
 ```js
 "scripts": {
-  "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-sstm-grid -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
+  "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-s-grid -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"
 }
 ```
 
@@ -93,7 +93,7 @@ Ready to use helper classes. Inspect elements on the [demo page](http://francois
 - [grids](https://github.com/francoisromain/system.css/blob/master/grids.css)
 - [margins](https://github.com/francoisromain/system.css/blob/master/margins.css)
 
-See [postcss-sstm-grid](https://github.com/francoisromain/postcss-sstm-grid#usage) to use the grid in your stylesheet.
+See [postcss-s-grid](https://github.com/francoisromain/postcss-s-grid#usage) to use the grid in your stylesheet.
 
 ### Ui
 
