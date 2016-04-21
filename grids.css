@@ -1,17 +1,17 @@
 /*
-      PostCSS-structure
+      postcss-sstm-grid
 -------------------------------
 
-https://github.com/francoisromain/postcss-structure
+https://github.com/francoisromain/postcss-sstm-grid
 
 */
 
-@structure {
-  unit: var(--structure-unit);
-  gutter: var(--structure-gutter);
-  padding: var(--structure-padding);
-  max: var(--structure-max);
-  min: var(--structure-min);
-  display: var(--structure-display);
-  align: var(--structure-align);
+@sstm-grid {
+  unit: var(--sstm-grid-unit);
+  gutter: var(--sstm-grid-gutter);
+  padding: var(--sstm-grid-padding);
+  max: var(--sstm-grid-max);
+  min: var(--sstm-grid-min);
+  display: var(--sstm-grid-display);
+  align: var(--sstm-grid-align);
 }
