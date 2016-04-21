@@ -1,6 +1,6 @@
-/* Structure.css / settings
+/* System.css / settings
 -------------------------------
-http://francoisromain.github.io/structure.css
+http://francoisromain.github.io/system.css
 */
 
 :root {
@@ -133,37 +133,36 @@ http://francoisromain.github.io/structure.css
   /* Grid          ------------------------------- */
 
   /*
-  This is binded to postcss-structure configuration:
-  https://github.com/francoisromain/postcss-structure#configuration
+  This is binded to postcss-sstm-grid configuration:
+  https://github.com/francoisromain/postcss-sstm-grid#configuration
 
   use the grid your stylesheet:
-  https://github.com/francoisromain/postcss-structure#usage
+  https://github.com/francoisromain/postcss-sstm-grid#usage
   */
 
   /* width of a single bloc in rem */
-  --structure-unit: 20.5rem;
+  --sstm-grid-unit: 20.5rem;
 
   /* width of the gutter in rem */
-  --structure-gutter: var(--base-unit);
+  --sstm-grid-gutter: var(--base-unit);
 
   /* padding of the main conatiner in rem */
-  --structure-padding: var(--base-unit);
+  --sstm-grid-padding: var(--base-unit);
 
   /* maximum number of blocs */
-  --structure-max: 8;
+  --sstm-grid-max: 8;
 
   /* minimum number of blocs */
-  --structure-min: 2;
+  --sstm-grid-min: 2;
 
   /* float or flex */
-  --structure-display: flex;
+  --sstm-grid-display: flex;
 
   /* center or left */
-  --structure-align: center;
+  --sstm-grid-align: center;
 
   /* Utils         -------------------------------  */
 
   /* adding of class .pad and .pad-h */
   --pad: var(--base-unit-s);
 }
-

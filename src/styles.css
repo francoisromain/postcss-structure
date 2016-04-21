@@ -1,5 +1,5 @@
 @import "settings.css";
-@import "../structure.css/structure.css";
+@import "../system.css/system.css";
 
 /*
     Theme
@@ -7,35 +7,25 @@
 */
 
 .container {
-  structure: container;
+  sstm-grid: container;
 }
 
 .row {
-  structure: row;
+  sstm-grid: row;
 }
 
-.bloc-2-6 {
-  structure: bloc 2-6;
-}
+@sstm-grid-media 2 {
+  .bloc-2-6 {
+    sstm-grid: bloc 2-6;
+  }
 
-.bloc-2-1 {
-  structure: bloc 2-1;
-}
-
-.blob-2-1-3 {
-  structure: blob 2-1/3;
+  .bloc-2-1 {
+    sstm-grid: bloc 2-1;
+  }
 }
 
 .fraction-4-3 {
-  structure: fraction 4/3;
-}
-
-.show-2 {
-  structure: show 2;
-}
-
-.hide-4 {
-  structure: hide 4;
+  sstm-grid: fraction 4/3;
 }
 
 /*
@@ -108,12 +98,12 @@ header {
 
 .img-left {
   float: left;
-  margin-right: var(--structure-gutter);
-  max-width: var(--structure-unit);
+  margin-right: var(--sstm-grid-gutter);
+  max-width: var(--sstm-grid-unit);
 }
 
 .img-right {
   float: right;
-  margin-left: var(--structure-gutter);
-  max-width: var(--structure-unit);
+  margin-left: var(--sstm-grid-gutter);
+  max-width: var(--sstm-grid-unit);
 }

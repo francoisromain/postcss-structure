@@ -1,5 +1,3 @@
-# Structure.css
-
-gh-pages branch for https://github.com/francoisromain/structure.css
+gh-pages branch for https://github.com/francoisromain/system.css
 
 - [ ] add button disabled

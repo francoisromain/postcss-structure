@@ -1,6 +1,6 @@
-/* Structure.css / settings
+/* System.css / settings
 -------------------------------
-http://francoisromain.github.io/structure.css
+http://francoisromain.github.io/system.css
 */
 
 :root {
@@ -64,11 +64,11 @@ http://francoisromain.github.io/structure.css
   /* Grid          ------------------------------- */
 
   /*
-  This is binded to postcss-structure configuration:
-  https://github.com/francoisromain/postcss-structure#configuration
+  This is binded to postcss-sstm-grid configuration:
+  https://github.com/francoisromain/postcss-sstm-grid#configuration
 
   use the grid your stylesheet:
-  https://github.com/francoisromain/postcss-structure#usage
+  https://github.com/francoisromain/postcss-sstm-grid#usage
   */
 
   /* width of a single bloc in rem */
@@ -819,7 +819,9 @@ li > ul,
 
 .list-inline {
   padding: 0;
-  list-style: none
+  list-style: none;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem
 }
 
 .list-inline > li {
@@ -1255,10 +1257,10 @@ http://cssmojo.com/the-very-latest-clearfix-reloaded/
 }
 
 /*
-      PostCSS-structure
+      postcss-sstm-grid
 -------------------------------
 
-https://github.com/francoisromain/postcss-structure
+https://github.com/francoisromain/postcss-sstm-grid
 
 */
 
@@ -1330,47 +1332,17 @@ https://github.com/francoisromain/postcss-structure
           flex: 0 1 25.833333333333332rem;
 }
 
-.blob-2-1-3 {
-  margin-right: 24px;
-  margin-right: 1.5rem;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 100%;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
-}
-
 @media (min-width: 43.5rem) {
 
   .container {
     width: 42.5rem;
   }
 
-  .bloc-2-1 {
+  .bloc-2-1, .bloc-2-6 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 19rem;
         -ms-flex: 0 1 19rem;
             flex: 0 1 19rem;
-  }
-
-  .bloc-2-6 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 39.5rem;
-        -ms-flex: 0 1 39.5rem;
-            flex: 0 1 39.5rem;
-  }
-
-  .blob-2-1-3 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 calc(33.333333333333336% - 1.5rem);
-        -ms-flex: 0 1 calc(33.333333333333336% - 1.5rem);
-            flex: 0 1 calc(33.333333333333336% - 1.5rem);
-  }
-
-  .show-2 {
-    display: block;
-    visibility: visible;
   }
 }
 
@@ -1380,11 +1352,11 @@ https://github.com/francoisromain/postcss-structure
     width: 63rem;
   }
 
-  .bloc-2-6 {
+  .bloc-2-1 {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 60rem;
-        -ms-flex: 0 1 60rem;
-            flex: 0 1 60rem;
+    -webkit-flex: 0 1 39.5rem;
+        -ms-flex: 0 1 39.5rem;
+            flex: 0 1 39.5rem;
   }
 }
 
@@ -1393,18 +1365,6 @@ https://github.com/francoisromain/postcss-structure
   .container {
     width: 83.5rem;
   }
-
-  .bloc-2-6 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 80.5rem;
-        -ms-flex: 0 1 80.5rem;
-            flex: 0 1 80.5rem;
-  }
-
-  .hide-4 {
-    display: none;
-    visibility: hidden;
-  }
 }
 
 @media (min-width: 105rem) {
@@ -1412,26 +1372,12 @@ https://github.com/francoisromain/postcss-structure
   .container {
     width: 104rem;
   }
-
-  .bloc-2-6 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 101rem;
-        -ms-flex: 0 1 101rem;
-            flex: 0 1 101rem;
-  }
 }
 
 @media (min-width: 125.5rem) {
 
   .container {
     width: 124.5rem;
-  }
-
-  .bloc-2-6 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 121.5rem;
-        -ms-flex: 0 1 121.5rem;
-            flex: 0 1 121.5rem;
   }
 }
 
@@ -1446,6 +1392,13 @@ https://github.com/francoisromain/postcss-structure
 
   .container {
     width: 165.5rem;
+  }
+
+  .bloc-2-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 39.5rem;
+        -ms-flex: 0 1 39.5rem;
+            flex: 0 1 39.5rem;
   }
 }
 
