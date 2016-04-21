@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.10.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '.' ]
+2 info using npm@3.8.6
+3 info using node@v5.10.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Volumes/fr_Mobile/Sites/francoisromain.github.io/system.css/system.css',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Volumes/iMac-HD/Users/fr/.npm/system.css/0.1.5/package.tgz not in flight; packing
+9 verbose correctMkdir /Volumes/iMac-HD/Users/fr/.npm correctMkdir not in flight; initializing
+10 info lifecycle system.css@0.1.5~prepublish: system.css@0.1.5
+11 silly lifecycle system.css@0.1.5~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Volumes/iMac-HD/Users/fr/.npm/system.css/0.1.5/package.tgz',
+12 verbose tar pack   '/Volumes/fr_Mobile/Sites/francoisromain.github.io/system.css/system.css' ]
+13 verbose tarball /Volumes/iMac-HD/Users/fr/.npm/system.css/0.1.5/package.tgz
+14 verbose folder /Volumes/fr_Mobile/Sites/francoisromain.github.io/system.css/system.css
+15 verbose addLocalTarball adding from inside cache /Volumes/iMac-HD/Users/fr/.npm/system.css/0.1.5/package.tgz
+16 verbose correctMkdir /Volumes/iMac-HD/Users/fr/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd system.css@0.1.5
+18 verbose afterAdd /Volumes/iMac-HD/Users/fr/.npm/system.css/0.1.5/package/package.json not in flight; writing
+19 verbose correctMkdir /Volumes/iMac-HD/Users/fr/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Volumes/iMac-HD/Users/fr/.npm/system.css/0.1.5/package/package.json written
+21 silly publish { name: 'system.css',
+21 silly publish   version: '0.1.5',
+21 silly publish   style: 'system.css',
+21 silly publish   description: 'A minimal CSS framework based on PostCSS, cssnext and postcss-s',
+21 silly publish   keywords: [ 'postcss', 'css' ],
+21 silly publish   author: { name: 'Francois Romain', email: 'francoisromain@gmail.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/francoisromain/system.css.git' },
+21 silly publish   bugs: { url: 'https://github.com/francoisromain/system.css/issues' },
+21 silly publish   homepage: 'http://francoisromain.github.io/system.css/',
+21 silly publish   dependencies:
+21 silly publish    { postcss: '^5.0.19',
+21 silly publish      'postcss-cssnext': '^2.5.2',
+21 silly publish      'postcss-import': '^8.1.0',
+21 silly publish      'normalize.css': '^4.1.1',
+21 silly publish      'postcss-grid-system': '^0.1.1' },
+21 silly publish   readme: '# system.css\n\n[francoisromain.github.io/system.css/](http://francoisromain.github.io/system.css/)\n\nA minimal CSS framework based on:\n\n- [PostCSS](http://postcss.org/)\n- [cssnext](http://cssnext.io)\n- [postcss-s](http://francoisromain.github.io/postcss-s-grid/)\n\n* * * \n\n## Installation\n\nInstall the [npm module](https://www.npmjs.com/package/system.css):\n\n    $ npm install system.css --save-dev\n\nThis installs the following dependencies in */node_modules*:\n\n- [postCSS](https://www.npmjs.com/package/postcss)\n- [postcss-cssnext](https://www.npmjs.com/package/postcss-cssnext)\n- [postcss-import](https://www.npmjs.com/package/postcss-import)\n- [normalize.css](https://www.npmjs.com/package/normalize-css)\n- [postcss-s-grid](https://www.npmjs.com/package/postcss-s)\n\nRequire the PostCSS plugins:\n\n``` js\npostcss([ \n    require(\'postcss-import\'),            // imports the external css\n    require(\'postcss-custom-properties\'), // converts variables to values\n    require(\'postcss-s-grid\'),         // makes grids and media-queries\n    require(\'postcss-cssnext\')            // does a lot of stuffs\n])\n```\n\nSee [PostCSS usage instructions](https://github.com/postcss/postcss#usage) to setup with Gulp, Grunt, Webpack, npm scripts…\n\n##### Example with [npm scripts](https://docs.npmjs.com/misc/scripts) and [postcss-cli](https://www.npmjs.com/package/postcss-cli)\n\n    $ npm install postcss-cli --save-dev\n\nAdd a script to package.json:\n\n```js\n"scripts": {\n  "build": "postcss -u postcss-import -u postcss-custom-properties -u postcss-s-grid -u postcss-cssnext -i src/css/styles.css -o dist/css/styles.css"\n}\n```\n\n    $ npm run build\n\n* * * \n\n## Configuration\n\n1. Copy the content from [`node_modules/system.css/settings`](https://raw.githubusercontent.com/francoisromain/system.css/master/settings.css) to your own `src/css/settings.css`.\n2. Add `@import "settings.css";` and `@import "system.css";` at the top of your stylesheet.\n\n* * * \n\n## Usage\n\n### Settings\n\n- [settings](https://github.com/francoisromain/system.css/blob/master/settings.css)\n\n[cssnext](http://cssnext.io) brings _css variables_, _calc()_, _autoprefixer_ and many other goodies. In your `settings.css`, set the variables in the `:root` declaration and they are available inside your CSS.\n\n### Reset\n\n- [normalize](https://github.com/necolas/normalize.css/blob/master/normalize.css)\n- [print](https://github.com/francoisromain/system.css/blob/master/print.css)\n- [reset](https://github.com/francoisromain/system.css/blob/master/reset.css)\n\nConsistent styling accross browsers, basic @print reset and consistent vertical rhythm. \n\n\n### Helper classes\n\n- [typography](https://github.com/francoisromain/system.css/blob/master/typography.css)\n- [lists](https://github.com/francoisromain/system.css/blob/master/lists.css)\n- [buttons](https://github.com/francoisromain/system.css/blob/master/buttons.css)\n- [forms](https://github.com/francoisromain/system.css/blob/master/forms.css)\n- [tables](https://github.com/francoisromain/system.css/blob/master/tables.css)\n- [utils](https://github.com/francoisromain/system.css/blob/master/utils.css)\n\nReady to use helper classes. Inspect elements on the [demo page](http://francoisromain.github.io/system.css/) to get the class names.\n\n### Grids\n\n- [grids](https://github.com/francoisromain/system.css/blob/master/grids.css)\n- [margins](https://github.com/francoisromain/system.css/blob/master/margins.css)\n\nSee [postcss-grid-system](https://github.com/francoisromain/postcss-grid-system#usage) to use the grid in your stylesheet.\n\n### Ui\n\n- [ui](https://github.com/francoisromain/system.css/blob/master/ui.css)\n\n### Tools\n\n- [tools](https://github.com/francoisromain/system.css/blob/master/tools.css)\n\nAdd classes to the main `html` element: \n\n- `grid`: display baseline grid\n- `debug`: add a background color to every blocs\n\n* * * \n\n## todo\n\n- [ ] feat: add media object\n- [ ] feat: add code and pre styles\n- [ ] fix: indent list in list\n- [ ] fix: tooltip position\n- [ ] feat: add more ui components',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '24d341fce441f47900192c84282aa7613188037c',
+21 silly publish   _id: 'system.css@0.1.5',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '32b155a94da7c58d8c53e15f72a6e8da81e0a873',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name system.css
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'system.css',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'system.css',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/system.css
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Volumes/iMac-HD/Users/fr/.npm/system.css/0.1.5/package.tgz
+30 verbose request uri https://registry.npmjs.org/system.css
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:59:33 PM
+33 verbose request using bearer token for auth
+34 verbose request id a2b8d577343d8ddb
+35 http request PUT https://registry.npmjs.org/system.css
+36 http 403 https://registry.npmjs.org/system.css
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 21 Apr 2016 12:59:20 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-fra1227-FRA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1461243559.576556,VS0,VE1210',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Volumes/iMac-HD/Users/fr/.npm/registry.npmjs.org/system.css on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.1.5." : system.css
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:100:13)
+40 verbose stack     at Request.emit (events.js:185:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:95:20)
+40 verbose stack     at Request.emit (events.js:182:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid system.css
+43 verbose cwd /Volumes/fr_Mobile/Sites/francoisromain.github.io/system.css/system.css
+44 error Darwin 15.4.0
+45 error argv "/usr/local/Cellar/node/5.10.1/bin/node" "/usr/local/bin/npm" "publish" "."
+46 error node v5.10.1
+47 error npm  v3.8.6
+48 error code E403
+49 error "You cannot publish over the previously published version 0.1.5." : system.css
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
