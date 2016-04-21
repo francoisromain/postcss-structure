@@ -1,8 +1,8 @@
 {
-  "name": "structure.css",
-  "version": "0.6.7",
-  "style": "structure.css",
-  "description": "A minimal CSS framework based on PostCSS and cssnext",
+  "name": "system.css",
+  "version": "0.1.0",
+  "style": "system.css",
+  "description": "A minimal CSS framework based on PostCSS, cssnext and postcss-sstm",
   "keywords": [
     "postcss",
     "css"
@@ -11,17 +11,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/francoisromain/structure.css.git"
+    "url": "https://github.com/francoisromain/system.css.git"
   },
   "bugs": {
-    "url": "https://github.com/francoisromain/postcss-structure/issues"
+    "url": "https://github.com/francoisromain/system.css/issues"
   },
-  "homepage": "http://francoisromain.github.io/structure.css/",
+  "homepage": "http://francoisromain.github.io/system.css/",
   "dependencies": {
     "postcss": "^5.0.19",
     "postcss-cssnext": "^2.5.2",
     "postcss-import": "^8.1.0",
     "normalize.css": "^4.1.1",
-    "postcss-structure": "^0.8.4"
+    "postcss-sstm-grid": "^0.1.0"
   }
 }
