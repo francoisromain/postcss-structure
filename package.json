@@ -1,8 +1,8 @@
 {
   "name": "system.css",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "style": "system.css",
-  "description": "A minimal CSS framework based on PostCSS, cssnext and postcss-sstm",
+  "description": "A minimal CSS framework based on PostCSS, cssnext and postcss-s",
   "keywords": [
     "postcss",
     "css"
