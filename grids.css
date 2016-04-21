@@ -6,7 +6,7 @@ https://github.com/francoisromain/postcss-grid-system
 
 */
 
-@s-grid {
+@gs-grid {
   unit: var(--gs-unit);
   gutter: var(--gs-gutter);
   padding: var(--gs-padding);
