@@ -141,7 +141,7 @@ http://francoisromain.github.io/system.css
   */
 
   /* width of a single bloc in rem */
-  --gs-unit: 20.5rem;
+  --gs-width: 20.5rem;
 
   /* width of the gutter in rem */
   --gs-gutter: var(--base-unit);

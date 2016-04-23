@@ -1,6 +1,6 @@
 {
   "name": "system.css",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "style": "system.css",
   "description": "A minimal CSS framework based on PostCSS, cssnext and postcss-grid-system",
   "keywords": [
@@ -22,6 +22,6 @@
     "postcss-cssnext": "^2.5.2",
     "postcss-import": "^8.1.0",
     "normalize.css": "^4.1.1",
-    "postcss-grid-system": "^0.1.1"
+    "postcss-grid-system": "^0.1.2"
   }
 }

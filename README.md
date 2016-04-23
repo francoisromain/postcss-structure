@@ -6,7 +6,7 @@ A minimal CSS framework based on:
 
 - [PostCSS](http://postcss.org/)
 - [cssnext](http://cssnext.io)
-- [postcss-s](http://francoisromain.github.io/postcss-grid-system/)
+- [postcss-grid-system](http://francoisromain.github.io/postcss-grid-system/)
 
 * * * 
 
