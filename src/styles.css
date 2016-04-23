@@ -95,15 +95,3 @@ header {
   float: left;
   clear: none;
 }
-
-.img-left {
-  float: left;
-  margin-right: var(--gs-gutter);
-  max-width: var(--gs-unit);
-}
-
-.img-right {
-  float: right;
-  margin-left: var(--gs-gutter);
-  max-width: var(--gs-unit);
-}

@@ -9,15 +9,15 @@
     "start": "npm-run-all --parallel watch reload"
   },
   "dependencies": {
-    "system.css": "^0.1.8"
+    "system.css": "^0.1.10"
   },
   "devDependencies": {
     "livereload": "^0.4.1",
     "npm-run-all": "^1.7.0",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.1",
-    "stylefmt": "^3.1.0",
-    "stylelint": "^6.0.3",
+    "stylefmt": "^3.2.0",
+    "stylelint": "^6.1.1",
     "stylelint-config-standard": "^6.0.0"
   },
   "stylelint": {
