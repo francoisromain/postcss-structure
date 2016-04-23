@@ -90,7 +90,7 @@ Ready to use helper classes. Inspect elements on the [demo page](http://francois
 
 ### Grids
 
-- [grids](https://github.com/francoisromain/system.css/blob/master/grids.css)
+- [grid-system](https://github.com/francoisromain/system.css/blob/master/grid-system.css)
 - [margins](https://github.com/francoisromain/system.css/blob/master/margins.css)
 
 See [postcss-grid-system](https://github.com/francoisromain/postcss-grid-system#usage) to use the grid in your stylesheet.
