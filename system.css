@@ -13,7 +13,7 @@ http://francoisromain.github.io/structure.css
 @import "forms.css";
 @import "tables.css";
 @import "utils.css";
-@import "grids.css";
+@import "grid-system.css";
 @import "margins.css";
 @import "ui.css";
 @import "tools.css";
