@@ -4,7 +4,7 @@
   "scripts": {
     "babel": "babel system.css/src --out-dir system.css/lib",
     "lint": "stylelint src/*.css && stylelint system.css/*.css",
-    "css": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u ./system.css -i src/styles.css -o dist/styles.css",
+    "css": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u ./system.css -u postcss-cssnext -i src/styles.css -o dist/styles.css",
     "watch": "onchange 'index.html' 'src/**/*.*' 'system.css/src/**/*.*' -- npm run build",
     "reload": "livereload",
     "build": "npm run babel && npm run css",
@@ -22,7 +22,8 @@
     "postcss-cli": "^2.5.1",
     "postcss-custom-properties": "^5.0.1",
     "postcss-import": "^8.1.0",
-    "prismjs": "^1.4.1"
+    "prismjs": "^1.4.1",
+    "postcss-cssnext": "^2.5.2"
   },
   "babel": {
     "presets": [
