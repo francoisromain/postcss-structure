@@ -1133,7 +1133,7 @@ code {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: #07a;
+  color: rgba(105, 134, 46, 1.0);
 }
 
 .token.function {
