@@ -198,12 +198,13 @@ header {
   visibility: hidden;
 }
 
-
+pre {
+  display: block;
+}
 
 code {
   white-space: pre-wrap;
   background-color: var(--color-alt);
-  display: block;
   padding: var(--pad);
   white-space: pre;
   hyphens: none;

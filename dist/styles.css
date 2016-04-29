@@ -1064,10 +1064,13 @@ header {
   visibility: hidden;
 }
 
+pre {
+  display: block;
+}
+
 code {
   white-space: pre-wrap;
   background-color: #f8f7f3;
-  display: block;
   padding: 12px;
   padding: 0.75rem;
   white-space: pre;
