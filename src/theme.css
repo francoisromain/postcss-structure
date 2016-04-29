@@ -61,6 +61,10 @@ html {
   typescale: 0 1;
 }
 
+.xxxl {
+  typescale: 8 4;
+}
+
 h1 {
   typescale: 4 2;
 }
@@ -180,6 +184,10 @@ header {
   padding: var(--pad);
 }
 
+.color-brand {
+  color: var(--color-brand);
+}
+
 .bg-alt {
   background-color: var(--color-alt);
 }
@@ -188,6 +196,8 @@ header {
   display: none;
   visibility: hidden;
 }
+
+
 
 code {
   white-space: pre-wrap;
