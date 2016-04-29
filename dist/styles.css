@@ -1064,7 +1064,7 @@ header {
   visibility: hidden;
 }
 
-pre {
+pre code {
   display: block;
 }
 
