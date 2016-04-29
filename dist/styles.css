@@ -1047,6 +1047,11 @@ header {
   background-color: #f8f7f3;
 }
 
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
 code {
   white-space: pre-wrap;
   background-color: #f8f7f3;

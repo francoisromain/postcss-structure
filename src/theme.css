@@ -184,6 +184,11 @@ header {
   background-color: var(--color-alt);
 }
 
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
 code {
   white-space: pre-wrap;
   background-color: var(--color-alt);
