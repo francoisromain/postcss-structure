@@ -166,6 +166,10 @@ header {
   margin-top: var(--base-unit-s);
 }
 
+.margin-bottom {
+  margin-bottom: var(--base-unit);
+}
+
 .pad {
   padding: var(--pad);
 }
