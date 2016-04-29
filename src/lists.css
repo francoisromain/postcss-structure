@@ -1,0 +1,65 @@
+/*
+      Lists
+-------------------------------
+
+*/
+
+ul,
+ol,
+dd {
+  list-style-position: inside;
+  overflow: auto;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  & > ul,
+  & > ol {
+    margin-bottom: 0;
+  }
+}
+
+.list-sans {
+  padding: 0;
+  list-style: none;
+}
+
+.list-inline {
+  padding: 0;
+  list-style: none;
+  margin-bottom: calc(var(--base-unit) * var(--baseline-margin-bottom) - var(--base-unit-xs));
+  & > li {
+    margin-bottom: var(--base-unit-xs);
+    margin-right: var(--base-unit-xs);
+    float: left;
+  }
+}
+
+.list-space li {
+  margin-right: var(--base-unit);
+}
+
+.list-prefix {
+  list-style: none;
+  & > li::before {
+    content: var(--list-prefix);
+    margin-right: var(--base-unit-xs);
+    color: var(--color-neutral);
+  }
+}
+
+.list-postfix {
+  list-style: none;
+  & > li {
+    &::after {
+      content: var(--list-postfix);
+    }
+  }
+}
+
+.list-inline.list-postfix li:last-child::after {
+  content: none;
+}

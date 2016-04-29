@@ -1,0 +1,41 @@
+/*
+    Print
+-------------------------------
+
+From HTML5 Boilerplate
+https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css
+
+Black prints faster: http://www.sanbeiji.com/archives/953
+*/
+
+@media print {
+  *,
+  *::before,
+  *::after,
+  *::first-letter,
+  *::first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+  Don't show links that are fragment identifiers,
+  or use the `javascript:` pseudo protocol
+  */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+}

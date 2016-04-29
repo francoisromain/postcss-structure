@@ -5,293 +5,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>system.css</title>
-  <meta name="description" content="A css grid-system based on sass">
-  <meta name="keywords" content="Grid system, css, sass, grunt, masonry">
+  <meta name="description" content="A css grid-system">
+  <meta name="keywords" content="Grid system, css, PostCSS, masonry">
   <link rel="stylesheet" href="dist/styles.css">
 </head>
 
 <body>
   <header class="container" role="banner">
     <h1>system.css</h1>
+    <h4>A bundle of <a href="http://postcss.org/">PostCSS</a> plugins.</h4>
     <p><a href="https://github.com/francoisromain/system.css">Github</a></p>
-    <h4>A minimal CSS framework based on <a href="http://postcss.org/">PostCSS</a>, <a href="http://cssnext.io/">cssnext</a> and <a href="http://francoisromain.github.io/postcss-grid-system/">postcss-grid-system</a>.</h4>
     <hr />
   </header>
-  <nav class="container" role="navigation">
-    <h2>Included</h2>
-    <ul class="list-prefix">
-      <li><a href="#settings">Settings</a></li>
-      <li><a href="#normalize">Normalize</a></li>
-      <li><a href="#print">Print</a></li>
-      <li><a href="#reset">Reset</a></li>
-      <li><a href="#typography">Typography</a></li>
-      <li><a href="#lists">Lists</a></li>
-      <li><a href="#buttons">Buttons</a></li>
-      <li><a href="#forms">Forms</a></li>
-      <li><a href="#tables">Tables</a></li>
-      <li><a href="#utils">Utils</a></li>
-      <li><a href="#grid-system">Grid-system</a></li>
-      <li><a href="#margins">Margins</a></li>
-      <li><a href="#ui">Ui</a></li>
-      <li><a href="#tools">Tools</a></li>
-    </ul>
-    <hr />
-  </nav>
   <main class="container" role="main">
-    <h2 id="settings"><a href="https://github.com/francoisromain/system.css/blob/master/settings.css">Settings</a></h2>
-    <p>Variables to define colors, spacing, typographic scale, grid, etc.</p>
+    <h2 id="typescale">Typescale</a></h2>
+    <p>Set type based on a <a href="http://type-scale.com/">typographic scale</a>.</p>
+    <p><a href="http://francoisromain.github.io/postcss-typescale/">Demo</a> | <a href="https://github.com/francoisromain/postcss-typescale">Doc</a></p>
     <hr />
-    <h2 id="normalize"><a href="https://github.com/necolas/normalize.css/blob/master/normalize.css">Normalize</a></h2>
-    <p><a href="https://necolas.github.io/normalize.css/">Normalize.css</a> makes browsers render all elements more consistently and in line with modern standards.</p>
+    <h2 id="grid-system">Grid system</h2>
+    <p>Create a grid-system based on a fixed column width.</p>
+    <p><a href="http://francoisromain.github.io/postcss-grid-system/">Demo</a> | <a href="https://github.com/francoisromain/postcss-grid-system">Doc</a></p>
     <hr />
-    <h2 id="print"><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L203">Print</a></h2>
-    <p><a href="https://html5boilerplate.com/">HTML5 boilerplate</a> simple @print styles.</p>
+    <h2 id="grid-fluid">Grid fluid</h2>
+    <p>Create fluid grids.</p>
+    <p><a href="http://francoisromain.github.io/postcss-grid-fluid/">Demo</a> | <a href="https://github.com/francoisromain/postcss-grid-fluid">Doc</a></p>
     <hr />
-    <h2 id="reset"><a href="https://github.com/francoisromain/system.css/blob/master/reset.css">Reset</a></h2>
-    <p>Basic styles for Html tag, responsive images, constant margins on elements.</p>
-    <hr />
-    <h2 id="typography"><a href="https://github.com/francoisromain/system.css/blob/master/typography.css">Typography</a></h2>
-    <p class="xxxl">xxxl: Sample text</p>
-    <h1>h1, xxl: Sample text</h1>
-    <h2>h2, xl: Sample text</h2>
-    <h3>h3, l: Sample text</h3>
-    <h4>h4, m: Sample text</h4>
-    <h5>h5, s: Sample text</h5>
-    <h6>h6, xs: Sample text</h6>
-    <p class="lead">Lead: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    <p>Paragraph: lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-    <blockquote>Blockquote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor.</blockquote>
-    <hr />
-    <h2 id="lists"><a href="https://github.com/francoisromain/system.css/blob/master/lists.css">Lists</a></h2>
-    <h3>Standard list</h3>
-    <ul>
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item three</li>
-      <li>Item four</li>
-      <li>Item five</li>
-    </ul>
-    <h3>Ordered list</h3>
-    <ol>
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item three</li>
-      <li>Item four</li>
-      <li>Item five</li>
-    </ol>
-    <h3>List sans</h3>
-    <ul class="list-sans">
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item three</li>
-      <li>Item four</li>
-      <li>Item five</li>
-    </ul>
-    <h3>List inline</h3>
-    <ul class="list-inline clearfix">
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item three</li>
-      <li>Item four</li>
-      <li>Item five</li>
-    </ul>
-    <h3>Prefixed list</h3>
-    <ul class="list-prefix">
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item three</li>
-      <li>Item four</li>
-      <li>Item five</li>
-    </ul>
-    <h3>Postfixed list</h3>
-    <ul class="list-postfix list-inline">
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item three</li>
-      <li>Item four</li>
-      <li>Item five</li>
-    </ul>
-    <hr />
-    <h2 id="buttons"><a href="https://github.com/francoisromain/system.css/blob/master/buttons.css">Buttons</a></h2>
-    <h3>Default buttons</h3>
-    <a class="btn btn-xxs">Button xxs</a>
-    <a class="btn btn-xs">Button xs</a>
-    <a class="btn btn-s">Button s</a>
-    <a class="btn btn-m">Button m</a>
-    <a class="btn btn-l">Button l</a>
-    <h3>Rounded corner buttons</h3>
-    <a class="btn btn-xxs btn-rnd">Button xxs</a>
-    <a class="btn btn-xs btn-rnd">Button xs</a>
-    <a class="btn btn-s btn-rnd">Button s</a>
-    <a class="btn btn-m btn-rnd">Button m</a>
-    <a class="btn btn-l btn-rnd">Button l</a>
-    <h3>Pills buttons</h3>
-    <a class="btn btn-xxs btn-pill">Button xxs</a>
-    <a class="btn btn-xs btn-pill">Button xs</a>
-    <a class="btn btn-s btn-pill">Button s</a>
-    <a class="btn btn-m btn-pill">Button m</a>
-    <a class="btn btn-l btn-pill">Button l</a>
-    <h3>Alternate buttons</h3>
-    <a class="btn btn-xxs btn-alt">Button xxs</a>
-    <a class="btn btn-xs btn-alt">Button xs</a>
-    <a class="btn btn-s btn-alt">Button s</a>
-    <a class="btn btn-m btn-alt">Button m</a>
-    <a class="btn btn-l btn-alt">Button l</a>
-    <h3>Flash buttons</h3>
-    <a class="btn btn-xxs btn-flash">Button xxs</a>
-    <a class="btn btn-xs btn-flash">Button xs</a>
-    <a class="btn btn-s btn-flash">Button s</a>
-    <a class="btn btn-m btn-flash">Button m</a>
-    <a class="btn btn-l btn-flash">Button l</a>
-    <h3>Bordered buttons</h3>
-    <a class="btn btn-xxs btn-border">Button xxs</a>
-    <a class="btn btn-xs btn-border">Button xs</a>
-    <a class="btn btn-s btn-border">Button s</a>
-    <a class="btn btn-m btn-border">Button m</a>
-    <a class="btn btn-l btn-border">Button l</a>
-    <h3>Example of combination</h3>
-    <a class="btn btn-l btn-alt l btn-rnd margin-bottom">Large button with large text rounded corners flash background</a>
-    <a class="btn btn-xl btn-flash xl btn-full margin-bottom">Full width xl button with xl text flash background</a><a class="btn btn-xxs btn-border s btn-pill margin-bottom">Small button small text pill shape border</a><a class="btn btn-xs btn-alt s btn-pill margin-bottom">Small button small text pill shape</a>
-    <hr />
-    <h2 id="forms"><a href="https://github.com/francoisromain/system.css/blob/master/forms.css">Forms</a></h2>
-    <form method="post">
-      <fieldset>
-        <div class="margin-bottom clearfix">
-          <label><h4>Gender</h4></label>
-          <ul class="list-inline list-space">
-            <li>
-              <label>
-                <input type="radio" name="id_gender" value="1" checked="checked" /> Mr</label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="id_gender" value="2" /> Ms</label>
-            </li>
-          </ul>
-        </div>
-        <div class="margin-bottom clearfix">
-          <label><h4>Gender</h4></label>
-          <ul class="list-inline list-space">
-            <li>
-              <label>
-                <input type="checkbox" name="id_gender" value="1" checked="checked" /> One</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="id_gender" value="2" /> Two</label>
-            </li>
-          </ul>
-        </div>
-        <div class="tooltip margin-bottom">
-          <label for="contactform-name"><h4>Name</h4></label>
-          <input type="text" id="contactform-name" name="name" value="" class="input" />
-        </div>
-        <div class="tooltip margin-bottom">
-          <label for="contactform-email"><h4>Email</h4></label>
-          <input type="text" id="contactform-email" name="email" value="" class="input" />
-        </div>
-        <div class="tooltip margin-bottom">
-          <label class="contactform-label" for="contactform-recipient"><h4>Recipient</h4></label>
-          <select class="input" id="contactform-recipient" name="recipient">
-            <option value="">—</option>
-            <option value="#">One</option>
-            <option value="#">Two</option>
-            <option value="#">Three</option>
-            <option value="#">Four</option>
-            <option value="#">Five</option>
-          </select>
-        </div>
-        <div class="tooltip margin-bottom">
-          <label class="contactform-label" for="contactform-message"><h4>Message</h4></label>
-          <textarea class="input" name="text" id="contactform-message" rows="6"></textarea>
-        </div>
-        <input type="submit" name="submit" value="Envoyer" class="btn btn-s btn-rnd btn-alt btn-full margin-bottom" />
-      </fieldset>
-    </form>
-    <hr />
-    <h2 id="tables"><a href="https://github.com/francoisromain/system.css/blob/master/tables.css">Tables</a></h2>
-    <table>
-      <tr>
-        <th>Firstname</th>
-        <th>Name</th>
-        <th>Value</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>80</td>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>80</td>
-      </tr>
-    </table>
-    <hr />
-    <h2 id="grid-system"><a href="https://github.com/francoisromain/system.css/blob/master/grids.css">Grid-system</a></h2>
-    <p>The grid system of system.css relies on <a href="http://francoisromain.github.io/postcss-grid-system/">postcss-grid-system</a>.</p>
-    <div class="row">
-      <div class="bloc-2-1 pad bg-alt">bloc 2-1</div><div class="fraction-4-3 pad bg-alt">fraction 4/3</div>
-    </div>
-    <hr />
-    <h2 id="utils"><a href="https://github.com/francoisromain/system.css/blob/master/utils.css">Utils</a></h2>
-    <p>Clearfix, hide</p>
-    <div class="row">
-      <div class="bloc-2-6 pad bg-alt text-center">Center</div>
-      <div class="bloc-2-6 pad bg-alt text-right">Text-right</div>
-    </div>
-    <p class="capitalize">capitalize</p>
-    <p class="pointer">Pointer (mouse over)</p>
-    <p class="strikethrough">Strikethrough</p>
-    <p class="pad">pad</p>
-    <p class="color-brand">color-brand</p>
-    <p class="color-clear">color-clear</p>
-    <p class="color-neutral">color-neutral</p>
-    <p class="bg-brand">bg-brand</p>
-    <p class="bg-alt">bg-alt</p>
-    <p class="bg-neutral">bg-neutral</p>
-    <hr />
-    <h2 id="margins"><a href="https://github.com/francoisromain/system.css/blob/master/margins.css">Margins</a></h2>
-    <p>A margin utility</p>
-    <hr />
-    <h2 id="ui"><a href="https://github.com/francoisromain/system.css/blob/master/ui.css">Ui</a></h2>
-    <p><span class="tooltip">Tooltip is better on mouseover.<span>Tooltip text</span></span></p>
-    <p class="alert alert-info">This is an info alert</p>
-    <p class="alert alert-success">This is a success alert</p>
-    <p class="alert alert-warning">This is an warning alert</p>
-    <p class="alert alert-error">This is an error alert</p>
-    <span class="label">label</span>
-    <span class="label label-color">label color</span>
-    <hr />
-    <h2 id="tools"><a href="https://github.com/francoisromain/system.css/blob/master/tools.css">Tools</a></h2>
-    <p>Classes for development and debuging.</p>
-  </main>
+    <h2 id="button"><a href="http://francoisromain.github.io/postcss-button/">Button</a></h2>
+    <p>Create buttons.</p>
+    <p><a href="http://francoisromain.github.io/postcss-button/">Demo</a> | <a href="https://github.com/francoisromain/postcss-button">Doc</a></p></main>
   <footer>
     <div class="container">
       <hr class="margin-top-s" />
       <p class="s">© 2016 <a href="http://francoisromain.com">François Romain</a> | <a href="https://twitter.com/francoisromain">Twitter</a></p>
     </div>
   </footer>
+  <script src="dist/prism.js"></script>
 </body>
 
 </html>
