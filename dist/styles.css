@@ -947,6 +947,10 @@ header {
           flex: 0 1 calc(100% - 1.5rem);
 }
 
+.bloc {
+  gs: blob 1;
+}
+
 @media (min-width: 43.5rem) {
 
   .container {
