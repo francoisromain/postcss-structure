@@ -65,11 +65,11 @@ html {
 }
 
 h1 {
-  typescale: 4 2;
+  typescale: 4 3;
 }
 
 h2 {
-  typescale: 3 1.5;
+  typescale: 3 2;
 }
 
 h3 {
@@ -77,16 +77,16 @@ h3 {
 }
 
 h4 {
-  typescale: 1 1;
+  typescale: 1 1.5;
 }
 
 h5 {
-  typescale: -1 1;
+  typescale: 0 1;
 }
 
 h6,
 small {
-  typescale: -2 0.5;
+  typescale: -1 0.5;
 }
 
 hr {
