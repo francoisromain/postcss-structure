@@ -19,7 +19,6 @@ const tests = {
 }
 `,
   output: `.my-button, .my-button:visited {
-  display: inline-block;
   cursor: pointer;
   text-decoration: none;
   border: none;
