@@ -22,6 +22,7 @@ const tests = {
   cursor: pointer;
   text-decoration: none;
   border: none;
+  display: inline-block;
   padding: 0;
   color: orangered;
   background-color: white;
