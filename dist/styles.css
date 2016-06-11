@@ -28,34 +28,8 @@ http://francoisromain.github.io/system.css
 
   /* xxl: 2.5rem = 60 px */
 
-  /* Text sizes    ------------------------------- */
-
-  /* typographic scale and vertical rhythm:
-     cf http://type-scale.com/ or http://www.gridlover.net/app/
-     default to major third 1.250
-  */
-  
-  /* h6, .xs: 10px / 12px */
-
-  /* h5, .s: 12px / 24px */
-
-  /* h4, .m: 16px / 24px */
-
-  /* h3, .l: 28.4px / 24px */
-
-  /* h2, .xl: 37.9px / 36px */
-
-  /* h1, .xxl: 39px / 48px */
-
-  /* .xxxl: 48px / 48px */
-
-  /* .lead: 20px / 36px */
-
-  /* .blockquote: 20px / 24px */
 
   /* margin-bottom: 24px */
-
-  /* Buttons       ------------------------------- */
 
   /* Lists         ------------------------------- */
 
@@ -942,7 +916,6 @@ header {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 1 calc(100% - 1.5rem);
       -ms-flex: 0 1 calc(100% - 1.5rem);
           flex: 0 1 calc(100% - 1.5rem);
 }
@@ -968,7 +941,6 @@ header {
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 calc(50% - 1.5rem);
         -ms-flex: 0 1 calc(50% - 1.5rem);
             flex: 0 1 calc(50% - 1.5rem);
   }
@@ -1014,19 +986,15 @@ header {
   margin-right: -24px;
   margin-right: -1.5rem;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .row::after {
@@ -1079,7 +1047,6 @@ code {
   padding: 0.75rem;
   white-space: pre;
   -webkit-hyphens: none;
-     -moz-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
   word-wrap: break-word;
