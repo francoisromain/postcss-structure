@@ -23,6 +23,7 @@ const tests = {
   cursor: pointer;
   text-decoration: none;
   border: none;
+  padding: 0;
   color: orangered;
   background-color: white;
   box-shadow: inset 0 0 0 1px silver;
