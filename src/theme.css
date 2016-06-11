@@ -199,6 +199,10 @@ header {
   visibility: hidden;
 }
 
+pad-s {
+  padding: var(--base-unit-s);
+}
+
 pre code {
   display: block;
 }

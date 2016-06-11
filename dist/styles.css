@@ -1036,6 +1036,11 @@ header {
   visibility: hidden;
 }
 
+pad-s {
+  padding: 12px;
+  padding: 0.75rem;
+}
+
 pre code {
   display: block;
 }
