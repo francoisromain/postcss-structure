@@ -199,7 +199,7 @@ header {
   visibility: hidden;
 }
 
-pad-s {
+.pad-s {
   padding: var(--base-unit-s);
 }
 
