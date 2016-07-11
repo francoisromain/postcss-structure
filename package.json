@@ -1,13 +1,16 @@
 {
   "name": "postcss-structure",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "A bundle of PostCSS plugins.",
   "keywords": [
     "postcss",
     "css",
     "postcss-plugin",
     "buttons",
-    "postcss-structure"
+    "postcss-structure",
+    "typographic scale",
+    "grid fluid",
+    "grid system"
   ],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
@@ -39,10 +42,10 @@
     "eslint-plugin-react": "^5.2.2"
   },
   "dependencies": {
-    "postcss-grid-system": "0.3.2",
-    "postcss-grid-fluid": "0.1.10",
-    "postcss-typescale": "0.1.4",
-    "postcss-button": "0.1.12"
+    "postcss-grid-system": "0.3.3",
+    "postcss-grid-fluid": "0.1.11",
+    "postcss-typescale": "0.1.5",
+    "postcss-button": "0.1.13"
   },
   "eslintConfig": {
     "extends": "airbnb",
