@@ -1,11 +1,11 @@
 {
-  "name": "francoisromain.github.io.system.css",
+  "name": "francoisromain.github.io.postcss-structure",
   "version": "0.1.0",
   "scripts": {
-    "babel": "babel system.css/src --out-dir system.css/lib",
-    "lint": "stylelint src/*.css && stylelint system.css/*.css",
-    "css": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u ./system.css -u postcss-cssnext -i src/styles.css -o dist/styles.css",
-    "watch": "onchange 'index.html' 'src/**/*.*' 'system.css/src/**/*.*' -- npm run build",
+    "babel": "babel postcss-structure/src --out-dir postcss-structure/lib",
+    "lint": "stylelint src/*.css && stylelint postcss-structure/*.css",
+    "css": "postcss --local-plugins -u postcss-import -u postcss-custom-properties -u ./postcss-structure -u postcss-cssnext -i src/styles.css -o dist/styles.css",
+    "watch": "onchange 'index.html' 'src/**/*.*' 'postcss-structure/src/**/*.*' -- npm run build",
     "reload": "livereload",
     "build": "npm run babel && npm run css",
     "start": "npm-run-all --parallel watch reload"
