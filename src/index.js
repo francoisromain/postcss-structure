@@ -4,7 +4,7 @@ import postcssGridFluid from 'postcss-grid-fluid';
 import postcssButton from 'postcss-button';
 import postcssTypescale from 'postcss-typescale';
 
-module.exports = postcss.plugin('system.css', (opts) => {
+module.exports = postcss.plugin('postcss-structure', (opts) => {
   const instance = postcss();
 
   const processors = [{
