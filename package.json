@@ -1,24 +1,24 @@
 {
-  "name": "system.css",
-  "version": "0.2.9",
+  "name": "postcss-structure",
+  "version": "0.10.0",
   "description": "A bundle of PostCSS plugins.",
   "keywords": [
     "postcss",
     "css",
     "postcss-plugin",
     "buttons",
-    "system.css"
+    "postcss-structure"
   ],
   "author": "Francois Romain <francoisromain@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/francoisromain/system.css.git"
+    "url": "https://github.com/francoisromain/postcss-structure.git"
   },
   "bugs": {
-    "url": "https://github.com/francoisromain/system.css/issues"
+    "url": "https://github.com/francoisromain/postcss-structure/issues"
   },
-  "homepage": "http://francoisromain.github.io/system.css/",
+  "homepage": "http://francoisromain.github.io/postcss-structure/",
   "dependencies": {
     "postcss": "^5.0.19"
   },

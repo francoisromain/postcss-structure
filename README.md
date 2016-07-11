@@ -1,8 +1,8 @@
-# system.css
+# postcss-structure
 
 [![npm version][npm-img]][npm] [![Build Status][ci-img]][ci] [![Dependency Status][dep-img]][dep]
 
-[francoisromain.github.io/system.css][github.io]
+[francoisromain.github.io/postcss-structure][github.io]
 
 A bundle of [PostCSS] plugins including: 
 
@@ -11,27 +11,27 @@ A bundle of [PostCSS] plugins including:
 - [postcss-grid-fluid](https://www.npmjs.com/package/postcss-grid-fluid)
 - [postcss-button](https://www.npmjs.com/package/postcss-button)
 
-[github.io]: http://francoisromain.github.io/system.css
+[github.io]: http://francoisromain.github.io/postcss-structure
 [PostCSS]:   https://github.com/postcss/postcss
-[ci-img]:    https://travis-ci.org/francoisromain/system.css.svg
-[ci]:        https://travis-ci.org/francoisromain/system.css
-[npm-img]:   https://badge.fury.io/js/system.css.svg
-[npm]:       https://badge.fury.io/js/system.css
-[dep-img]:   https://david-dm.org/francoisromain/system.css.svg
-[dep]:       https://david-dm.org/francoisromain/system.css
+[ci-img]:    https://travis-ci.org/francoisromain/postcss-structure.svg
+[ci]:        https://travis-ci.org/francoisromain/postcss-structure
+[npm-img]:   https://badge.fury.io/js/postcss-structure.svg
+[npm]:       https://badge.fury.io/js/postcss-structure
+[dep-img]:   https://david-dm.org/francoisromain/postcss-structure.svg
+[dep]:       https://david-dm.org/francoisromain/postcss-structure
 
 * * * 
 
 ## Installation
 
-Install the [npm package](https://www.npmjs.com/package/system.css):
+Install the [npm package](https://www.npmjs.com/package/postcss-structure):
 
-    $ npm install system.css --save-dev
+    $ npm install postcss-structure --save-dev
 
 Require the PostCSS plugin:
 
 ``` js
-postcss([ require('system.css') ])
+postcss([ require('postcss-structure') ])
 ```
 
 See [PostCSS docs](https://github.com/postcss/postcss#usage) to setup with Gulp, Grunt, Webpack, npm scripts… 
