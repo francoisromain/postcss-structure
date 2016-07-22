@@ -1,6 +1,6 @@
 {
   "name": "postcss-structure",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "A bundle of PostCSS plugins.",
   "keywords": [
     "postcss",
@@ -42,7 +42,7 @@
     "eslint-plugin-react": "^5.2.2"
   },
   "dependencies": {
-    "postcss-grid-system": "0.4.1",
+    "postcss-grid-system": "0.4.2",
     "postcss-grid-fluid": "0.1.11",
     "postcss-typescale": "0.1.5",
     "postcss-button": "0.1.13"
