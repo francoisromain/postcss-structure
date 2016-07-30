@@ -23,7 +23,6 @@ const tests = {
   text-decoration: none;
   border: none;
   display: inline-block;
-  padding: 0;
   color: orangered;
   background-color: white;
   box-shadow: inset 0 0 0 1px silver;
