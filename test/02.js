@@ -69,73 +69,72 @@ const tests = {
     padding-right: 1.5rem;
     overflow: hidden;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 .custom-1 {
     background-color: plum;
     & .custom-3 {
-        color: red
+      color: red;
     }
-}
+  }
 .custom-2 {
     background-color: plum;
-    color: white
-}
+    color: white;
+  }
 @media (min-width: 42.5rem) {
     .container {
-        width: 42.5rem
+        width: 42.5rem;
     }
-    .custom-1 {
-        background-color: deeppink
-    }
-    .custom-2 {
-        background-color: deeppink;
-        color: silver
-    }
+  .custom-1 {
+    background-color: deeppink;
+  }
+  .custom-2 {
+    background-color: deeppink;
+    color: silver;
+  }
 }
 @media (min-width: 63rem) {
     .container {
-        width: 63rem
+        width: 63rem;
     }
-    .custom-1 {
-        background-color: orangered
-    }
+  .custom-1 {
+    background-color: orangered;
+  }
 }
 @media (min-width: 83.5rem) {
     .container {
-        width: 83.5rem
+        width: 83.5rem;
     }
-    .custom-1 {
-        background-color: dodgerblue
-    }
+  .custom-1 {
+    background-color: dodgerblue;
+  }
 }
 @media (min-width: 104rem) {
     .container {
-        width: 104rem
+        width: 104rem;
     }
-    .custom-1 {
-        background-color: lightcoral
-    }
+  .custom-1 {
+    background-color: lightcoral;
+  }
 }
 @media (min-width: 124.5rem) {
     .container {
-        width: 124.5rem
+        width: 124.5rem;
     }
-    .custom-1 {
-        background-color: gold
-    }
+  .custom-1 {
+    background-color: gold;
+  }
 }
 @media (min-width: 145rem) {
     .container {
-        width: 145rem
+        width: 145rem;
     }
 }
 @media (min-width: 165.5rem) {
     .container {
-        width: 165.5rem
+        width: 165.5rem;
     }
 }
-`,
-};
+` };
 
 export default tests;

@@ -1,6 +1,6 @@
 {
   "name": "postcss-structure",
-  "version": "0.11.2",
+  "version": "0.11.3",
   "description": "A bundle of PostCSS plugins.",
   "keywords": [
     "postcss",
@@ -22,30 +22,28 @@
     "url": "https://github.com/francoisromain/postcss-structure/issues"
   },
   "homepage": "http://francoisromain.github.io/postcss-structure/",
-  "dependencies": {
-    "postcss": "^5.0.19"
-  },
   "scripts": {
     "build": "babel src --out-dir lib",
     "test": "ava && eslint *.js"
   },
   "main": "./lib/index.js",
   "devDependencies": {
-    "ava": "^0.15.2",
-    "babel-cli": "^6.11.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-register": "^6.11.6",
-    "eslint": "^3.2.0",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
-    "eslint-plugin-react": "^5.2.2"
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1"
   },
   "dependencies": {
-    "postcss-grid-system": "0.4.2",
-    "postcss-grid-fluid": "0.1.11",
-    "postcss-typescale": "0.1.5",
-    "postcss-button": "0.1.16"
+    "postcss": "^6.0.1",
+    "postcss-grid-system": "0.4.8",
+    "postcss-grid-fluid": "0.1.16",
+    "postcss-typescale": "0.1.7",
+    "postcss-button": "0.1.18"
   },
   "eslintConfig": {
     "extends": "airbnb",
