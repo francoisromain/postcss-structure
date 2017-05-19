@@ -8,7 +8,7 @@ import plugin from '../src/index';
 
 function run(t, input, output, opts = {}) {
   return postcss([plugin(opts)]).process(input)
-    .then(result => {
+    .then((result) => {
       t.deepEqual(result.css, output);
       t.deepEqual(result.warnings().length, 0);
     });
