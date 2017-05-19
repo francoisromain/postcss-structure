@@ -3,6 +3,7 @@
 -------------------------------
 */
 
+
 /*
   css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
   paulirish.com/2012/box-sizing-border-box-ftw
@@ -20,6 +21,7 @@ html,
 }
 
 html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   overflow-y: scroll;
   min-height: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -88,12 +90,14 @@ img {
   border: 0;
 }
 
+
 /* remove yellow bg on automplete in chrome */
 
 input:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset;
 }
+
 
 /* remove round corner on iOs */
 
